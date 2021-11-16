@@ -1,0 +1,27 @@
+{
+  "name": "js-lenex",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc",
+    "update-typings": "./scripts/update-typings.sh"
+  },
+  "author": "Tim (https://tiim.ch/)",
+  "license": "MIT",
+  "dependencies": {
+    "fast-xml-parser": "^3.20.0",
+    "he": "^1.2.0",
+    "jszip": "^3.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "quicktype": "^15.0.260",
+    "typescript": "^4.4.4"
+  }
+}
