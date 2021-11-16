@@ -1,32 +1,34 @@
 // Auto generated code, update with npm run update-typings
 // Last update 2021-11-16
+
 export interface LenexRaw {
-    version:            string;
     constructor:        Constructor;
     meets?:             Meet[];
-    timestandardlists?: Timestandardlist[];
     recordlists?:       Recordlist[];
+    timestandardlists?: Timestandardlist[];
+    version:            string;
 }
 
 export interface Constructor {
+    contact:       ConstructorContact;
     name:          ConstructorName;
     registration?: string;
     version:       string;
-    contact:       Contact;
 }
 
-export interface Contact {
-    name?:     string;
-    street?:   string;
+export interface ConstructorContact {
     city?:     string;
-    zip?:      string;
     country?:  Country;
     email?:    string;
-    internet?: string;
-    phone?:    string;
     fax?:      string;
+    internet?: string;
+    mobile?:   string;
+    name?:     string;
+    phone?:    string;
     state?:    string;
+    street?:   string;
     street2?:  string;
+    zip?:      string;
 }
 
 export enum Country {
@@ -40,45 +42,46 @@ export enum Country {
 export enum ConstructorName {
     SPLASHMeetManager11 = "SPLASH Meet Manager 11",
     SPLASHMeetManager2007 = "SPLASH Meet Manager 2007",
+    SPLASHTeamManager10 = "SPLASH Team Manager 10",
     SwimrankingsNet = "swimrankings.net",
 }
 
 export interface Meet {
+    agedate:            Agedate;
     city:               string;
-    name:               string;
+    clubs?:             ClubElement[];
+    contact?:           ConstructorContact;
     course:             Course;
     deadline?:          Date;
     entrystartdate?:    Date;
     entrytype?:         string;
+    facility?:          Facility;
+    fees?:              FeeElement[];
     hostclub?:          string;
     "hostclub.url"?:    string;
+    maxentriesathlete?: string;
+    name:               string;
+    "name.en"?:         string;
+    nation:             Nation;
+    number?:            string;
     organizer?:         string;
     "organizer.url"?:   string;
+    pointtable?:        Pointtable;
+    pool:               Pool;
+    qualify?:           Qualify;
+    reservecount?:      string;
     "result.url"?:      string;
+    sessions:           Session[];
     startmethod?:       string;
-    timing:             Timing;
+    state?:             string;
+    timing?:            Timing;
     type?:              string;
     withdrawuntil?:     Date;
-    nation:             Nation;
-    maxentriesathlete?: string;
-    agedate:            Agedate;
-    pool:               Pool;
-    facility?:          Facility;
-    pointtable?:        Pointtable;
-    contact?:           Contact;
-    fees?:              FeeElement[];
-    qualify?:           Qualify;
-    sessions:           Session[];
-    clubs?:             ClubElement[];
-    reservecount?:      string;
-    number?:            string;
-    state?:             string;
-    "name.en"?:         string;
 }
 
 export interface Agedate {
-    value: Date;
     type:  AgedateType;
+    value: Date;
 }
 
 export enum AgedateType {
@@ -89,37 +92,37 @@ export enum AgedateType {
 }
 
 export interface ClubElement {
-    type:            ClubType;
-    code?:           string;
-    nation?:         Nation;
-    region?:         Region;
-    clubid?:         string;
-    swrid?:          string;
-    name:            string;
-    shortname?:      string;
     athletes?:       AthleteElement[];
-    relays?:         RelayElement[];
+    clubid?:         string;
     coaches?:        Coaches;
+    code?:           string;
+    contact?:        ConstructorContact;
+    name:            string;
     "name.en"?:      string;
-    "shortname.en"?: string;
+    nation?:         Nation;
     officials?:      Official[];
-    contact?:        Contact;
+    region?:         Region;
+    relays?:         RelayElement[];
+    shortname?:      string;
+    "shortname.en"?: string;
+    swrid?:          string;
+    type?:           ClubType;
 }
 
 export interface AthleteElement {
-    firstname?:  string;
-    lastname?:   string;
-    birthdate?:  Date;
-    gender:      Gender;
-    nation:      Nation;
-    license?:    string;
-    swrid?:      string;
     athleteid:   string;
-    results?:    Result[];
+    birthdate?:  Date;
     entries?:    AthleteEntries;
     externalid?: string;
+    firstname?:  string;
+    gender:      Gender;
     handicap?:   Handicap;
+    lastname?:   string;
     level?:      string;
+    license?:    string;
+    nation?:     Nation;
+    results?:    Result[];
+    swrid?:      string;
 }
 
 export interface AthleteEntries {
@@ -129,19 +132,19 @@ export interface AthleteEntries {
 export interface PurpleEntry {
     entrytime: string;
     eventid:   string;
-    lane?:     string;
     heatid?:   string;
+    lane?:     string;
     meetinfo?: Meetinfo;
     status?:   EntryStatus;
 }
 
 export interface Meetinfo {
-    course?:     Course;
     city?:       string;
+    course?:     Course;
     date?:       Date;
+    meetinfoid?: string;
     name?:       string;
     nation?:     Nation;
-    meetinfoid?: string;
 }
 
 export enum Course {
@@ -204,15 +207,15 @@ export enum EntryStatus {
 export interface FluffyEntry {
     entrytime:       string;
     eventid:         string;
-    lane:            string;
-    heatid:          string;
+    heatid?:         string;
+    lane?:           string;
     relaypositions?: EntryRelayposition[];
 }
 
 export interface EntryRelayposition {
     athleteid: string;
-    number:    string;
     meetinfo?: Meetinfo;
+    number:    string;
 }
 
 export enum Gender {
@@ -228,20 +231,20 @@ export interface Handicap {
 }
 
 export interface Result {
-    eventid:         string;
-    swimtime:        string;
-    resultid:        string;
-    entrytime?:      string;
+    comment?:        string;
     entrycourse?:    Course;
-    points?:         string;
+    entrytime?:      string;
+    eventid:         string;
     heatid?:         string;
     lane?:           string;
-    status?:         EntryStatus;
-    splits?:         Split[];
-    comment?:        string;
     late?:           Formeet;
+    points?:         string;
     reactiontime?:   string;
     relaypositions?: ResultRelayposition[];
+    resultid:        string;
+    splits?:         Split[];
+    status?:         EntryStatus;
+    swimtime:        string;
 }
 
 export enum Formeet {
@@ -251,8 +254,8 @@ export enum Formeet {
 export interface ResultRelayposition {
     athleteid?:    string;
     number:        string;
-    status?:       EntryStatus;
     reactiontime?: string;
+    status?:       EntryStatus;
 }
 
 export interface Split {
@@ -265,12 +268,24 @@ export interface Coaches {
 }
 
 export interface CoachElement {
+    coachid?:  string;
+    contact?:  CoachContact;
     firstname: string;
     gender:    Gender;
     lastname:  string;
     license?:  string;
-    type?:     CoachType;
     nation?:   Nation;
+    type?:     CoachType;
+}
+
+export interface CoachContact {
+    city:    string;
+    email:   string;
+    mobile?: string;
+    phone?:  string;
+    state:   string;
+    street:  string;
+    zip:     string;
 }
 
 export enum CoachType {
@@ -278,13 +293,13 @@ export enum CoachType {
 }
 
 export interface Official {
-    officialid: string;
     firstname:  string;
     gender:     Gender;
     grade:      string;
     lastname:   string;
-    nation?:    Nation;
     license?:   string;
+    nation?:    Nation;
+    officialid: string;
 }
 
 export enum Region {
@@ -305,11 +320,12 @@ export interface RelayElement {
     agemin:      string;
     agetotalmax: string;
     agetotalmin: string;
-    gender:      Gender;
-    number?:     string;
-    results?:    Result[];
-    name?:       string;
     entries?:    RelayEntries;
+    gender:      Gender;
+    name?:       string;
+    number?:     string;
+    relayid?:    string;
+    results?:    Result[];
 }
 
 export interface RelayEntries {
@@ -325,14 +341,14 @@ export interface Facility {
     city:    string;
     name?:   string;
     nation:  Nation;
+    state?:  string;
     street?: string;
     zip?:    string;
-    state?:  string;
 }
 
 export interface FeeElement {
     currency: Currency;
-    type:     string;
+    type:     FeeType;
     value:    string;
 }
 
@@ -341,9 +357,16 @@ export enum Currency {
     Eur = "EUR",
 }
 
+export enum FeeType {
+    Athlete = "ATHLETE",
+    LateentryIndividual = "LATEENTRY.INDIVIDUAL",
+    LateentryRelay = "LATEENTRY.RELAY",
+    Relay = "RELAY",
+}
+
 export interface Pointtable {
-    pointtableid: string;
     name:         PointtableName;
+    pointtableid: string;
     version:      string;
 }
 
@@ -354,59 +377,59 @@ export enum PointtableName {
 }
 
 export interface Pool {
-    name?:    string;
+    lanemax?: string;
     lanemin?: string;
-    lanemax:  string;
+    name?:    string;
 }
 
 export interface Qualify {
-    until?:      Date;
-    from?:       Date;
     conversion?: string;
+    from?:       Date;
     percent?:    string;
+    until?:      Date;
 }
 
 export interface Session {
     date:               Date;
     daytime?:           string;
+    endtime?:           string;
+    events:             Event[];
+    judges?:            Judge[];
+    maxentriesathlete?: string;
     name?:              string;
     number:             string;
     officialmeeting?:   string;
+    remarksjudge?:      string;
     teamleadermeeting?: string;
     warmupfrom?:        string;
     warmupuntil?:       string;
-    remarksjudge?:      string;
-    maxentriesathlete?: string;
-    events:             Event[];
-    endtime?:           string;
-    judges?:            Judge[];
 }
 
 export interface Event {
-    eventid:           string;
+    agegroups?:        AgegroupElement[];
     daytime?:          string;
+    eventid:           string;
+    fee?:              EventFee;
     gender?:           Gender;
+    heats?:            Heat[];
     number:            string;
     order?:            string;
-    round:             Round;
     preveventid:       string;
+    round?:            Round;
     swimstyle:         EventSwimstyle;
-    fee?:              EventFee;
-    agegroups?:        AgegroupElement[];
-    heats?:            Heat[];
-    type?:             AgegroupType;
     timestandardrefs?: Timestandardref[];
+    type?:             AgegroupType;
 }
 
 export interface AgegroupElement {
     agegroupid: string;
     agemax:     string;
     agemin:     string;
-    rankings?:  Ranking[];
+    calculate?: string;
     gender?:    Gender;
     name?:      string;
+    rankings?:  Ranking[];
     type?:      AgegroupType;
-    calculate?: string;
 }
 
 export interface Ranking {
@@ -425,8 +448,8 @@ export interface EventFee {
 }
 
 export interface Heat {
-    heatid:   string;
     daytime?: string;
+    heatid:   string;
     number:   string;
     order?:   string;
     status?:  HeatStatus;
@@ -442,13 +465,13 @@ export enum Round {
 }
 
 export interface EventSwimstyle {
+    code?:        string;
     distance:     string;
+    name?:        string;
     relaycount:   string;
     stroke:       Stroke;
-    technique?:   string;
     swimstyleid?: string;
-    name?:        string;
-    code?:        string;
+    technique?:   string;
 }
 
 export enum Stroke {
@@ -461,9 +484,9 @@ export enum Stroke {
 }
 
 export interface Timestandardref {
+    fee:                EventFee;
     marker:             Marker;
     timestandardlistid: string;
-    fee:                EventFee;
 }
 
 export enum Marker {
@@ -471,9 +494,9 @@ export enum Marker {
 }
 
 export interface Judge {
+    number?:    string;
     officialid: string;
     role:       Role;
-    number?:    string;
 }
 
 export enum Role {
@@ -491,16 +514,16 @@ export enum Timing {
 }
 
 export interface Recordlist {
-    recordlistid: string;
+    agegroup:     RecordlistAgegroup;
     course:       Course;
+    formeet:      Formeet;
     gender:       Gender;
     name:         RecordlistName;
     order:        string;
+    recordlistid: string;
+    records:      Record[];
     type:         RecordlistType;
     updated:      Date;
-    formeet:      Formeet;
-    agegroup:     RecordlistAgegroup;
-    records:      Record[];
 }
 
 export interface RecordlistAgegroup {
@@ -514,22 +537,22 @@ export enum RecordlistName {
 }
 
 export interface Record {
-    swimtime:  string;
-    swimstyle: RecordSwimstyle;
-    meetinfo:  Meetinfo;
     athlete?:  RecordAthlete;
-    splits?:   Split[];
+    meetinfo:  Meetinfo;
     relay?:    RecordRelay;
+    splits?:   Split[];
+    swimstyle: RecordSwimstyle;
+    swimtime:  string;
 }
 
 export interface RecordAthlete {
     athleteid: string;
     birthdate: Date;
+    club?:     AthleteClub;
     firstname: string;
     gender:    Gender;
     lastname:  string;
     nation:    Nation;
-    club?:     AthleteClub;
 }
 
 export interface AthleteClub {
@@ -546,8 +569,8 @@ export interface RecordRelay {
 }
 
 export interface RelayRelayposition {
-    number:  string;
     athlete: RecordAthlete;
+    number:  string;
 }
 
 export interface RecordSwimstyle {
@@ -561,14 +584,14 @@ export enum RecordlistType {
 }
 
 export interface Timestandardlist {
-    timestandardlistid: string;
+    agegroup?:          TimestandardlistAgegroup;
     code?:              Code;
     course:             Course;
     gender:             Gender;
     name?:              TimestandardlistName;
-    type:               TimestandardlistType;
-    agegroup?:          TimestandardlistAgegroup;
+    timestandardlistid: string;
     timestandards:      Timestandard[];
+    type:               TimestandardlistType;
 }
 
 export interface TimestandardlistAgegroup {
@@ -592,8 +615,8 @@ export enum TimestandardlistName {
 }
 
 export interface Timestandard {
-    swimtime:  string;
     swimstyle: RecordSwimstyle;
+    swimtime:  string;
 }
 
 export enum TimestandardlistType {
