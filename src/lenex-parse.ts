@@ -3,29 +3,39 @@ import { parse } from "fast-xml-parser";
 import JSZip from 'jszip';
 import he from "he"
 import { LenexRaw } from './lenex-type.js';
+import Ajv from "ajv";
+import addFormats from "ajv-formats"
+import schema from "./schema.json";
 
 const isBrowser = typeof window !== 'undefined';
+const ajv = new Ajv({
+  allowUnionTypes: true,
+})
+addFormats(ajv);
+const validate = ajv.compile(schema);
 
-/**
- * 
- * @param {Blob|String|Buffer|Uint8Array} file 
- * @returns {Promise<LenexRaw>}
- */
-export async function parseLenex(file) : Promise<LenexRaw>{
+export async function parseLenex(
+  file: Blob | String | Buffer | Uint8Array
+): Promise<LenexRaw> {
   let data = await handleFile(file);
   if (isZip(data)) {
     data = await extractZip(data);
   }
 
-  return parseXML(new TextDecoder().decode(data));
+  const lenex: LenexRaw = parseXML(new TextDecoder().decode(data));
+
+  const valid = validate(lenex);
+
+  if (!valid) {
+    console.log(ajv.errorsText(validate.errors));
+    console.log(JSON.stringify(lenex));
+    throw new Error(ajv.errorsText(validate.errors));
+  }
+
+  return lenex;
 }
 
-/**
- * 
- * @param {Blob|String|Buffer|Uint8Array} file 
- * @returns {Promise<Uint8Array>}
- */
-async function handleFile(file) {
+async function handleFile(file: Blob | String | Buffer | Uint8Array): Promise<Uint8Array> {
   if (!isBrowser && typeof file === "string") {
     return readFile(file);
   } else if ((Buffer && Buffer.isBuffer(file)) || file instanceof Uint8Array) {
@@ -35,12 +45,7 @@ async function handleFile(file) {
   }
 }
 
-/**
- * 
- * @param {Uint8Array} data
- * @returns {Promise<Uint8Array>} 
- */
-async function extractZip(data) {
+async function extractZip(data: Uint8Array): Promise<Uint8Array> {
   const zip = await JSZip.loadAsync(data);
   const keys = Object.keys(zip.files)
   if (keys.length > 1) {
@@ -60,20 +65,35 @@ function isZip(buffer: Uint8Array): boolean {
 
 }
 
-/**
- * 
- * @param {String} str 
- * @returns {any}
- */
-function parseXML(str) {
+const attrIgnoreNumbers = ["zip", "fax", "phone", "mobile"]
+function parseXML(str: string): any {
     let data = parse(str, {
     ignoreAttributes : false,
     attributeNamePrefix: '',
     arrayMode: (tagName, parentTagName) => {
       return tagName.toLowerCase() + "s" === parentTagName?.toLowerCase()
     },
-    tagValueProcessor: a => he.decode(a, {}),// default is a=>a
-    attrValueProcessor: a => he.decode(a, {isAttributeValue: true})
+    tagValueProcessor: (a, tagName) => { 
+      let num: Number;
+      if (a === "") {
+        return ""
+      } else if (!Number.isNaN( num = Number(a))) {
+        return num;
+      } else {
+        return he.decode(a, {});
+      }
+    },
+    attrValueProcessor: (a, attrName) => 
+    { 
+      let num: Number;
+      if (a === "") {
+        return ""
+      } else if (!Number.isNaN( num = Number(a)) && !attrIgnoreNumbers.includes(attrName)) {
+        return num;
+      } else {
+        return he.decode(a, {isAttributeValue: true})
+      }
+    }
   });
 
   data = keysToLowerCase(data);
@@ -81,12 +101,7 @@ function parseXML(str) {
   return data.lenex;
 }
 
-/**
- * 
- * @param {any} obj 
- * @returns {any}
- */
-function keysToLowerCase(obj) {
+function keysToLowerCase(obj: any): any {
     if (Array.isArray(obj)) {
       return obj.map(x => keysToLowerCase(x));
     }
@@ -106,12 +121,7 @@ function keysToLowerCase(obj) {
     return newObj;
 }
 
-/**
- * 
- * @param {any} obj 
- * @returns {any}
- */
-function arrayTagSquash(obj) {
+function arrayTagSquash(obj: any): any {
   if (Array.isArray(obj)) {
     return obj.map(o => arrayTagSquash(o));
   } else if (typeof obj === 'object') {

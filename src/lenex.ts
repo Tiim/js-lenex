@@ -1,11 +1,12 @@
 import { parseLenex } from './lenex-parse.js'
-import { AthleteElement, ClubElement, Event, LenexRaw } from './lenex-type.js';
-
+import { LenexRaw, MeetAthlete, MeetClub } from './lenex-type.js';
 
 type AcceptedInputTypes = string|Blob|Buffer|Uint8Array;
 
 
 export class Lenex {
+
+  readonly accepted_lenex_versions = [3, "3.0"];
   
   private file?: AcceptedInputTypes;
   /**
@@ -20,15 +21,15 @@ export class Lenex {
   /**
    * Maps athlete-ids to athletes
    */
-  private athleteMap: Record<string, AthleteElement>;
+  private athleteMap: Record<string, MeetAthlete>;
   /**
    * Maps club-ids to clubs
    */
-  private clubsMap: Record<string, ClubElement>;
+  private clubsMap: Record<string, MeetClub>;
   /**
    * Maps club-codes to clubs
    */
-  private clubsMapCode: Record<string, ClubElement>;
+  private clubsMapCode: Record<string, any>;
   
   constructor(file: AcceptedInputTypes) {      
     this.file = file;
@@ -47,7 +48,11 @@ export class Lenex {
 
     this.raw = await parseLenex(this.file);
     delete this.file;
-    //console.log(JSON.stringify(this.raw, null, 2));
+
+    if (!this.accepted_lenex_versions.includes(this.raw.version)) {
+      throw new Error(`Unsupported lenex version: ${this.raw.version} Supported versions: (${this.accepted_lenex_versions.join(", ")})`);
+    }
+
 
     this.eventsMap = this.raw.meets
       ?.flatMap(meet => meet.sessions)

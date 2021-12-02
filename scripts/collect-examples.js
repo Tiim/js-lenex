@@ -13,8 +13,3 @@ readdir(testFolder, async (err, files) => {
   const arr = await Promise.all(all);
   console.log(JSON.stringify(arr, null, 2));
 });
-
-// const lenex = new Lenex("examples/Results-Result.lef");
-// await lenex.init()
-
-//console.log(JSON.stringify(lenex.rawLenexData))

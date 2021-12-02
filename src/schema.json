@@ -1,0 +1,2757 @@
+{
+  "$ref": "#/definitions/LenexRaw",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "AgeDate": {
+      "description": "The AGEDATE is the date used to calculate the age of an athlete.",
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/AgedateType",
+          "description": "The type describes, how the age is calculated."
+        },
+        "value": {
+          "$ref": "#/definitions/DateOnly"
+        }
+      },
+      "required": [
+        "type",
+        "value"
+      ],
+      "type": "object"
+    },
+    "AgeGroupCalc": {
+      "enum": [
+        "TOTAL",
+        "SINGLE"
+      ],
+      "type": "string"
+    },
+    "AgedateType": {
+      "enum": [
+        "CAN.FNQ",
+        "DATE",
+        "POR",
+        "YEAR",
+        "LUX"
+      ],
+      "type": "string"
+    },
+    "AgegroupType": {
+      "const": "MASTERS",
+      "type": "string"
+    },
+    "ClubType": {
+      "enum": [
+        "CLUB",
+        "NATIONALTEAM",
+        "REGIONALTEAM",
+        "UNATTACHED"
+      ],
+      "type": "string"
+    },
+    "Constructor": {
+      "properties": {
+        "contact": {
+          "$ref": "#/definitions/ConstructorContact",
+          "description": "Contact information of the provider of the software, which created the Lenex file."
+        },
+        "name": {
+          "description": "Name of the application that created the Lenex file.",
+          "type": "string"
+        },
+        "registration": {
+          "description": "Name of user, to who the creator application was registered.",
+          "type": "string"
+        },
+        "version": {
+          "description": "The version number of the application that created the Lenex file.",
+          "type": [
+            "string",
+            "number"
+          ]
+        }
+      },
+      "required": [
+        "contact",
+        "name",
+        "version"
+      ],
+      "type": "object"
+    },
+    "ConstructorContact": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/_Contact"
+        },
+        {
+          "properties": {
+            "email": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "email"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "Conversion": {
+      "description": "The way, how times are converted for seeding.",
+      "enum": [
+        "NONE",
+        "FINA_POINTS",
+        "PERCENT_LINEAR",
+        "NON_CONFORMING_LAST"
+      ],
+      "type": "string"
+    },
+    "Country": {
+      "enum": [
+        "AD",
+        "AE",
+        "AF",
+        "AG",
+        "AI",
+        "AL",
+        "AM",
+        "AN",
+        "AO",
+        "AR",
+        "AS",
+        "AT",
+        "AU",
+        "AW",
+        "AZ",
+        "BA",
+        "BB",
+        "BD",
+        "BE",
+        "BF",
+        "BG",
+        "BH",
+        "BI",
+        "BJ",
+        "BM",
+        "BN",
+        "BO",
+        "BR",
+        "BS",
+        "BT",
+        "BW",
+        "BY",
+        "BZ",
+        "CA",
+        "CC",
+        "CD",
+        "CF",
+        "CG",
+        "CH",
+        "CI",
+        "CK",
+        "CL",
+        "CM",
+        "CN",
+        "CO",
+        "CR",
+        "CS",
+        "CU",
+        "CV",
+        "CX",
+        "CY",
+        "CZ",
+        "DE",
+        "DJ",
+        "DK",
+        "DM",
+        "DO",
+        "DZ",
+        "EC",
+        "EE",
+        "EG",
+        "ER",
+        "ES",
+        "ET",
+        "FI",
+        "FJ",
+        "FK",
+        "FO",
+        "FR",
+        "GA",
+        "GB",
+        "GD",
+        "GE",
+        "GF",
+        "GH",
+        "GI",
+        "GL",
+        "GM",
+        "GN",
+        "GP",
+        "GQ",
+        "GR",
+        "GS",
+        "GT",
+        "GU",
+        "GW",
+        "GY",
+        "HK",
+        "HN",
+        "HR",
+        "HT",
+        "HU",
+        "ID",
+        "IE",
+        "IL",
+        "IN",
+        "IQ",
+        "IR",
+        "IS",
+        "IT",
+        "JM",
+        "JO",
+        "JP",
+        "KE",
+        "KG",
+        "KH",
+        "KI",
+        "KM",
+        "KN",
+        "KP",
+        "KR",
+        "KW",
+        "KY",
+        "KZ",
+        "LA",
+        "LB",
+        "LC",
+        "LI",
+        "LK",
+        "LR",
+        "LS",
+        "LT",
+        "LU",
+        "LV",
+        "LY",
+        "MA",
+        "MC",
+        "MD",
+        "MG",
+        "MH",
+        "MK",
+        "ML",
+        "MM",
+        "MN",
+        "MO",
+        "MP",
+        "MQ",
+        "MR",
+        "MS",
+        "MT",
+        "MU",
+        "MV",
+        "MW",
+        "MX",
+        "MY",
+        "MZ",
+        "NA",
+        "NC",
+        "NE",
+        "NF",
+        "NG",
+        "NI",
+        "NL",
+        "NO",
+        "NP",
+        "NR",
+        "NZ",
+        "OM",
+        "PA",
+        "PE",
+        "PF",
+        "PG",
+        "PH",
+        "PK",
+        "PL",
+        "PM",
+        "PN",
+        "PR",
+        "PT",
+        "PW",
+        "PY",
+        "QA",
+        "RE",
+        "RO",
+        "RU",
+        "RW",
+        "SA",
+        "SB",
+        "SC",
+        "SD",
+        "SE",
+        "SG",
+        "SH",
+        "SI",
+        "SK",
+        "SL",
+        "SM",
+        "SN",
+        "SO",
+        "SR",
+        "ST",
+        "SV",
+        "SY",
+        "SZ",
+        "TC",
+        "TD",
+        "TF",
+        "TG",
+        "TH",
+        "TJ",
+        "TK",
+        "TM",
+        "TN",
+        "TO",
+        "TP",
+        "TR",
+        "TT",
+        "TV",
+        "TW",
+        "TZ",
+        "UA",
+        "UG",
+        "UM",
+        "US",
+        "UY",
+        "UZ",
+        "VA",
+        "VC",
+        "VE",
+        "VG",
+        "VI",
+        "VN",
+        "VU",
+        "WF",
+        "WS",
+        "XZ",
+        "YE",
+        "YT",
+        "ZA",
+        "ZM",
+        "ZW"
+      ],
+      "type": "string"
+    },
+    "Course": {
+      "enum": [
+        "LCM",
+        "SCM",
+        "SCY",
+        "SCM16",
+        "SCM20",
+        "SCM33",
+        "SCY20",
+        "SCY27",
+        "SCY33",
+        "SCY36",
+        "OPEN"
+      ],
+      "type": "string"
+    },
+    "Currency": {
+      "enum": [
+        "AUD",
+        "BRL",
+        "CAD",
+        "CHF",
+        "DKK",
+        "DZD",
+        "GBP",
+        "DR",
+        "EUR",
+        "HRK",
+        "INR",
+        "IQD",
+        "IRR",
+        "JPY",
+        "KRW",
+        "KWD",
+        "MXP",
+        "NGN",
+        "NOK",
+        "NZD",
+        "PHP",
+        "PKR",
+        "PYG",
+        "RUR",
+        "SAR",
+        "SEK",
+        "TND",
+        "USD"
+      ],
+      "type": "string"
+    },
+    "CurrencyFormat": {
+      "type": [
+        "string",
+        "number"
+      ]
+    },
+    "DateOnly": {
+      "type": "string"
+    },
+    "DayTime": {
+      "description": "Time string with format TODO",
+      "type": "string"
+    },
+    "Entry": {
+      "description": "This element contains the information for a single entry of an athlete or a relay to a specific round of a meet. \n\nThe combination  of the  attributes eventid, heatid and  lane should be unique over all ENTRY objects of the  same meet.",
+      "properties": {
+        "agegroupid": {
+          "description": "Reference to an age group (AGEGROUP element in the  AGEGROUPS collection of the EVENT element).",
+          "type": "number"
+        },
+        "entrycourse": {
+          "$ref": "#/definitions/Course",
+          "description": "This attribute indicates a pool length for the entry time. This is  necessary when special seeding rules are used. See section 5.4. for  acceptable values."
+        },
+        "entrytime": {
+          "$ref": "#/definitions/SwimTime",
+          "description": "The entry time in the swim time format."
+        },
+        "eventid": {
+          "description": "Reference to the EVENT element using the id attribute.",
+          "type": "number"
+        },
+        "heatid": {
+          "description": "Reference to a heat (HEAT element in HEATS collection of the  EVENT element).",
+          "type": "number"
+        },
+        "lane": {
+          "description": "The lane number of the entry.",
+          "type": "number"
+        },
+        "meetinfo": {
+          "$ref": "#/definitions/RaceMeetInfo",
+          "description": "This element contains the information, about a qualification result for  the entry time was achieved."
+        },
+        "relaypositions": {
+          "description": "Only for relay entries. This element contains references to the relay  swimmers.",
+          "items": {
+            "$ref": "#/definitions/EntryRelayPosition"
+          },
+          "type": "array"
+        },
+        "status": {
+          "description": "This attribute is used for the entry status information. An empty status  attribute means a regular entry. The following values are allowed: \n* EXH: exhibition swim. \n* RJC: rejected entry \n* SICK: athlete is sick. \n* WDR: athlete/relay was withdrawn.",
+          "enum": [
+            "",
+            "EXH",
+            "RJC",
+            "SICK",
+            "WDR"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "eventid"
+      ],
+      "type": "object"
+    },
+    "EntryRelayPosition": {
+      "anyOf": [
+        {
+          "properties": {
+            "number": {
+              "description": "The number of the swimmer in the relay. The first swimmer is 1, the  second 2 and so on. -1 can be used to add reserve swimmers.",
+              "type": "number"
+            },
+            "reactiontime": {
+              "$ref": "#/definitions/ReactionTime",
+              "description": "The reaction time at the start of the first swimmer and the relay take    over times for other swimmers."
+            },
+            "status": {
+              "description": "No status attribute means the swimmer finished his part correctly.  Otherwise, the following values are allowed: \n* DSQ: relay athlete was disqualified. \n* DNF: relay athlete did not finish.",
+              "enum": [
+                "DSQ",
+                "DNF"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "number"
+          ],
+          "type": "object"
+        },
+        {
+          "properties": {
+            "meetinfo": {
+              "$ref": "#/definitions/RaceMeetInfo",
+              "description": "This element contains the information, where the entry time was  achieved. This element is only allowed in the context of a relay entry."
+            }
+          },
+          "type": "object"
+        }
+      ]
+    },
+    "EntryStatus": {
+      "enum": [
+        "DNF",
+        "DNS",
+        "DSQ",
+        "EXH",
+        "SICK",
+        "SUI.RED10",
+        "WDR"
+      ],
+      "type": "string"
+    },
+    "EntryType": {
+      "enum": [
+        "OPEN",
+        "INVITATION"
+      ],
+      "type": "string"
+    },
+    "Event": {
+      "description": "This element contains all information of an event.  For events with finals, there has to be an EVENT element for each round.",
+      "properties": {
+        "agegroups": {
+          "description": "The AGEGROUPS collection contains the descriptions for the age  groups in this event. For Open/Senior events, AGEGROUPS is only  needed with one AGEGROUP element as a placeholder for the  RANKINGS element (for places in result lists). If round=\"FHT\", then  no AGEGROUPS element is allowed. \n\nTODO",
+          "items": {
+            "$ref": "#/definitions/EventAgeGroup"
+          },
+          "type": "array"
+        },
+        "daytime": {
+          "$ref": "#/definitions/DayTime",
+          "description": "The daytime of the start of the event."
+        },
+        "eventid": {
+          "description": "Every event needs to have an id attribute, so that it can be referenced  by ENTRY and RESULT objects. The id attribute has to be unique  over all EVENT objects of all sessions of a meet.",
+          "type": "number"
+        },
+        "fee": {
+          "$ref": "#/definitions/SingleFee",
+          "description": "The entry fee for this event. If there are global fees per athlete, relay  and/or meet, the FEE elements in the MEET element should be used."
+        },
+        "gender": {
+          "$ref": "#/definitions/Gender",
+          "description": "The gender of the event. The default value is all (A). Other values  allowed are male (M), female (F) and mixed (X). Mixed is only used for  relays."
+        },
+        "heats": {
+          "description": "Collection with all heats in the event.",
+          "items": {
+            "$ref": "#/definitions/Heat"
+          },
+          "type": "array"
+        },
+        "maxentries": {
+          "description": "The maximum number of entries per club in this event. To limit the  number of entries per athlete or relay, use the maxentries attribute in  the MEET element.",
+          "type": "number"
+        },
+        "number": {
+          "description": "The number of the event. The event numbers should be unique over  all events of a meet. The EVENT objects of the different rounds for the  same event may have the same event number.",
+          "type": "number"
+        },
+        "order": {
+          "description": "This value can be used to define the order of the events within a  session if it is not by the event number and if there are no start times  for the events.",
+          "type": "number"
+        },
+        "preveventid": {
+          "description": "This value is a reference to a previous event's id. (e.g. the prelims  events for final events). The default value  is -1 and means, that there  was no previous event.",
+          "type": "number"
+        },
+        "round": {
+          "$ref": "#/definitions/Round"
+        },
+        "run": {
+          "description": "Used if there is more than one swim-off necessary. Default value is 1.",
+          "type": "number"
+        },
+        "swimstyle": {
+          "$ref": "#/definitions/Swimstyle",
+          "description": "The SWIMSTYLE element contains information about distance and  stroke of the event."
+        },
+        "timestandardrefs": {
+          "description": "A list of references to TIMESTANDARDREF elements with references  to time standard lists to be used for this event.",
+          "items": {
+            "$ref": "#/definitions/TimeStandardRef"
+          },
+          "type": "array"
+        },
+        "timing": {
+          "$ref": "#/definitions/Timing",
+          "description": "The type of timing for an event. If missing, the session should be  checked and finally the value for the meet should be used."
+        },
+        "type": {
+          "$ref": "#/definitions/AgegroupType",
+          "description": "The default value is empty. This applies for regular events that are  run according to the FINA rules.  MASTERS: Master results to be used for master rankings/records."
+        }
+      },
+      "required": [
+        "eventid",
+        "number",
+        "swimstyle"
+      ],
+      "type": "object"
+    },
+    "EventAgeGroup": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/_AgeGroup"
+        },
+        {
+          "properties": {
+            "agegroupid": {
+              "description": "Only for events, every AGEGROUP element needs an id, because the  objects can be referenced from ENTRY objects. The id has to be  unique within an AGEGROUPS collection.",
+              "type": "number"
+            },
+            "gender": {
+              "$ref": "#/definitions/Gender",
+              "description": "In mixed events, the gender can be specifiedin the AGEGROUP  objects. Values can be male (M), female (F) or mixed (X). Mixed is  only used for relays. This can be useful to define events with gender  set to all (A), but the ranking is separated. This attribute is not allowed  in the context of a RECORDLIST or TIMESTANDARDLIST element."
+            }
+          },
+          "required": [
+            "agegroupid"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "Facility": {
+      "description": "This element contains name and full address of meets facility.",
+      "properties": {
+        "city": {
+          "description": "The city of the facility.",
+          "type": "string"
+        },
+        "name": {
+          "description": "The name of the facility (e.g. \"Aquatic Center\").",
+          "type": "string"
+        },
+        "nation": {
+          "$ref": "#/definitions/Nation"
+        },
+        "state": {
+          "description": "The state, province or county of the address.",
+          "type": "string"
+        },
+        "street": {
+          "description": "The first additional line of the address.",
+          "type": "string"
+        },
+        "street2": {
+          "description": "The second additional line of the address.",
+          "type": "string"
+        },
+        "zip": {
+          "description": "The postal code of the address.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "city",
+        "nation"
+      ],
+      "type": "object"
+    },
+    "FeeElement": {
+      "anyOf": [
+        {
+          "description": "The fee is used in MEET and EVENT objects.",
+          "properties": {
+            "currency": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/Currency"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "value": {
+              "$ref": "#/definitions/CurrencyFormat"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "type": "object"
+        },
+        {
+          "properties": {
+            "type": {
+              "$ref": "#/definitions/FeeType"
+            }
+          },
+          "required": [
+            "type"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "FeeType": {
+      "enum": [
+        "ATHLETE",
+        "LATEENTRY.INDIVIDUAL",
+        "LATEENTRY.RELAY",
+        "RELAY"
+      ],
+      "type": "string"
+    },
+    "FinalType": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "type": "string"
+    },
+    "Gender": {
+      "enum": [
+        "F",
+        "M",
+        "X"
+      ],
+      "type": "string"
+    },
+    "Handicap": {
+      "properties": {
+        "breast": {
+          "$ref": "#/definitions/HandicapClass",
+          "description": "The handicap class for breaststroke."
+        },
+        "exception": {
+          "description": "Additional information about handicap.",
+          "type": "string"
+        },
+        "free": {
+          "$ref": "#/definitions/HandicapClass",
+          "description": "The handicap class for freestyle, backstroke and fly"
+        },
+        "medley": {
+          "$ref": "#/definitions/HandicapClass",
+          "description": "The handicap class for individual medley"
+        }
+      },
+      "type": "object"
+    },
+    "HandicapClass": {
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        "GER.AB",
+        "GER.GB"
+      ],
+      "type": [
+        "number",
+        "string"
+      ]
+    },
+    "Heat": {
+      "description": "The heat is used to define more details in the start list (e.g. schedule)",
+      "properties": {
+        "agegroupid": {
+          "description": "Reference to an age group (AGEGROUP element in the  AGEGROUPS collection of the EVENT element).",
+          "type": "string"
+        },
+        "daytime": {
+          "$ref": "#/definitions/DayTime",
+          "description": "The daytime of the start of the event."
+        },
+        "final": {
+          "$ref": "#/definitions/FinalType",
+          "description": "This value is used to identify A, B, ... finals."
+        },
+        "heatid": {
+          "description": "The id attribute should be unique over all heats of a meet. It is  required when you have ENTRY / RESULT objects that reference to a  heat.",
+          "type": "number"
+        },
+        "number": {
+          "description": "The number of the heat. The heat numbers have to be unique within  one event, also in a case when you have A finals in different  agegroups.",
+          "type": "number"
+        },
+        "order": {
+          "description": "This value can be used to define the order of the heats within an event  if it is not by the heat number and if there are no start times for the  heats.",
+          "type": "number"
+        },
+        "status": {
+          "$ref": "#/definitions/HeatStatus",
+          "description": "The status of the heat"
+        }
+      },
+      "required": [
+        "heatid",
+        "number"
+      ],
+      "type": "object"
+    },
+    "HeatStatus": {
+      "description": "The status of the heat.",
+      "enum": [
+        "OFFICIAL",
+        "INOFFICIAL",
+        "SEEDED"
+      ],
+      "type": "string"
+    },
+    "Judge": {
+      "description": "This element contains information to attach an official to a session with his role in the session.",
+      "properties": {
+        "number": {
+          "description": "The number for judges where there are more than one. This can be  used for example for the lane number for timekeepers.",
+          "type": "string"
+        },
+        "officialid": {
+          "description": "A reference to a OFFICIAL element.",
+          "type": "number"
+        },
+        "remarks": {
+          "description": "Additional information for the judge.",
+          "type": "string"
+        },
+        "role": {
+          "$ref": "#/definitions/Role",
+          "description": "Indicates the role of a judge. The list is built according to the FINA  descriptions."
+        }
+      },
+      "required": [
+        "officialid"
+      ],
+      "type": "object"
+    },
+    "LenexRaw": {
+      "properties": {
+        "constructor": {
+          "$ref": "#/definitions/Constructor",
+          "description": "This element contains information about the software which created  the Lenex file."
+        },
+        "meets": {
+          "description": "Contains all the information of meets like athletes, relays, entries and  results.",
+          "items": {
+            "$ref": "#/definitions/Meet"
+          },
+          "type": "array"
+        },
+        "recordlists": {
+          "description": "Contains different types of records (e.g. World records, Olympic records) including age group records.",
+          "items": {
+            "$ref": "#/definitions/Recordlist"
+          },
+          "type": "array"
+        },
+        "timestandardlists": {
+          "description": "Contains different type of time standards and qualification times.",
+          "items": {
+            "$ref": "#/definitions/TimeStandardList"
+          },
+          "type": "array"
+        },
+        "version": {
+          "description": "The version number of the Lenex format.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "constructor",
+        "version"
+      ],
+      "type": "object"
+    },
+    "Meet": {
+      "description": "This element contains all information of one meet, including events, athletes, relays, entries and results.",
+      "properties": {
+        "agedate": {
+          "$ref": "#/definitions/AgeDate",
+          "description": "The date to be used to calculate the age of athletes. The default value is the date of the first session and type by year of birth only."
+        },
+        "altitude": {
+          "description": "Height above sea level of the meet city.",
+          "type": "number"
+        },
+        "city": {
+          "description": "The name of the city where the meet was run. Should be the same as FACILITY.city",
+          "type": "string"
+        },
+        "city.en": {
+          "description": "Name of meet city in english.",
+          "type": "string"
+        },
+        "clubs": {
+          "description": "Collection of clubs of the meet.",
+          "items": {
+            "$ref": "#/definitions/MeetClub"
+          },
+          "type": "array"
+        },
+        "contact": {
+          "$ref": "#/definitions/MeetContact",
+          "description": "The contact address of the meet organizer."
+        },
+        "course": {
+          "$ref": "#/definitions/Course",
+          "description": "The size of the pool. If the attribute is not available, all SESSION objects  need to have a course attribute."
+        },
+        "deadline": {
+          "$ref": "#/definitions/DateOnly",
+          "description": "The date for the entry deadline"
+        },
+        "deadlinetime": {
+          "description": "The exact time for the entry deadline.",
+          "type": "string"
+        },
+        "entrystartdate": {
+          "$ref": "#/definitions/DateOnly",
+          "description": "The date from when (online) entries are open/available."
+        },
+        "entrytype": {
+          "$ref": "#/definitions/EntryType",
+          "description": "The type of (online) entries:"
+        },
+        "facility": {
+          "$ref": "#/definitions/Facility",
+          "description": "The full address of the meets facility."
+        },
+        "fees": {
+          "description": "Fees used for this meet. On this level, different global fees for clubs,  athletes and relays are allowed. If there are fees that have to be paid  per entry, the FEE element in the EVENT objects should be used.",
+          "items": {
+            "$ref": "#/definitions/FeeElement"
+          },
+          "type": "array"
+        },
+        "hostclub": {
+          "description": "The executing federation or club of the meet (e.g. the German  Swimming Federation, if the European Champ was held in Berlin).",
+          "type": "string"
+        },
+        "hostclub.url": {
+          "description": "A website url, that directs to the executing club for the meet",
+          "type": "string"
+        },
+        "maxentriesathlete": {
+          "description": "The maximum number of individual entries per athlete in this session.",
+          "type": "number"
+        },
+        "maxentriesrelay": {
+          "description": "The maximum number of relay entries per club in this session.",
+          "type": "number"
+        },
+        "name": {
+          "description": "The name of the meet. Normally the name should not contain a full  date (maybe the year only) and/or a city or pool name.",
+          "type": "string"
+        },
+        "name.en": {
+          "description": "Meet name in english.",
+          "type": "string"
+        },
+        "nation": {
+          "$ref": "#/definitions/Nation",
+          "description": "The three letter code of the nation of the meet city. This should be the same as FACILITY.nation"
+        },
+        "number": {
+          "description": "The sanction number for the meet by the federation.",
+          "type": [
+            "string",
+            "number"
+          ]
+        },
+        "organizer": {
+          "description": "The organisation which promotes the meet (e.g. FINA for the World Championships).",
+          "type": "string"
+        },
+        "organizer.url": {
+          "description": "A website url, that directs to the organizer of the meet.",
+          "type": "string"
+        },
+        "pointtable": {
+          "$ref": "#/definitions/PointTable",
+          "description": "Description of the point table used for scoring."
+        },
+        "pool": {
+          "$ref": "#/definitions/Pool",
+          "description": "Details about the pool where the meet took place."
+        },
+        "qualify": {
+          "$ref": "#/definitions/Qualify",
+          "description": "Details about how qualification times for entries are defined."
+        },
+        "reservecount": {
+          "description": "The number of reserve swimmers in finals and semifinals.",
+          "type": "number"
+        },
+        "result.url": {
+          "description": "A website url, that directs to the results page. This should be a deep  (direct) link to the result lists and not the general website of a meet.",
+          "type": "string"
+        },
+        "sessions": {
+          "description": "Description of all events grouped by session.",
+          "items": {
+            "$ref": "#/definitions/Session"
+          },
+          "type": "array"
+        },
+        "startmethod": {
+          "description": "1 start rule or 2 start rule.",
+          "type": "number"
+        },
+        "state": {
+          "description": "UNDOCUMENTED in current version of LENEX (3.0, 2021-11-16) State where the meeting is held. Same as FACILITY.state",
+          "type": "string"
+        },
+        "swrid": {
+          "description": "The global unique meet id given by swimrankings.net.",
+          "type": "string"
+        },
+        "timing": {
+          "$ref": "#/definitions/Timing",
+          "description": "The type of timing for a meet."
+        },
+        "type": {
+          "description": "The meet type. The following values are allowed: \n* The default value is empty. This applies for normal meets that are    run according to the FINA rules. \n* All other values depend on definitions of national federations.",
+          "type": "string"
+        },
+        "withdrawuntil": {
+          "$ref": "#/definitions/DateOnly",
+          "description": "The date for withdrawals from the entry list."
+        }
+      },
+      "required": [
+        "city",
+        "name",
+        "nation",
+        "sessions"
+      ],
+      "type": "object"
+    },
+    "MeetAthlete": {
+      "anyOf": [
+        {
+          "properties": {
+            "athleteid": {
+              "description": "The id attribute should be unique over all athletes of a meet.  It is required for ATHLETE objects in a meet sub tree.",
+              "type": "number"
+            },
+            "birthdate": {
+              "$ref": "#/definitions/DateOnly",
+              "description": "The date of birth for the athlete.  If only the year of birth is known, the date should be set to January 1st of that year."
+            },
+            "externalid": {
+              "description": "UNDOCUMENTED.",
+              "type": [
+                "string",
+                "number"
+              ]
+            },
+            "firstname": {
+              "description": "The first name of the athlete.",
+              "type": "string"
+            },
+            "firstname.en": {
+              "description": "The first name in english.",
+              "type": "string"
+            },
+            "gender": {
+              "$ref": "#/definitions/Gender",
+              "description": "Gender of the athlete. Values can be male (M) and female (F)."
+            },
+            "handicap": {
+              "$ref": "#/definitions/Handicap",
+              "description": "Information about the handicap classes of a swimmer."
+            },
+            "lastname": {
+              "description": "The last name of the athlete.",
+              "type": "string"
+            },
+            "lastname.en": {
+              "description": "The last name in english.",
+              "type": "string"
+            },
+            "level": {
+              "description": "The level of the athlete (used with levels in AGEGROUP).",
+              "type": "string"
+            },
+            "nameprefix": {
+              "description": "An optional name prefix. For example for Peter van den Hoogenband,  this could be \"van den\".",
+              "type": "string"
+            },
+            "nation": {
+              "$ref": "#/definitions/Nation"
+            },
+            "swrid": {
+              "description": "The global unique athlete id given by swimrankings.net.",
+              "type": "number"
+            }
+          },
+          "required": [
+            "birthdate",
+            "firstname",
+            "gender"
+          ],
+          "type": "object"
+        },
+        {
+          "properties": {
+            "athleteid": {
+              "description": "The id attribute should be unique over all athletes of a meet. It is  required for ATHLETE objects in a meet sub tree.",
+              "type": "number"
+            },
+            "entries": {
+              "description": "All entries of the athlete.",
+              "items": {
+                "$ref": "#/definitions/Entry"
+              },
+              "type": "array"
+            },
+            "license": {
+              "description": "The registration number given by the national federation.  This number should be looked at together with the nation of the  club the athlete is listed in the Lenex file.",
+              "type": "string"
+            },
+            "results": {
+              "description": "All results of the athlete.",
+              "items": {
+                "$ref": "#/definitions/Result"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "athleteid"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "MeetClub": {
+      "$ref": "#/definitions/_Club"
+    },
+    "MeetContact": {
+      "$ref": "#/definitions/_Contact"
+    },
+    "MeetRelay": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/_Relay"
+        },
+        {
+          "properties": {
+            "agemax": {
+              "description": "The maximum age allowed for the oldest swimmer in the team. The value -1 means no upper bound.",
+              "type": "number"
+            },
+            "agemin": {
+              "description": "The minimal age allowed for the youngest swimmer in the team. The  value -1 means no lower bound.",
+              "type": "number"
+            },
+            "agetotalmax": {
+              "description": "The maximum total age of all swimmers in the relay team. The value  \n-1 means that the total age is unknown",
+              "type": "number"
+            },
+            "agetotalmin": {
+              "description": "The minimum total age of all swimmers in the relay team. The value -1  means that the total age is unknown.",
+              "type": "number"
+            },
+            "entries": {
+              "description": "All entries of the relay team.",
+              "items": {
+                "$ref": "#/definitions/Entry"
+              },
+              "type": "array"
+            },
+            "gender": {
+              "$ref": "#/definitions/Gender",
+              "description": "The gender of the relay team. Acceptable values are male (M), female  (F) or mixed (X)."
+            },
+            "handicap": {
+              "$ref": "#/definitions/RelayHandicap",
+              "description": "For relays with handicapped swimmers. The default value is 0."
+            },
+            "number": {
+              "description": "The team number of the relay team. This number is only necessary, if  there are different teams of the same club in the same agegroups /  events.",
+              "type": "number"
+            },
+            "results": {
+              "description": "All results of the relay team.",
+              "items": {
+                "$ref": "#/definitions/Result"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "agemax",
+            "agemin",
+            "agetotalmax",
+            "agetotalmin",
+            "gender"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "MeetRelayPosition": {
+      "anyOf": [
+        {
+          "properties": {
+            "number": {
+              "description": "The number of the swimmer in the relay. The first swimmer is 1, the  second 2 and so on. -1 can be used to add reserve swimmers.",
+              "type": "number"
+            },
+            "reactiontime": {
+              "$ref": "#/definitions/ReactionTime",
+              "description": "The reaction time at the start of the first swimmer and the relay take    over times for other swimmers."
+            },
+            "status": {
+              "description": "No status attribute means the swimmer finished his part correctly.  Otherwise, the following values are allowed: \n* DSQ: relay athlete was disqualified. \n* DNF: relay athlete did not finish.",
+              "enum": [
+                "DSQ",
+                "DNF"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "number"
+          ],
+          "type": "object"
+        },
+        {
+          "properties": {
+            "athleteid": {
+              "description": "A reference to the ATHLETE element of the athlete. This attribute is  allowed in the context of a meet sub tree only.",
+              "type": "number"
+            }
+          },
+          "type": "object"
+        }
+      ]
+    },
+    "Nation": {
+      "description": "For  the  nation  codes,  the  three  letter  codes  of  FINA  are  used.  The  current  table  with  all  codes  and  nation  names can be downloaded from http://www.swimrankings.net/files/Lenex_Nation.txt",
+      "enum": [
+        "AFG",
+        "ALB",
+        "ALG",
+        "ASA",
+        "AND",
+        "ANG",
+        "ANT",
+        "ARG",
+        "ARM",
+        "ARU",
+        "AUS",
+        "AUT",
+        "AZE",
+        "BAH",
+        "BRN",
+        "BAN",
+        "BAR",
+        "BLR",
+        "BEL",
+        "BIZ",
+        "BEN",
+        "BER",
+        "BHU",
+        "BOL",
+        "BIH",
+        "BOT",
+        "BRA",
+        "IVB",
+        "BRU",
+        "BUL",
+        "BUR",
+        "BDI",
+        "CAM",
+        "CMR",
+        "CAN",
+        "CPV",
+        "CAY",
+        "CAF",
+        "CHA",
+        "CHI",
+        "CHN",
+        "TPE",
+        "COL",
+        "COM",
+        "CGO",
+        "COK",
+        "CRC",
+        "CRO",
+        "CUB",
+        "CYP",
+        "CZE",
+        "PRK",
+        "COD",
+        "DEN",
+        "DJI",
+        "DMA",
+        "DOM",
+        "ECU",
+        "EGY",
+        "ESA",
+        "GEQ",
+        "ERI",
+        "EST",
+        "ETH",
+        "FAR",
+        "FIJ",
+        "FIN",
+        "MKD",
+        "FRA",
+        "GAB",
+        "GAM",
+        "GEO",
+        "GER",
+        "GHA",
+        "GIB",
+        "GBR",
+        "GRE",
+        "GRN",
+        "GUM",
+        "GUA",
+        "GUI",
+        "GBS",
+        "GUY",
+        "HAI",
+        "HON",
+        "HKG",
+        "HUN",
+        "IRI",
+        "ISL",
+        "IND",
+        "INA",
+        "IRQ",
+        "IRL",
+        "ISR",
+        "ITA",
+        "CIV",
+        "JAM",
+        "JPN",
+        "JOR",
+        "KAZ",
+        "KEN",
+        "KIR",
+        "KOR",
+        "KUW",
+        "KGZ",
+        "LAO",
+        "LAT",
+        "LBN",
+        "LES",
+        "LBR",
+        "LBA",
+        "LIE",
+        "LTU",
+        "LUX",
+        "MAC",
+        "MAD",
+        "MAW",
+        "MAS",
+        "MDV",
+        "MLI",
+        "MLT",
+        "MHL",
+        "MTN",
+        "MRI",
+        "MEX",
+        "FSM",
+        "MDA",
+        "MON",
+        "MNE",
+        "MGL",
+        "MAR",
+        "MOZ",
+        "MYA",
+        "NAM",
+        "NRU",
+        "NEP",
+        "NED",
+        "AHO",
+        "NZL",
+        "NCA",
+        "NIG",
+        "NGR",
+        "NMA",
+        "NOR",
+        "OMA",
+        "PAK",
+        "PLW",
+        "PLE",
+        "PAN",
+        "PNG",
+        "PAR",
+        "PER",
+        "PHI",
+        "POL",
+        "POR",
+        "PUR",
+        "QAT",
+        "ROU",
+        "RUS",
+        "RWA",
+        "STP",
+        "LCA",
+        "SAM",
+        "SMR",
+        "KSA",
+        "SEN",
+        "SRB",
+        "SEY",
+        "SLE",
+        "SGP",
+        "SVK",
+        "SLO",
+        "SOL",
+        "SOM",
+        "RSA",
+        "ESP",
+        "SRI",
+        "SKN",
+        "VIN",
+        "SUD",
+        "SUR",
+        "SWZ",
+        "SWE",
+        "SUI",
+        "SYR",
+        "TAH",
+        "TJK",
+        "TAN",
+        "THA",
+        "TLS",
+        "TOG",
+        "TGA",
+        "TRI",
+        "TUN",
+        "TUR",
+        "TKM",
+        "TUV",
+        "UGA",
+        "UKR",
+        "UAE",
+        "USA",
+        "URU",
+        "UZB",
+        "VAN",
+        "VEN",
+        "VIE",
+        "ISV",
+        "YEM",
+        "ZAM",
+        "ZIM"
+      ],
+      "type": "string"
+    },
+    "Official": {
+      "description": "This element contains all information about an official.",
+      "properties": {
+        "contact": {
+          "$ref": "#/definitions/OfficialContact",
+          "description": "The contact information of  the official."
+        },
+        "firstname": {
+          "description": "The first name if the official.",
+          "type": "string"
+        },
+        "gender": {
+          "$ref": "#/definitions/Gender",
+          "description": "Gender of the official. Values can be male (M) and female (F)."
+        },
+        "grade": {
+          "description": "The grade of the judge. The value here is specific to national  federations and depends on their officials education system.",
+          "type": "string"
+        },
+        "lastname": {
+          "description": "The last name of the official.",
+          "type": "string"
+        },
+        "license": {
+          "description": "The registration number given by the national federation.",
+          "type": "string"
+        },
+        "nameprefix": {
+          "description": "An optional name prefix. For example for Peter van den Hoogenband,  this could be \"van den\".",
+          "type": "string"
+        },
+        "nation": {
+          "$ref": "#/definitions/Nation"
+        },
+        "officialid": {
+          "description": "The id attribute should be unique over all officials of a meet. It is  required for JUDGE objects in a meet sub tree.",
+          "type": "number"
+        },
+        "passport": {
+          "description": "The passport number of the official.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "firstname",
+        "gender",
+        "lastname"
+      ],
+      "type": "object"
+    },
+    "OfficialContact": {
+      "properties": {
+        "city": {
+          "description": "The city of the contact address.",
+          "type": "string"
+        },
+        "country": {
+          "$ref": "#/definitions/Country",
+          "description": "Country code of the contact address."
+        },
+        "email": {
+          "description": "The e-mail address of the contact. The attribute is required in the context of a CONSTRUCTOR element only.",
+          "type": "string"
+        },
+        "fax": {
+          "description": "The fax number of the contact.",
+          "type": "string"
+        },
+        "fname": {
+          "description": "UNDOCUMENTED",
+          "type": "string"
+        },
+        "internet": {
+          "description": "The full URL of the website of the contact person or organisation.  The http:// should be included in the string.",
+          "type": "string"
+        },
+        "mobile": {
+          "description": "The mobile phone number of the contact person.",
+          "type": "string"
+        },
+        "phone": {
+          "description": "The phone number of the contact person or the organisation.",
+          "type": "string"
+        },
+        "place": {
+          "description": "UNDOCUMENTED",
+          "type": "string"
+        },
+        "state": {
+          "description": "state, province or county of the contact address.",
+          "type": "string"
+        },
+        "street": {
+          "description": "The first additional line of the address.",
+          "type": "string"
+        },
+        "street2": {
+          "description": "The second additional line of the address.",
+          "type": "string"
+        },
+        "zip": {
+          "description": "The postal code of the address.",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "PointTable": {
+      "description": "This element is used to describe the point scoring used for a meet.",
+      "properties": {
+        "name": {
+          "$ref": "#/definitions/PointtableName",
+          "description": "The name of the point score system."
+        },
+        "pointtableid": {
+          "description": "Common point tables have a unique id. Details are in chapter 5.5. of the lenex spec http://www.swimrankings.net/files/Lenex_PointTable.txt",
+          "type": "number"
+        },
+        "version": {
+          "description": "The version number/year of the point score system.",
+          "type": [
+            "string",
+            "number"
+          ]
+        }
+      },
+      "required": [
+        "name",
+        "version"
+      ],
+      "type": "object"
+    },
+    "PointtableName": {
+      "enum": [
+        "DSV Master Performance Table",
+        "FINA Point Scoring",
+        "KNZB NED WPS Rankings"
+      ],
+      "type": "string"
+    },
+    "Pool": {
+      "description": "This element is used to describe the pool where the meet took place.",
+      "properties": {
+        "lanemax": {
+          "description": "Number of the last lane used in the pool for the meet.  The number of lanes can be calculated with LANEMAX - LANEMIN + 1.",
+          "type": "number"
+        },
+        "lanemin": {
+          "description": "Number of the first lane used in the pool for the meet.",
+          "type": "number"
+        },
+        "temperature": {
+          "description": "The water temperature.",
+          "type": "number"
+        },
+        "type": {
+          "$ref": "#/definitions/PoolType",
+          "description": "The type of the pool."
+        }
+      },
+      "type": "object"
+    },
+    "PoolType": {
+      "enum": [
+        "INDOOR",
+        "OUTDOOR",
+        "LAKE",
+        "OCEAN"
+      ],
+      "type": "string"
+    },
+    "Qualify": {
+      "description": "This element contains information about details, how qualification entrytimes are defined.",
+      "properties": {
+        "conversion": {
+          "$ref": "#/definitions/Conversion",
+          "description": "The way, how times are converted for seeding."
+        },
+        "from": {
+          "$ref": "#/definitions/DateOnly",
+          "description": "The first day of the qualification period for entry times."
+        },
+        "percent": {
+          "description": "The percentage for conversion PERCENT_LINEAR.",
+          "type": "number"
+        },
+        "until": {
+          "$ref": "#/definitions/DateOnly",
+          "description": "The last day of the qualification period for entry times. If it is missing,  then the default is the last day before the first day of the meet."
+        }
+      },
+      "type": "object"
+    },
+    "RaceMeetInfo": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/_MeetInfo"
+        },
+        {
+          "properties": {
+            "approved": {
+              "description": "Contains a code for the organisation, who approved the qualification  time, e.g. FINA, LEN or a IOC nation code. If this field is empty, the  qualification time was not approved.",
+              "type": "string"
+            },
+            "course": {
+              "$ref": "#/definitions/Course",
+              "description": "This attribute indicates the pool length, where the qualification time  was achieved."
+            },
+            "qualificationtime": {
+              "$ref": "#/definitions/SwimTime",
+              "description": "The qualification time, since this can be different to the entry time. If  the value is missing, the entry time is the qualification time"
+            }
+          },
+          "required": [
+            "qualificationtime"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "Ranking": {
+      "description": "This element describes one entry in the rankings of one agegroup. It contains the place and a reference to a  result (individual or relay).",
+      "properties": {
+        "order": {
+          "description": "This value can be used to define the order of the results. If it is  missing, the value for place is used to sort the elements in a  collection.",
+          "type": "number"
+        },
+        "place": {
+          "description": "The final position in the result list for the current event/round.",
+          "type": "number"
+        },
+        "resultid": {
+          "description": "A reference to the RESULT element.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "place",
+        "resultid"
+      ],
+      "type": "object"
+    },
+    "ReactionTime": {
+      "description": "Reaction time string with format TODO",
+      "type": "string"
+    },
+    "Record": {
+      "description": "This element describes one individual or relay record. It is possible  to have no ATHLETE / RELAY objects. In  this case the record is a \"record standard time\".",
+      "properties": {
+        "athlete": {
+          "$ref": "#/definitions/RecordAthlete",
+          "description": "The person who holds the record. This is only used for individual  records."
+        },
+        "comment": {
+          "description": "This value can be used for additional comments like \"Swum in the  prelims\" or things like that",
+          "type": "string"
+        },
+        "meetinfo": {
+          "$ref": "#/definitions/RecordMeetInfo",
+          "description": "Information about the meet, where the record was swum."
+        },
+        "relay": {
+          "$ref": "#/definitions/RecordRelay",
+          "description": "The relay team and swimmers, who holds the record. This is only  used for relay records."
+        },
+        "splits": {
+          "description": "The split times of the record.",
+          "items": {
+            "$ref": "#/definitions/Split"
+          },
+          "type": "array"
+        },
+        "status": {
+          "description": "Can be used to add comment about the record, e.g. \"Ratification  pending by FINA\"",
+          "type": "string"
+        },
+        "swimstyle": {
+          "$ref": "#/definitions/Swimstyle",
+          "description": "The swimstyle contains information like distance, stroke of the record."
+        },
+        "swimtime": {
+          "$ref": "#/definitions/SwimTime",
+          "description": "The final time of the record in the swim time format."
+        }
+      },
+      "required": [
+        "swimstyle",
+        "swimtime"
+      ],
+      "type": "object"
+    },
+    "RecordAgeGroup": {
+      "$ref": "#/definitions/_AgeGroup"
+    },
+    "RecordAthlete": {
+      "anyOf": [
+        {
+          "properties": {
+            "athleteid": {
+              "description": "The id attribute should be unique over all athletes of a meet.  It is required for ATHLETE objects in a meet sub tree.",
+              "type": "number"
+            },
+            "birthdate": {
+              "$ref": "#/definitions/DateOnly",
+              "description": "The date of birth for the athlete.  If only the year of birth is known, the date should be set to January 1st of that year."
+            },
+            "externalid": {
+              "description": "UNDOCUMENTED.",
+              "type": [
+                "string",
+                "number"
+              ]
+            },
+            "firstname": {
+              "description": "The first name of the athlete.",
+              "type": "string"
+            },
+            "firstname.en": {
+              "description": "The first name in english.",
+              "type": "string"
+            },
+            "gender": {
+              "$ref": "#/definitions/Gender",
+              "description": "Gender of the athlete. Values can be male (M) and female (F)."
+            },
+            "handicap": {
+              "$ref": "#/definitions/Handicap",
+              "description": "Information about the handicap classes of a swimmer."
+            },
+            "lastname": {
+              "description": "The last name of the athlete.",
+              "type": "string"
+            },
+            "lastname.en": {
+              "description": "The last name in english.",
+              "type": "string"
+            },
+            "level": {
+              "description": "The level of the athlete (used with levels in AGEGROUP).",
+              "type": "string"
+            },
+            "nameprefix": {
+              "description": "An optional name prefix. For example for Peter van den Hoogenband,  this could be \"van den\".",
+              "type": "string"
+            },
+            "nation": {
+              "$ref": "#/definitions/Nation"
+            },
+            "swrid": {
+              "description": "The global unique athlete id given by swimrankings.net.",
+              "type": "number"
+            }
+          },
+          "required": [
+            "birthdate",
+            "firstname",
+            "gender"
+          ],
+          "type": "object"
+        },
+        {
+          "properties": {
+            "club": {
+              "$ref": "#/definitions/RecordListClub",
+              "description": "The club or team for the athlete, when he swam the record."
+            }
+          },
+          "type": "object"
+        }
+      ]
+    },
+    "RecordListClub": {
+      "properties": {
+        "clubid": {
+          "description": "UNDOCUMENTED. The id of this club.",
+          "type": [
+            "string",
+            "number"
+          ]
+        },
+        "code": {
+          "description": "The official club code given by the national federation.  Only official club codes should be used here!",
+          "type": "string"
+        },
+        "name": {
+          "description": "The full name of the club or the team.",
+          "type": "string"
+        },
+        "name.en": {
+          "description": "The club name in english.",
+          "type": "string"
+        },
+        "nation": {
+          "$ref": "#/definitions/Nation",
+          "description": "Nation of this club."
+        },
+        "officials": {
+          "description": "The officials from this club.",
+          "items": {
+            "$ref": "#/definitions/Official"
+          },
+          "type": "array"
+        },
+        "region": {
+          "description": "The code of the regional or local swimming committee.  Only official codes should be used here!",
+          "type": "string"
+        },
+        "shortname": {
+          "description": "A short version of the club name. This string is limited to 20 characters.",
+          "type": "string"
+        },
+        "shortname.en": {
+          "description": "The short version of the club name in english.",
+          "type": "string"
+        },
+        "swrid": {
+          "description": "The global unique club id given by swimrankings.net.",
+          "type": "number"
+        },
+        "type": {
+          "$ref": "#/definitions/ClubType"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "type": "object"
+    },
+    "RecordMeetInfo": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/_MeetInfo"
+        },
+        {
+          "properties": {
+            "city": {
+              "description": "The city name where the meet took place.",
+              "type": "string"
+            },
+            "date": {
+              "$ref": "#/definitions/DateOnly",
+              "description": "The date of the swim of the record or qualification time achievement."
+            },
+            "nation": {
+              "$ref": "#/definitions/Nation",
+              "description": "The nation of the city for the meet."
+            }
+          },
+          "required": [
+            "city",
+            "date"
+          ],
+          "type": "object"
+        }
+      ],
+      "description": "This element is used in entries and records for general information about a meet."
+    },
+    "RecordRelay": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/_Relay"
+        },
+        {
+          "properties": {
+            "club": {
+              "$ref": "#/definitions/RecordListClub",
+              "description": "The club or team of the relay in the context of a record."
+            },
+            "relaypositions": {
+              "description": "The relay swimmers in the context of a relay record.",
+              "items": {
+                "$ref": "#/definitions/RecordRelayPosition"
+              },
+              "type": "array"
+            }
+          },
+          "type": "object"
+        }
+      ]
+    },
+    "RecordRelayPosition": {
+      "anyOf": [
+        {
+          "properties": {
+            "number": {
+              "description": "The number of the swimmer in the relay. The first swimmer is 1, the  second 2 and so on. -1 can be used to add reserve swimmers.",
+              "type": "number"
+            },
+            "reactiontime": {
+              "$ref": "#/definitions/ReactionTime",
+              "description": "The reaction time at the start of the first swimmer and the relay take    over times for other swimmers."
+            },
+            "status": {
+              "description": "No status attribute means the swimmer finished his part correctly.  Otherwise, the following values are allowed: \n* DSQ: relay athlete was disqualified. \n* DNF: relay athlete did not finish.",
+              "enum": [
+                "DSQ",
+                "DNF"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "number"
+          ],
+          "type": "object"
+        },
+        {
+          "properties": {
+            "athlete": {
+              "$ref": "#/definitions/RecordAthlete",
+              "description": "Last name, first name, etc. of the athlete. This element is allowed in  the context of a record only and in this case it is required."
+            }
+          },
+          "required": [
+            "athlete"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "Recordlist": {
+      "description": "This element describes one single record list.",
+      "properties": {
+        "agegroup": {
+          "$ref": "#/definitions/RecordAgeGroup",
+          "description": "For agegroup records. Agegroup is \"Open\", if the element is missing."
+        },
+        "course": {
+          "$ref": "#/definitions/Course",
+          "description": "The course for the record list."
+        },
+        "formeet": {
+          "const": "yes",
+          "description": "UNDOCUMENTED",
+          "type": "string"
+        },
+        "gender": {
+          "$ref": "#/definitions/Gender",
+          "description": "The gender for records in this list. Acceptable values are male (M),  female (F) and mixed (X). Mixed is only used for relays."
+        },
+        "handicap": {
+          "description": "The handicap class for the record list. Allowed values are:  1 - 15, 20, 34, 49 standard handicap classes.",
+          "type": "string"
+        },
+        "name": {
+          "description": "The name of the record list (e.g. \"World Records\").",
+          "type": "string"
+        },
+        "nation": {
+          "$ref": "#/definitions/Nation",
+          "description": "For international records, this field is empty. For national or regional  records, the field should contain the FINA three letter code of the  national federation."
+        },
+        "order": {
+          "description": "This value can be used to define an order for all recordlists within a  collection.",
+          "type": "number"
+        },
+        "recordlistid": {
+          "description": "UNDOCUMENTED",
+          "type": [
+            "string",
+            "number"
+          ]
+        },
+        "records": {
+          "description": "The records of this record list.",
+          "items": {
+            "$ref": "#/definitions/Record"
+          },
+          "type": "array"
+        },
+        "region": {
+          "description": "For international and national records, this field is empty. For regional  records, the field should contain the official code for the region. If  region has a value, nation needs to have a value as well.",
+          "type": "string"
+        },
+        "type": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/RecordlistType"
+            },
+            {
+              "$ref": "#/definitions/Nation"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "description": "The record type. This list of types maybe extended by federations. In this case, values  should have the nation code and a dot as prefix (e.g. SUI.RZW for  records of a region in Switzerland)."
+        },
+        "updated": {
+          "$ref": "#/definitions/DateOnly",
+          "description": "The date of the last change to the record list."
+        }
+      },
+      "required": [
+        "course",
+        "gender",
+        "name",
+        "records"
+      ],
+      "type": "object"
+    },
+    "RecordlistType": {
+      "enum": [
+        "WR",
+        "OR",
+        "ER",
+        "PAR",
+        "AFR",
+        "AR",
+        "OCR",
+        "CWR"
+      ],
+      "type": "string"
+    },
+    "RelayHandicap": {
+      "enum": [
+        "0",
+        "14",
+        "20",
+        "34",
+        "49"
+      ],
+      "type": "string"
+    },
+    "Result": {
+      "properties": {
+        "comment": {
+          "description": "Additional comment e.g. for new records or reasons for  disqualifications.",
+          "type": "string"
+        },
+        "entrycourse": {
+          "$ref": "#/definitions/Course",
+          "description": "UNDOCUMENTED"
+        },
+        "entrytime": {
+          "description": "UNDOCUMENTED",
+          "type": "string"
+        },
+        "eventid": {
+          "description": "Reference to the EVENT element using the id attribute.",
+          "type": "number"
+        },
+        "heatid": {
+          "description": "Reference to a heat (HEAT element in HEATS collection of the  EVENT element).",
+          "type": "number"
+        },
+        "lane": {
+          "description": "The lane number of the entry.",
+          "type": "number"
+        },
+        "late": {
+          "const": "yes",
+          "description": "UNDOCUMENTED",
+          "type": "string"
+        },
+        "points": {
+          "description": "The number of points for the result according to the scoring table used in a meet.",
+          "type": "number"
+        },
+        "reactiontime": {
+          "$ref": "#/definitions/ReactionTime",
+          "description": "The reaction time at the start. For relay events it is the reaction time of  the first swimmer."
+        },
+        "relaypositions": {
+          "description": "The information about relay swimmers in this result. Only allowed for  relay RESULT objects.",
+          "items": {
+            "$ref": "#/definitions/MeetRelayPosition"
+          },
+          "type": "array"
+        },
+        "resultid": {
+          "description": "Each result needs a unique id which should be unique over a meet.",
+          "type": "string"
+        },
+        "splits": {
+          "description": "The split times for the result. In a Lenex file, split times are always  saved continuously.",
+          "items": {
+            "$ref": "#/definitions/Split"
+          },
+          "type": "array"
+        },
+        "status": {
+          "$ref": "#/definitions/EntryStatus",
+          "description": "This attribute is used for the result status information. An empty status attribute means a regular result."
+        },
+        "swimtime": {
+          "$ref": "#/definitions/SwimTime",
+          "description": "The final time of the result in the swim time format."
+        }
+      },
+      "required": [
+        "eventid",
+        "resultid",
+        "swimtime"
+      ],
+      "type": "object"
+    },
+    "Role": {
+      "enum": [
+        "OTH",
+        "MDR",
+        "TDG",
+        "REF",
+        "STA",
+        "ANN",
+        "JOS",
+        "CTIK",
+        "TIK",
+        "CFIN",
+        "FIN",
+        "CIOT",
+        "IOT",
+        "FSR",
+        "COC",
+        "CREC",
+        "REC",
+        "CRS",
+        "CR",
+        "MED"
+      ],
+      "type": "string"
+    },
+    "Round": {
+      "enum": [
+        "FIN",
+        "PRE",
+        "TIM",
+        "FTH",
+        "SEM",
+        "QUA",
+        "SOP",
+        "SOS",
+        "SOQ"
+      ],
+      "type": "string"
+    },
+    "Session": {
+      "description": "This element is used to describe one session of a meet.",
+      "properties": {
+        "course": {
+          "$ref": "#/definitions/Course",
+          "description": "With indicating a pool length per session,  the global value of the meet can be overridden, e.g. if the prelim sessions are short course  and the finals are long course."
+        },
+        "date": {
+          "$ref": "#/definitions/DateOnly",
+          "description": "The date of the session."
+        },
+        "daytime": {
+          "description": "The daytime when the session starts.",
+          "type": "string"
+        },
+        "endtime": {
+          "description": "The time when the session ended.",
+          "type": "string"
+        },
+        "events": {
+          "description": "The events of the session",
+          "items": {
+            "$ref": "#/definitions/Event"
+          },
+          "type": "array"
+        },
+        "fees": {
+          "description": "Fees used for this session. On this level, different global fees for clubs,  athletes and relays are allowed. If there are fees that have to be  paid per entry, the FEE element in the EVENT objects should be used.",
+          "items": {
+            "$ref": "#/definitions/FeeElement"
+          },
+          "type": "array"
+        },
+        "judges": {
+          "description": "The judges of the session.",
+          "items": {
+            "$ref": "#/definitions/Judge"
+          },
+          "type": "array"
+        },
+        "maxentriesathlete": {
+          "description": "The maximum number of individual entries per athlete in this session.",
+          "type": "number"
+        },
+        "maxentriesrelay": {
+          "description": "The maximum number of relay entries per club in this session.",
+          "type": "number"
+        },
+        "name": {
+          "description": "Additional name for the session e.g. \"Day 1 - Prelims\".",
+          "type": "string"
+        },
+        "number": {
+          "description": "The number of the session. Session numbers in a meet have to be unique.",
+          "type": "number"
+        },
+        "officialmeeting": {
+          "description": "The daytime when the officials meeting starts.",
+          "type": "string"
+        },
+        "pool": {
+          "$ref": "#/definitions/Pool",
+          "description": "The details about the pool, if they are different per session. Otherwise use the element in MEET."
+        },
+        "remarksjudge": {
+          "description": "Additional remarks given by the referee.",
+          "type": "string"
+        },
+        "teamleadermeeting": {
+          "description": "The daytime when the team leaders meeting starts.",
+          "type": "string"
+        },
+        "timing": {
+          "$ref": "#/definitions/Timing",
+          "description": "The type of timing for a session. If missing, the global value for the meet should be used. See MEET for acceptable values."
+        },
+        "warmupfrom": {
+          "description": "The daytime when the warmup starts.",
+          "type": "string"
+        },
+        "warmupuntil": {
+          "description": "The daytime when the warmup ends.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "date",
+        "events",
+        "number"
+      ],
+      "type": "object"
+    },
+    "SingleFee": {
+      "description": "The fee is used in MEET and EVENT objects.",
+      "properties": {
+        "currency": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/Currency"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "value": {
+          "$ref": "#/definitions/CurrencyFormat"
+        }
+      },
+      "required": [
+        "value"
+      ],
+      "type": "object"
+    },
+    "Split": {
+      "description": "This  element  contains  information  about  a  single  split  time.   In  a  Lenex  file,  split  times  are  always  saved  continuously.",
+      "properties": {
+        "distance": {
+          "description": "The distance where the split time was measured.",
+          "type": "number"
+        },
+        "swimtime": {
+          "$ref": "#/definitions/SwimTime",
+          "description": "The time of the result in the swim time format."
+        }
+      },
+      "required": [
+        "distance",
+        "swimtime"
+      ],
+      "type": "object"
+    },
+    "Stroke": {
+      "enum": [
+        "APNEA",
+        "BACK",
+        "BIFINS",
+        "BREAST",
+        "FLY",
+        "FREE",
+        "IMMERSION",
+        "IMRELAY",
+        "MEDLEY",
+        "SURFACE",
+        "UNKNOWN"
+      ],
+      "type": "string"
+    },
+    "SwimTime": {
+      "description": "Swim time string with format TODO",
+      "type": "string"
+    },
+    "Swimstyle": {
+      "description": "This element is used to describe one swim style.",
+      "properties": {
+        "code": {
+          "description": "A code (max. 6 characters) of the swim style if the stroke is unknown.",
+          "type": "string"
+        },
+        "distance": {
+          "description": "The distance for the event. For relay events it is the distance for one  single athlete.",
+          "type": "number"
+        },
+        "name": {
+          "description": "The full descriptive name of the swim style if the stroke is unknown  (e.g. \"5 x 75m Breast with one Arm only\").",
+          "type": "string"
+        },
+        "relaycount": {
+          "description": "The number of swimmers per entry / result. Value 1 means, that it is  an individual event. All other values mean, that it is a relay event.",
+          "type": "number"
+        },
+        "stroke": {
+          "$ref": "#/definitions/Stroke"
+        },
+        "swimstyleid": {
+          "description": "The id attribute is important for SWIMSTYLE objects, where the stroke  attribute is \"UNKNOWN\". In this case, the id should be a unique value  to help to identify the swim style.",
+          "type": "number"
+        },
+        "technique": {
+          "$ref": "#/definitions/Technique",
+          "description": "The technique of the style. If this attribute is missing or empty, it  means normal swimming. All other values are mainly used for  technical events in meets for kids."
+        }
+      },
+      "required": [
+        "distance",
+        "relaycount",
+        "stroke"
+      ],
+      "type": "object"
+    },
+    "Technique": {
+      "enum": [
+        "DIVE",
+        "GLIDE",
+        "KICK",
+        "PULL",
+        "START",
+        "TURN"
+      ],
+      "type": "string"
+    },
+    "Time": {
+      "description": "Time string with format TODO",
+      "type": "string"
+    },
+    "TimeStandardList": {
+      "description": "This element describes one single time standard list.",
+      "properties": {
+        "agegroup": {
+          "$ref": "#/definitions/RecordAgeGroup",
+          "description": "For age group time standards. Agegroup is \"Open\", if the element is missing."
+        },
+        "code": {
+          "description": "UNDOCUMENTED",
+          "type": "string"
+        },
+        "course": {
+          "$ref": "#/definitions/Course",
+          "description": "The course for the timestandard list. See section 5.4. for acceptable  values."
+        },
+        "gender": {
+          "$ref": "#/definitions/Gender",
+          "description": "The gender for time standards in this list. Acceptable values are male  (M), female (F) and mixed (X). Mixed is only used for relays."
+        },
+        "handicap": {
+          "description": "The handicap class for the timestandard list. Allowed values are: \n* 1 - 15, 20, 34, 49 standard handicap classes.",
+          "type": "string"
+        },
+        "name": {
+          "description": "The name of the time standard list (e.g. \"Olympic A Time Standards\").",
+          "type": "string"
+        },
+        "timestandardlistid": {
+          "description": "The unique id of the time standard list.",
+          "type": "number"
+        },
+        "timestandards": {
+          "description": "The time standards or qualification times of this list.",
+          "items": {
+            "$ref": "#/definitions/Timestandard"
+          },
+          "type": "array"
+        },
+        "type": {
+          "$ref": "#/definitions/TimeStandardListType",
+          "description": "There can be different type of time standards. Default value is MAXIMUM."
+        }
+      },
+      "required": [
+        "course",
+        "gender",
+        "timestandardlistid",
+        "timestandards"
+      ],
+      "type": "object"
+    },
+    "TimeStandardListType": {
+      "enum": [
+        "DEFAULT",
+        "LEVEL",
+        "MAXIMUM",
+        "MINIMUM"
+      ],
+      "type": "string"
+    },
+    "TimeStandardRef": {
+      "description": "This element describes a reference from a meet to a time standard list.",
+      "properties": {
+        "fee": {
+          "$ref": "#/definitions/SingleFee",
+          "description": "An optional element with a fine for missed time standards."
+        },
+        "marker": {
+          "description": "An optional string to be used to mark the result, if the time standard  was missed. Or to mark a result if a qualification time was fulfilled.",
+          "type": "string"
+        },
+        "timestandardlistid": {
+          "description": "The id of the time standard list element.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "timestandardlistid"
+      ],
+      "type": "object"
+    },
+    "Timestandard": {
+      "description": "This element describes one time standard.",
+      "properties": {
+        "swimstyle": {
+          "$ref": "#/definitions/Swimstyle",
+          "description": "The style contains information like distance, stroke of the record. For  each TIMESTANDARD in the same collection, the SWIMSTYLE  should be unique."
+        },
+        "swimtime": {
+          "$ref": "#/definitions/SwimTime",
+          "description": "The time standard or qualification time."
+        }
+      },
+      "required": [
+        "swimstyle",
+        "swimtime"
+      ],
+      "type": "object"
+    },
+    "Timing": {
+      "enum": [
+        "AUTOMATIC",
+        "SEMIAUTOMATIC",
+        "MANUAL1",
+        "MANUAL2",
+        "MANUAL3"
+      ],
+      "type": "string"
+    },
+    "_AgeGroup": {
+      "properties": {
+        "agegroupid": {
+          "description": "Only for events, every AGEGROUP element needs an id, because the  objects can be referenced from ENTRY objects. The id has to be  unique within an AGEGROUPS collection.",
+          "type": "number"
+        },
+        "agemax": {
+          "description": "The upper bound of the age range. -1 means no upper bound.",
+          "type": "number"
+        },
+        "agemin": {
+          "description": "The lower bound of the age range. -1 means no lower bound.",
+          "type": "number"
+        },
+        "calculate": {
+          "$ref": "#/definitions/AgeGroupCalc",
+          "description": "Information for relay events about how the age is calculated:"
+        },
+        "handicap": {
+          "description": "The handicap class for the agegroup. This is used to group results by  disability categories. Allowed values are: \n* 1 - 15, 20, 34, 49 standard handicap classes",
+          "type": "string"
+        },
+        "levelmax": {
+          "description": "The maximum level (A-Z) of the agegroup. If the value is missing, this  means no upper bound.",
+          "type": "string"
+        },
+        "levelmin": {
+          "description": "The minimum level (A-Z) of the agegroup. If the value is missing, this  means no lower bound.",
+          "type": "string"
+        },
+        "levels": {
+          "description": "comma separated list of codes of allowed athlete levels.",
+          "type": "string"
+        },
+        "name": {
+          "description": "The name of the age group (e.g. \"Juniors\").",
+          "type": "string"
+        },
+        "rankings": {
+          "description": "A collection with references to results ranked in this agegroup.",
+          "items": {
+            "$ref": "#/definitions/Ranking"
+          },
+          "type": "array"
+        },
+        "type": {
+          "const": "MASTERS",
+          "description": "UNDOCUMENTED",
+          "type": "string"
+        }
+      },
+      "required": [
+        "agemax",
+        "agemin"
+      ],
+      "type": "object"
+    },
+    "_Club": {
+      "properties": {
+        "athletes": {
+          "description": "The athletes of this club.",
+          "items": {
+            "$ref": "#/definitions/MeetAthlete"
+          },
+          "type": "array"
+        },
+        "clubid": {
+          "description": "UNDOCUMENTED. The id of this club.",
+          "type": [
+            "string",
+            "number"
+          ]
+        },
+        "code": {
+          "description": "The official club code given by the national federation.  Only official club codes should be used here!",
+          "type": "string"
+        },
+        "contact": {
+          "$ref": "#/definitions/MeetContact",
+          "description": "Contact address for the specific meet."
+        },
+        "name": {
+          "description": "The full name of the club or the team.",
+          "type": "string"
+        },
+        "name.en": {
+          "description": "The club name in english.",
+          "type": "string"
+        },
+        "nation": {
+          "$ref": "#/definitions/Nation",
+          "description": "Nation of this club."
+        },
+        "number": {
+          "description": "This value can be used to distinguish different teams of the same club in a meet entries or results file.",
+          "type": "number"
+        },
+        "officials": {
+          "description": "The officials from this club.",
+          "items": {
+            "$ref": "#/definitions/Official"
+          },
+          "type": "array"
+        },
+        "region": {
+          "description": "The code of the regional or local swimming committee.  Only official codes should be used here!",
+          "type": "string"
+        },
+        "relays": {
+          "description": "The relay teams of this club.",
+          "items": {
+            "$ref": "#/definitions/MeetRelay"
+          },
+          "type": "array"
+        },
+        "shortname": {
+          "description": "A short version of the club name. This string is limited to 20 characters.",
+          "type": "string"
+        },
+        "shortname.en": {
+          "description": "The short version of the club name in english.",
+          "type": "string"
+        },
+        "swrid": {
+          "description": "The global unique club id given by swimrankings.net.",
+          "type": "number"
+        },
+        "type": {
+          "$ref": "#/definitions/ClubType"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "type": "object"
+    },
+    "_Contact": {
+      "properties": {
+        "city": {
+          "description": "The city of the contact address.",
+          "type": "string"
+        },
+        "country": {
+          "$ref": "#/definitions/Country",
+          "description": "Country code of the contact address."
+        },
+        "email": {
+          "description": "The e-mail address of the contact. The attribute is required in the context of a CONSTRUCTOR element only.",
+          "type": "string"
+        },
+        "fax": {
+          "description": "The fax number of the contact.",
+          "type": "string"
+        },
+        "fname": {
+          "description": "UNDOCUMENTED",
+          "type": "string"
+        },
+        "internet": {
+          "description": "The full URL of the website of the contact person or organisation.  The http:// should be included in the string.",
+          "type": "string"
+        },
+        "mobile": {
+          "description": "The mobile phone number of the contact person.",
+          "type": "string"
+        },
+        "name": {
+          "description": "The full name of the contact person or the name of the organisation. Not used in the OFFICIAL element",
+          "type": "string"
+        },
+        "phone": {
+          "description": "The phone number of the contact person or the organisation.",
+          "type": "string"
+        },
+        "place": {
+          "description": "UNDOCUMENTED",
+          "type": "string"
+        },
+        "state": {
+          "description": "state, province or county of the contact address.",
+          "type": "string"
+        },
+        "street": {
+          "description": "The first additional line of the address.",
+          "type": "string"
+        },
+        "street2": {
+          "description": "The second additional line of the address.",
+          "type": "string"
+        },
+        "zip": {
+          "description": "The postal code of the address.",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "_MeetInfo": {
+      "description": "This element is used in entries and records for general information about a meet.",
+      "properties": {
+        "daytime": {
+          "$ref": "#/definitions/Time",
+          "description": "The day time of the swim."
+        },
+        "meetinfoid": {
+          "description": "UNDOCUMENTED.",
+          "type": "string"
+        },
+        "name": {
+          "description": "The meet name.",
+          "type": "string"
+        },
+        "pool": {
+          "$ref": "#/definitions/Pool",
+          "description": "The details about the pool."
+        },
+        "state": {
+          "description": "The state of the city for the meet.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "daytime",
+        "state"
+      ],
+      "type": "object"
+    },
+    "_Relay": {
+      "properties": {
+        "name": {
+          "description": "The name of the relay team.",
+          "type": "string"
+        },
+        "relayid": {
+          "description": "UNDOCUMENTED",
+          "type": [
+            "string",
+            "number"
+          ]
+        }
+      },
+      "type": "object"
+    }
+  }
+}

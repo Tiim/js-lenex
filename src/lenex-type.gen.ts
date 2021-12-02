@@ -1,45 +1,64 @@
 // Auto generated code, update with npm run update-typings
-// Last update 2021-11-16
+// Last update 2021-11-17
 
 export interface LenexRaw {
     constructor:        Constructor;
     meets?:             Meet[];
     recordlists?:       Recordlist[];
     timestandardlists?: Timestandardlist[];
-    version:            string;
+    version:            number;
 }
 
 export interface Constructor {
     contact:       ConstructorContact;
     name:          ConstructorName;
     registration?: string;
-    version:       string;
+    version:       number | string;
 }
 
 export interface ConstructorContact {
-    city?:     string;
-    country?:  Country;
-    email?:    string;
-    fax?:      string;
-    internet?: string;
-    mobile?:   string;
-    name?:     string;
-    phone?:    string;
-    state?:    string;
-    street?:   string;
-    street2?:  string;
-    zip?:      string;
+    city?:    City;
+    country?: Country;
+    email:    Email;
+    fax?:     string;
+    internet: string;
+    name:     ContactName;
+    phone?:   string;
+    street?:  Street;
+    zip?:     number;
+}
+
+export enum City {
+    Bern = "Bern",
+    SpiegelBBern = "Spiegel b. Bern",
 }
 
 export enum Country {
     Ch = "CH",
-    De = "DE",
-    Fr = "FR",
-    It = "IT",
-    Pl = "PL",
+}
+
+export enum Email {
+    InfoEasywkDe = "info@easywk.de",
+    InfoSplashSoftwareCh = "info@splash-software.ch",
+    SalesSwimrankingsNet = "sales@swimrankings.net",
+    SwimresultsGeologixCh = "swimresults@geologix.ch",
+}
+
+export enum ContactName {
+    BjoernStickan = "Bjoern Stickan",
+    GeoLogixAG = "GeoLogix AG",
+    GeologixAG = "geologix AG",
+    SplashSoftwareGmbH = "Splash Software GmbH",
+}
+
+export enum Street {
+    Ahornweg41 = "Ahornweg 41",
+    Muristrasse60 = "Muristrasse 60",
+    Weltpoststrasse5 = "Weltpoststrasse 5",
 }
 
 export enum ConstructorName {
+    EasyWk = "EasyWk",
     SPLASHMeetManager11 = "SPLASH Meet Manager 11",
     SPLASHMeetManager2007 = "SPLASH Meet Manager 2007",
     SPLASHTeamManager10 = "SPLASH Team Manager 10",
@@ -49,30 +68,34 @@ export enum ConstructorName {
 export interface Meet {
     agedate:            Agedate;
     city:               string;
+    "city.en"?:         string;
     clubs?:             ClubElement[];
-    contact?:           ConstructorContact;
+    contact?:           MeetContact;
     course:             Course;
     deadline?:          Date;
+    deadlinetime?:      string;
+    "easy.additional"?: EasyAdditional;
     entrystartdate?:    Date;
     entrytype?:         string;
     facility?:          Facility;
     fees?:              FeeElement[];
     hostclub?:          string;
     "hostclub.url"?:    string;
-    maxentriesathlete?: string;
+    maxentriesathlete?: number;
+    maxentriesrelay?:   number;
     name:               string;
     "name.en"?:         string;
     nation:             Nation;
-    number?:            string;
+    number?:            number | string;
     organizer?:         string;
     "organizer.url"?:   string;
     pointtable?:        Pointtable;
-    pool:               Pool;
+    pool?:              MeetPool;
     qualify?:           Qualify;
-    reservecount?:      string;
+    reservecount?:      number;
     "result.url"?:      string;
     sessions:           Session[];
-    startmethod?:       string;
+    startmethod?:       number;
     state?:             string;
     timing?:            Timing;
     type?:              string;
@@ -93,11 +116,11 @@ export enum AgedateType {
 
 export interface ClubElement {
     athletes?:       AthleteElement[];
-    clubid?:         string;
+    clubid?:         number;
     coaches?:        Coaches;
     code?:           string;
-    contact?:        ConstructorContact;
-    name:            string;
+    contact?:        ClubContact;
+    name?:           string;
     "name.en"?:      string;
     nation?:         Nation;
     officials?:      Official[];
@@ -105,12 +128,12 @@ export interface ClubElement {
     relays?:         RelayElement[];
     shortname?:      string;
     "shortname.en"?: string;
-    swrid?:          string;
+    swrid?:          number;
     type?:           ClubType;
 }
 
 export interface AthleteElement {
-    athleteid:   string;
+    athleteid:   number;
     birthdate?:  Date;
     entries?:    AthleteEntries;
     externalid?: string;
@@ -119,10 +142,10 @@ export interface AthleteElement {
     handicap?:   Handicap;
     lastname?:   string;
     level?:      string;
-    license?:    string;
+    license?:    number | string;
     nation?:     Nation;
     results?:    Result[];
-    swrid?:      string;
+    swrid?:      number;
 }
 
 export interface AthleteEntries {
@@ -131,9 +154,9 @@ export interface AthleteEntries {
 
 export interface PurpleEntry {
     entrytime: string;
-    eventid:   string;
-    heatid?:   string;
-    lane?:     string;
+    eventid:   number;
+    heatid?:   number;
+    lane?:     number;
     meetinfo?: Meetinfo;
     status?:   EntryStatus;
 }
@@ -142,7 +165,7 @@ export interface Meetinfo {
     city?:       string;
     course?:     Course;
     date?:       Date;
-    meetinfoid?: string;
+    meetinfoid?: number;
     name?:       string;
     nation?:     Nation;
 }
@@ -157,6 +180,7 @@ export enum Nation {
     Aut = "AUT",
     Bel = "BEL",
     Bih = "BIH",
+    Blr = "BLR",
     Bra = "BRA",
     Bul = "BUL",
     Can = "CAN",
@@ -177,6 +201,7 @@ export enum Nation {
     LBA = "LBA",
     Lie = "LIE",
     Lux = "LUX",
+    MDA = "MDA",
     Ned = "NED",
     Nzl = "NZL",
     Phi = "PHI",
@@ -206,16 +231,16 @@ export enum EntryStatus {
 
 export interface FluffyEntry {
     entrytime:       string;
-    eventid:         string;
-    heatid?:         string;
-    lane?:           string;
+    eventid:         number;
+    heatid?:         number;
+    lane?:           number;
     relaypositions?: EntryRelayposition[];
 }
 
 export interface EntryRelayposition {
-    athleteid: string;
+    athleteid: number;
     meetinfo?: Meetinfo;
-    number:    string;
+    number:    number;
 }
 
 export enum Gender {
@@ -225,23 +250,23 @@ export enum Gender {
 }
 
 export interface Handicap {
-    breast?: string;
-    free:    string;
-    medley?: string;
+    breast?: number;
+    free:    number;
+    medley?: number;
 }
 
 export interface Result {
     comment?:        string;
     entrycourse?:    Course;
     entrytime?:      string;
-    eventid:         string;
-    heatid?:         string;
-    lane?:           string;
+    eventid:         number;
+    heatid?:         number;
+    lane?:           number;
     late?:           Formeet;
-    points?:         string;
-    reactiontime?:   string;
+    points?:         number;
+    reactiontime?:   number;
     relaypositions?: ResultRelayposition[];
-    resultid:        string;
+    resultid:        number;
     splits?:         Split[];
     status?:         EntryStatus;
     swimtime:        string;
@@ -252,14 +277,14 @@ export enum Formeet {
 }
 
 export interface ResultRelayposition {
-    athleteid?:    string;
-    number:        string;
-    reactiontime?: string;
+    athleteid?:    number;
+    number:        number;
+    reactiontime?: number;
     status?:       EntryStatus;
 }
 
 export interface Split {
-    distance: string;
+    distance: number;
     swimtime: string;
 }
 
@@ -268,12 +293,12 @@ export interface Coaches {
 }
 
 export interface CoachElement {
-    coachid?:  string;
+    coachid?:  number;
     contact?:  CoachContact;
     firstname: string;
     gender:    Gender;
     lastname:  string;
-    license?:  string;
+    license?:  number | string;
     nation?:   Nation;
     type?:     CoachType;
 }
@@ -281,15 +306,30 @@ export interface CoachElement {
 export interface CoachContact {
     city:    string;
     email:   string;
-    mobile?: string;
-    phone?:  string;
+    mobile?: number;
+    phone?:  number;
     state:   string;
     street:  string;
-    zip:     string;
+    zip:     number;
 }
 
 export enum CoachType {
     Headcoach = "HEADCOACH",
+}
+
+export interface ClubContact {
+    city?:     string;
+    country?:  string;
+    email?:    string;
+    fax?:      number | string;
+    internet?: string;
+    mobile?:   number | string;
+    name?:     string;
+    phone?:    number | string;
+    state?:    string;
+    street?:   string;
+    street2?:  string;
+    zip?:      number | string;
 }
 
 export interface Official {
@@ -299,7 +339,7 @@ export interface Official {
     lastname:   string;
     license?:   string;
     nation?:    Nation;
-    officialid: string;
+    officialid: number;
 }
 
 export enum Region {
@@ -316,15 +356,15 @@ export enum Region {
 }
 
 export interface RelayElement {
-    agemax:      string;
-    agemin:      string;
-    agetotalmax: string;
-    agetotalmin: string;
+    agemax:      number;
+    agemin:      number;
+    agetotalmax: number;
+    agetotalmin: number;
     entries?:    RelayEntries;
     gender:      Gender;
     name?:       string;
-    number?:     string;
-    relayid?:    string;
+    number?:     number;
+    relayid?:    number;
     results?:    Result[];
 }
 
@@ -337,24 +377,50 @@ export enum ClubType {
     Unattached = "UNATTACHED",
 }
 
+export interface MeetContact {
+    city?:     number | string;
+    email?:    string;
+    fax?:      number;
+    internet?: string;
+    name?:     string;
+    phone?:    number | string;
+    street?:   string;
+    street2?:  string;
+    zip?:      number | string;
+}
+
+export interface EasyAdditional {
+    bank:        string;
+    bic:         string;
+    iban:        string;
+    information: string;
+    person:      string;
+    poolcity:    string;
+    poolname:    string;
+    poolphone:   string;
+    poolstreet:  string;
+    poolzip:     number;
+}
+
 export interface Facility {
     city:    string;
     name?:   string;
     nation:  Nation;
     state?:  string;
     street?: string;
-    zip?:    string;
+    zip?:    number | string;
 }
 
 export interface FeeElement {
-    currency: Currency;
-    type:     FeeType;
-    value:    string;
+    currency?: Currency;
+    type:      FeeType;
+    value:     number;
 }
 
 export enum Currency {
     Chf = "CHF",
     Eur = "EUR",
+    Pln = "PLN",
 }
 
 export enum FeeType {
@@ -366,8 +432,8 @@ export enum FeeType {
 
 export interface Pointtable {
     name:         PointtableName;
-    pointtableid: string;
-    version:      string;
+    pointtableid: number;
+    version:      number;
 }
 
 export enum PointtableName {
@@ -376,16 +442,16 @@ export enum PointtableName {
     KNZBNEDWPSRankings = "KNZB NED WPS Rankings",
 }
 
-export interface Pool {
-    lanemax?: string;
-    lanemin?: string;
+export interface MeetPool {
+    lanemax?: number;
+    lanemin?: number;
     name?:    string;
 }
 
 export interface Qualify {
     conversion?: string;
     from?:       Date;
-    percent?:    string;
+    percent?:    number;
     until?:      Date;
 }
 
@@ -395,10 +461,12 @@ export interface Session {
     endtime?:           string;
     events:             Event[];
     judges?:            Judge[];
-    maxentriesathlete?: string;
+    maxentriesathlete?: number;
+    maxentriesrelay?:   number;
     name?:              string;
-    number:             string;
+    number:             number;
     officialmeeting?:   string;
+    pool?:              SessionPool;
     remarksjudge?:      string;
     teamleadermeeting?: string;
     warmupfrom?:        string;
@@ -408,13 +476,13 @@ export interface Session {
 export interface Event {
     agegroups?:        AgegroupElement[];
     daytime?:          string;
-    eventid:           string;
+    eventid:           number;
     fee?:              EventFee;
     gender?:           Gender;
     heats?:            Heat[];
-    number:            string;
-    order?:            string;
-    preveventid:       string;
+    number:            number;
+    order?:            number;
+    preveventid?:      number;
     round?:            Round;
     swimstyle:         EventSwimstyle;
     timestandardrefs?: Timestandardref[];
@@ -422,20 +490,24 @@ export interface Event {
 }
 
 export interface AgegroupElement {
-    agegroupid: string;
-    agemax:     string;
-    agemin:     string;
-    calculate?: string;
+    agegroupid: number;
+    agemax:     number;
+    agemin:     number;
+    calculate?: Calculate;
     gender?:    Gender;
     name?:      string;
     rankings?:  Ranking[];
     type?:      AgegroupType;
 }
 
+export enum Calculate {
+    Total = "TOTAL",
+}
+
 export interface Ranking {
-    order:    string;
-    place:    string;
-    resultid: string;
+    order:    number;
+    place:    number;
+    resultid: number;
 }
 
 export enum AgegroupType {
@@ -444,15 +516,16 @@ export enum AgegroupType {
 
 export interface EventFee {
     currency: Currency;
-    value:    string;
+    value:    number;
 }
 
 export interface Heat {
-    daytime?: string;
-    heatid:   string;
-    number:   string;
-    order?:   string;
-    status?:  HeatStatus;
+    agegroupid?: number;
+    daytime?:    string;
+    heatid:      number;
+    number:      number;
+    order?:      number;
+    status?:     HeatStatus;
 }
 
 export enum HeatStatus {
@@ -461,17 +534,39 @@ export enum HeatStatus {
 }
 
 export enum Round {
+    Fin = "FIN",
+    Pre = "PRE",
     Tim = "TIM",
 }
 
 export interface EventSwimstyle {
-    code?:        string;
-    distance:     string;
-    name?:        string;
-    relaycount:   string;
+    code?:        SwimstyleCode;
+    distance:     number;
+    name?:        SwimstyleName;
+    relaycount:   number;
     stroke:       Stroke;
-    swimstyleid?: string;
+    swimstyleid?: number;
     technique?:   string;
+}
+
+export enum SwimstyleCode {
+    Kl25Br = "KL:25BR",
+    The200Кп = "200 КП",
+    The25Bs = "25 BS",
+    The25CRBs = "25 Cr-Bs",
+    The25RüBs = "25 Rü-Bs",
+    The4X25Fun = "4 x 25 Fun",
+    The4Х50КП = "4 х 50 КП",
+}
+
+export enum SwimstyleName {
+    KL25MBrust = "KL: 25m Brust",
+    The200MКомплексноеПлавание = "200m Комплексное плавание",
+    The25CrawlBeinschlag = "25 Crawl Beinschlag",
+    The25MBeinschlag = "25m Beinschlag",
+    The25RückenBeinschlag = "25 Rücken Beinschlag",
+    The4X25FunStaffel = "4 x 25 Fun Staffel",
+    The4Х50Комбинированная = "4 х 50 Комбинированная",
 }
 
 export enum Stroke {
@@ -484,18 +579,32 @@ export enum Stroke {
 }
 
 export interface Timestandardref {
-    fee:                EventFee;
-    marker:             Marker;
-    timestandardlistid: string;
+    fee?:               EventFee;
+    marker:             MarkerEnum | number;
+    timestandardlistid: number;
 }
 
-export enum Marker {
+export enum MarkerEnum {
     Empty = "*",
+    I = "I",
+    IIIюн = "IIIюн",
+    IIюн = "IIюн",
+    Ii = "II",
+    Iii = "III",
+    Iюн = "Iюн",
+    MarkerКМС = "КМС",
+    MarkerМС = "МС",
+    The1Юн = "1юн",
+    The2Юн = "2юн",
+    The3Юн = "3юн",
+    Кмс = "кмс",
+    Мс = "мс",
+    Мсмк = "МСМК",
 }
 
 export interface Judge {
-    number?:    string;
-    officialid: string;
+    number?:    number;
+    officialid: number;
     role:       Role;
 }
 
@@ -505,6 +614,11 @@ export enum Role {
     Sta = "STA",
     Tdg = "TDG",
     Tik = "TIK",
+}
+
+export interface SessionPool {
+    lanemax:  number;
+    lanemin?: number;
 }
 
 export enum Timing {
@@ -519,16 +633,16 @@ export interface Recordlist {
     formeet:      Formeet;
     gender:       Gender;
     name:         RecordlistName;
-    order:        string;
-    recordlistid: string;
+    order:        number;
+    recordlistid: number;
     records:      Record[];
     type:         RecordlistType;
     updated:      Date;
 }
 
 export interface RecordlistAgegroup {
-    agemax:     string;
-    agemin:     string;
+    agemax:     number;
+    agemin:     number;
     calculate?: string;
 }
 
@@ -546,7 +660,7 @@ export interface Record {
 }
 
 export interface RecordAthlete {
-    athleteid: string;
+    athleteid: number;
     birthdate: Date;
     club?:     AthleteClub;
     firstname: string;
@@ -556,7 +670,7 @@ export interface RecordAthlete {
 }
 
 export interface AthleteClub {
-    clubid: string;
+    clubid: number;
     code:   string;
     name:   string;
     nation: Nation;
@@ -570,12 +684,12 @@ export interface RecordRelay {
 
 export interface RelayRelayposition {
     athlete: RecordAthlete;
-    number:  string;
+    number:  number;
 }
 
 export interface RecordSwimstyle {
-    distance:   string;
-    relaycount: string;
+    distance:   number;
+    relaycount: number;
     stroke:     Stroke;
 }
 
@@ -585,37 +699,41 @@ export enum RecordlistType {
 
 export interface Timestandardlist {
     agegroup?:          TimestandardlistAgegroup;
-    code?:              Code;
+    code?:              TimestandardlistCode;
     course:             Course;
     gender:             Gender;
-    name?:              TimestandardlistName;
-    timestandardlistid: string;
+    name?:              string;
+    timestandardlistid: number;
     timestandards:      Timestandard[];
-    type:               TimestandardlistType;
+    type?:              TimestandardlistType;
 }
 
 export interface TimestandardlistAgegroup {
-    agemax: string;
-    agemin: string;
+    agemax: number;
+    agemin: number;
 }
 
-export enum Code {
+export enum TimestandardlistCode {
     H = "H",
+    I = "I",
+    IIIю = "IIIю",
+    IIю = "IIю",
+    Ii = "II",
+    Iii = "III",
+    Iю = "Iю",
     LV = "LV",
     Lt = "LT",
     NS = "NS",
-}
-
-export enum TimestandardlistName {
-    Fricktalcup2013Nachmittag = "Fricktalcup 2013 Nachmittag",
-    Fricktalcup2013Vormittag = "Fricktalcup 2013 Vormittag",
-    Haai2021 = "Haai 2021",
-    Loodsvisjes2021 = "loodsvisjes 2021",
-    NiveauNachwuchsSM2011 = "Niveau Nachwuchs-SM 2011",
+    Д = "Д",
+    ДДев = "Д дев",
+    ДЮн = "Д юн",
+    Кмс = "КМС",
+    Мс = "МС",
+    Мсмк = "МСМК",
 }
 
 export interface Timestandard {
-    swimstyle: RecordSwimstyle;
+    swimstyle: EventSwimstyle;
     swimtime:  string;
 }
 

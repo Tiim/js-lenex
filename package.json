@@ -9,12 +9,15 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "tsc",
-    "update-typings": "./scripts/update-typings.sh"
+    "build": "tsc",
+    "update-typings": "./scripts/update-typings.sh",
+    "update-schema": "ts-json-schema-generator --path src/lenex-type.ts --type LenexRaw -o src/schema.json --additional-properties true"
   },
   "author": "Tim (https://tiim.ch/)",
   "license": "MIT",
   "dependencies": {
+    "ajv": "^8.8.1",
+    "ajv-formats": "^2.1.1",
     "fast-xml-parser": "^3.20.0",
     "he": "^1.2.0",
     "jszip": "^3.7.1"
@@ -22,6 +25,8 @@
   "devDependencies": {
     "@types/node": "^16.11.7",
     "quicktype": "^15.0.260",
+    "ts-json-schema-generator": "^0.97.0",
+    "tslint": "^6.1.3",
     "typescript": "^4.4.4"
   }
 }
