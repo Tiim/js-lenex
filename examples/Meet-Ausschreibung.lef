@@ -1,0 +1,1744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LENEX version="3.0">
+  <CONSTRUCTOR name="SPLASH Meet Manager 11" registration="Wassersport-Club Kloten" version="11.70661">
+    <CONTACT name="Splash Software GmbH" street="Ahornweg 41" city="Spiegel b. Bern" zip="3095" country="CH" email="sales@swimrankings.net" internet="https://www.swimrankings.net" />
+  </CONSTRUCTOR>
+  <MEETS>
+    <MEET city="Kloten" name="Klotener Jahrgangswettkämpfe 2021 mit Raiffeisen" course="SCM" deadline="2021-09-15" entrystartdate="2021-09-01" entrytype="OPEN" hostclub="Wassersport-Club Kloten" hostclub.url="https://wsck.ch" organizer="Wassersport-Club Kloten" organizer.url="https://wsck.ch" result.url="https://live.swimrankings.net/29105/" startmethod="1" timing="AUTOMATIC" type="SUI.IM" withdrawuntil="2021-09-22" nation="SUI" maxentriesathlete="4">
+      <AGEDATE value="2021-12-31" type="YEAR" />
+      <POOL name="Hallenbad Zentrum Schluefweg" lanemin="1" lanemax="5" />
+      <FACILITY city="Kloten" name="Hallenbad Zentrum Schluefweg" nation="SUI" street="Schluefweg 10" zip="8302" />
+      <POINTTABLE pointtableid="3014" name="FINA Point Scoring" version="2021" />
+      <CONTACT city="Kloten" email="juerg.ulrich@alumni.ethz.ch; shammerle@scanco.ch" name="Wassersport-Club Kloten" phone="044 260 54 88" zip="8302" />
+      <FEES>
+        <FEE currency="CHF" type="LATEENTRY.INDIVIDUAL" value="800" />
+        <FEE currency="CHF" type="LATEENTRY.RELAY" value="800" />
+      </FEES>
+      <QUALIFY until="2021-08-31" />
+      <SESSIONS>
+        <SESSION date="2021-09-25" daytime="09:30" name="Vormittagswettkämpfe: 11-Jährige und Jüngere" number="1" officialmeeting="09:00" teamleadermeeting="08:30" warmupfrom="08:15" warmupuntil="09:15" remarksjudge="WSCK und teilnehmende Vereine - ein Richter ab 5, zwei ab 20 an der Veranstaltung Schwimmenden des Vereins." maxentriesathlete="4">
+          <EVENTS>
+            <EVENT eventid="1060" daytime="09:30" gender="F" number="1" order="1" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="1062" agemax="9" agemin="-1" />
+                <AGEGROUP agegroupid="1061" agemax="10" agemin="10" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="1063" daytime="09:39" gender="M" number="2" order="2" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="1064" agemax="9" agemin="-1" />
+                <AGEGROUP agegroupid="1065" agemax="10" agemin="10" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="1094" daytime="09:47" gender="F" number="3" order="3" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="10369" agemax="11" agemin="11" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="1066" daytime="09:59" gender="M" number="4" order="4" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="1084" agemax="11" agemin="11" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="1107" daytime="10:04" gender="F" number="5" order="5" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="1108" agemax="9" agemin="-1" />
+                <AGEGROUP agegroupid="1109" agemax="10" agemin="10" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="1069" daytime="10:10" gender="M" number="6" order="6" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="1070" agemax="9" agemin="-1" />
+                <AGEGROUP agegroupid="1071" agemax="10" agemin="10" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="1099" daytime="10:17" gender="F" number="7" order="7" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="1100" agemax="11" agemin="11" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="1072" daytime="10:29" gender="M" number="8" order="8" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="1073" agemax="11" agemin="11" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="1112" daytime="10:34" gender="F" number="9" order="10" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="1113" agemax="9" agemin="-1" />
+                <AGEGROUP agegroupid="1114" agemax="10" agemin="10" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="1075" daytime="10:44" gender="M" number="10" order="11" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="1076" agemax="9" agemin="-1" />
+                <AGEGROUP agegroupid="1077" agemax="10" agemin="10" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="1117" daytime="10:51" gender="F" number="11" order="14" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="1118" agemax="11" agemin="11" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="1078" daytime="11:03" gender="M" number="12" order="15" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="1079" agemax="11" agemin="11" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="1125" daytime="11:14" gender="X" number="13" order="19" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="50" relaycount="4" stroke="FREE" />
+              <FEE currency="CHF" value="1600" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="1126" agemax="11" agemin="-1" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="10380" daytime="11:25" gender="F" number="15" order="22" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="10381" agemax="9" agemin="-1" />
+                <AGEGROUP agegroupid="10384" agemax="10" agemin="10" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="1135" daytime="11:34" gender="M" number="16" order="23" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="1143" agemax="9" agemin="-1" />
+                <AGEGROUP agegroupid="1136" agemax="10" agemin="10" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="10385" daytime="11:42" gender="F" number="17" order="24" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="10386" agemax="11" agemin="11" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="10388" daytime="11:53" gender="M" number="18" order="25" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="10389" agemax="11" agemin="11" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="10428" daytime="11:59" gender="F" number="19" order="26" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="10429" agemax="11" agemin="-1" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="10430" daytime="12:26" gender="M" number="20" order="27" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="10431" agemax="11" agemin="-1" />
+              </AGEGROUPS>
+            </EVENT>
+          </EVENTS>
+        </SESSION>
+        <SESSION date="2021-09-25" daytime="14:30" endtime="18:00" name="Nachmittagswettkämpfe: 12-bis 16-Jährige" number="2" officialmeeting="14:00" teamleadermeeting="13:30" warmupfrom="13:15" warmupuntil="14:15" remarksjudge="WSCK und teilnehmende Vereine - ein Richter ab 5, zwei ab 20 an der Veranstaltung Schwimmenden des Vereins.">
+          <EVENTS>
+            <EVENT eventid="10403" daytime="14:30" gender="F" number="21" order="7" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="10404" agemax="12" agemin="12" />
+                <AGEGROUP agegroupid="10405" agemax="13" agemin="13" />
+                <AGEGROUP agegroupid="10418" agemax="14" agemin="14" />
+                <AGEGROUP agegroupid="10419" agemax="16" agemin="15" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="10415" daytime="14:44" gender="M" number="22" order="8" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="10416" agemax="12" agemin="12" />
+                <AGEGROUP agegroupid="10417" agemax="13" agemin="13" />
+                <AGEGROUP agegroupid="10420" agemax="14" agemin="14" />
+                <AGEGROUP agegroupid="10421" agemax="16" agemin="15" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="10412" daytime="15:02" gender="F" number="23" order="9" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="10413" agemax="12" agemin="12" />
+                <AGEGROUP agegroupid="10414" agemax="13" agemin="13" />
+                <AGEGROUP agegroupid="10422" agemax="14" agemin="14" />
+                <AGEGROUP agegroupid="10423" agemax="16" agemin="15" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="10409" daytime="15:14" gender="M" number="24" order="10" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="10424" agemax="12" agemin="12" />
+                <AGEGROUP agegroupid="10425" agemax="13" agemin="13" />
+                <AGEGROUP agegroupid="10426" agemax="14" agemin="14" />
+                <AGEGROUP agegroupid="10427" agemax="16" agemin="15" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="10393" daytime="15:32" gender="F" number="25" order="16" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="10394" agemax="12" agemin="12" />
+                <AGEGROUP agegroupid="10395" agemax="13" agemin="13" />
+                <AGEGROUP agegroupid="10396" agemax="14" agemin="14" />
+                <AGEGROUP agegroupid="10397" agemax="16" agemin="15" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="10390" daytime="15:44" gender="M" number="26" order="19" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="10391" agemax="12" agemin="12" />
+                <AGEGROUP agegroupid="10392" agemax="13" agemin="13" />
+                <AGEGROUP agegroupid="10398" agemax="14" agemin="14" />
+                <AGEGROUP agegroupid="10399" agemax="16" agemin="15" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="1129" daytime="16:06" gender="F" number="27" order="21" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="50" relaycount="4" stroke="MEDLEY" />
+              <FEE currency="CHF" value="1600" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="1130" agemax="16" agemin="12" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="1131" daytime="16:10" gender="M" number="28" order="24" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="50" relaycount="4" stroke="MEDLEY" />
+              <FEE currency="CHF" value="1600" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="1132" agemax="16" agemin="12" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="1137" daytime="16:20" gender="F" number="29" order="26" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="3421" agemax="12" agemin="12" />
+                <AGEGROUP agegroupid="3420" agemax="13" agemin="13" />
+                <AGEGROUP agegroupid="6104" agemax="14" agemin="14" />
+                <AGEGROUP agegroupid="3422" agemax="16" agemin="15" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="1144" daytime="16:33" gender="M" number="30" order="27" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="1146" agemax="12" agemin="12" />
+                <AGEGROUP agegroupid="1147" agemax="13" agemin="13" />
+                <AGEGROUP agegroupid="6105" agemax="14" agemin="14" />
+                <AGEGROUP agegroupid="1148" agemax="16" agemin="15" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="1149" daytime="16:50" gender="F" number="31" order="28" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="1150" agemax="16" agemin="12" />
+              </AGEGROUPS>
+            </EVENT>
+            <EVENT eventid="1154" daytime="17:08" gender="M" number="32" order="29" round="TIM" preveventid="-1">
+              <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+              <FEE currency="CHF" value="800" />
+              <AGEGROUPS>
+                <AGEGROUP agegroupid="1155" agemax="16" agemin="12" />
+              </AGEGROUPS>
+            </EVENT>
+          </EVENTS>
+        </SESSION>
+      </SESSIONS>
+      <CLUBS>
+        <CLUB type="CLUB" code="SKZ" nation="SUI" region="RZO" clubid="10599" swrid="65631" name="Schwimmklub Zollikon" shortname="SK Zollikon">
+          <ATHLETES>
+            <ATHLETE firstname="Jarno" lastname="Spichiger" birthdate="2008-03-10" gender="M" nation="SUI" license="115074" swrid="4941074" athleteid="10657">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="10658" entrytime="00:01:15.48" entrycourse="SCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="10659" entrytime="00:01:29.62" entrycourse="SCM" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="10660" entrytime="00:01:35.89" entrycourse="SCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="10661" entrytime="00:02:46.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Franca" lastname="Lendi" birthdate="2009-03-21" gender="F" nation="SUI" license="121950" swrid="5145116" athleteid="10632">
+              <RESULTS>
+                <RESULT eventid="10412" swimtime="00:00:00.00" resultid="10633" entrytime="00:01:48.36" entrycourse="SCM" />
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="10634" entrytime="00:01:23.31" entrycourse="SCM" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="10635" entrytime="00:01:42.74" entrycourse="SCM" />
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="10636" entrytime="00:03:09.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Meret" lastname="Baur" birthdate="2011-06-28" gender="F" nation="SUI" swrid="5466212" athleteid="10600">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="10601" entrytime="00:00:40.88" entrycourse="SCM" />
+                <RESULT eventid="1107" swimtime="00:00:00.00" resultid="10602" entrytime="00:00:50.00" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="10603" entrytime="00:00:53.97" entrycourse="SCM" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="10604" entrytime="00:00:49.83" entrycourse="SCM" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="10605" entrytime="00:03:40.12" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Rafael" lastname="Bengtson" birthdate="2008-07-03" gender="M" nation="SUI" license="121944" swrid="5383892" athleteid="10606">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="10607" entrytime="00:01:16.57" entrycourse="SCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="10608" entrytime="00:01:33.06" entrycourse="SCM" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="10609" entrytime="00:01:28.67" entrycourse="SCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="10610" entrytime="00:03:25.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Flavia" lastname="Schmidt" birthdate="2011-07-01" gender="F" nation="SUI" athleteid="10647">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="10648" entrytime="00:00:45.00" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="10649" entrytime="00:00:55.00" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="10650" entrytime="00:00:55.00" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="10651" entrytime="00:04:00.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Federica" lastname="Schmidt" birthdate="2009-10-28" gender="F" nation="SUI" license="121953" swrid="5145101" athleteid="10642">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="10643" entrytime="00:01:16.44" entrycourse="SCM" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="10644" entrytime="00:01:25.78" entrycourse="SCM" />
+                <RESULT eventid="1137" swimtime="00:00:00.00" resultid="10645" entrytime="00:01:42.83" entrycourse="SCM" />
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="10646" entrytime="00:02:51.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Vanessa" lastname="Reck" birthdate="2009-01-26" gender="F" nation="SUI" license="117484" swrid="4210759" athleteid="10637">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="10638" entrytime="00:01:10.84" entrycourse="SCM" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="10639" entrytime="00:01:22.01" entrycourse="SCM" />
+                <RESULT eventid="1137" swimtime="00:00:00.00" resultid="10640" entrytime="00:01:33.40" entrycourse="SCM" />
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="10641" entrytime="00:02:54.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Villads" lastname="Egsgaard" birthdate="2008-12-10" gender="M" nation="SUI" license="115075" swrid="4941038" athleteid="10621">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="10622" entrytime="00:01:02.49" entrycourse="SCM" />
+                <RESULT eventid="10409" swimtime="00:00:00.00" resultid="10623" entrytime="00:01:17.10" entrycourse="SCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="10624" entrytime="00:01:14.21" entrycourse="SCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="10625" entrytime="00:02:15.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Leevi" lastname="Franz" birthdate="2011-01-18" gender="M" nation="SUI" swrid="5466220" athleteid="10626">
+              <RESULTS>
+                <RESULT eventid="1063" swimtime="00:00:00.00" resultid="10627" entrytime="00:00:44.17" entrycourse="SCM" />
+                <RESULT eventid="1069" swimtime="00:00:00.00" resultid="10628" entrytime="00:01:02.58" entrycourse="SCM" />
+                <RESULT eventid="1075" swimtime="00:00:00.00" resultid="10629" entrytime="00:00:55.00" />
+                <RESULT eventid="1135" swimtime="00:00:00.00" resultid="10630" entrytime="00:00:57.66" entrycourse="SCM" />
+                <RESULT eventid="10430" swimtime="00:00:00.00" resultid="10631" entrytime="00:04:02.17" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Henry" lastname="Share" birthdate="2010-05-31" gender="M" nation="SUI" swrid="5457583" athleteid="10652">
+              <RESULTS>
+                <RESULT eventid="1066" swimtime="00:00:00.00" resultid="10653" entrytime="00:01:21.75" entrycourse="SCM" />
+                <RESULT eventid="1078" swimtime="00:00:00.00" resultid="10654" entrytime="00:01:37.93" entrycourse="SCM" />
+                <RESULT eventid="10430" swimtime="00:00:00.00" resultid="10655" entrytime="00:03:16.73" entrycourse="SCM" />
+                <RESULT eventid="1072" swimtime="00:00:00.00" resultid="10656" entrytime="00:01:50.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Lionel" lastname="Croci" birthdate="2010-07-27" gender="M" nation="SUI" license="121945" swrid="5387505" athleteid="10611">
+              <RESULTS>
+                <RESULT eventid="1066" swimtime="00:00:00.00" resultid="10612" entrytime="00:01:23.54" entrycourse="SCM" />
+                <RESULT eventid="1078" swimtime="00:00:00.00" resultid="10613" entrytime="00:01:39.57" entrycourse="SCM" />
+                <RESULT eventid="10388" swimtime="00:00:00.00" resultid="10614" entrytime="00:01:55.31" entrycourse="SCM" />
+                <RESULT eventid="10430" swimtime="00:00:00.00" resultid="10615" entrytime="00:03:19.75" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Filippa" lastname="Egsgaard" birthdate="2010-11-15" gender="F" nation="SUI" athleteid="10616">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="10617" entrytime="00:01:25.00" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="10618" entrytime="00:01:50.00" />
+                <RESULT eventid="10385" swimtime="00:00:00.00" resultid="10619" entrytime="00:02:00.00" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="10620" entrytime="00:03:30.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Nicholas" lastname="Zuberbühler" birthdate="2011-04-08" gender="M" nation="SUI" license="121955" swrid="5145305" athleteid="10662">
+              <RESULTS>
+                <RESULT eventid="1063" swimtime="00:00:00.00" resultid="10663" entrytime="00:00:42.00" />
+                <RESULT eventid="1069" swimtime="00:00:00.00" resultid="10664" entrytime="00:01:01.01" entrycourse="SCM" />
+                <RESULT eventid="1075" swimtime="00:00:00.00" resultid="10665" entrytime="00:00:55.00" />
+                <RESULT eventid="1135" swimtime="00:00:00.00" resultid="10666" entrytime="00:00:55.00" />
+                <RESULT eventid="10430" swimtime="00:00:00.00" resultid="10667" entrytime="00:03:44.04" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+          <RELAYS>
+            <RELAY agemax="11" agemin="-1" agetotalmax="-1" agetotalmin="-1" gender="X" number="1">
+              <RESULTS>
+                <RESULT eventid="1125" swimtime="00:00:00.00" resultid="10668" entrytime="00:02:40.00">
+                  <RELAYPOSITIONS>
+                    <RELAYPOSITION athleteid="10652" number="1" />
+                    <RELAYPOSITION athleteid="10611" number="2" />
+                    <RELAYPOSITION athleteid="10616" number="3" />
+                    <RELAYPOSITION athleteid="10600" number="4" />
+                  </RELAYPOSITIONS>
+                </RESULT>
+              </RESULTS>
+            </RELAY>
+          </RELAYS>
+        </CLUB>
+        <CLUB type="CLUB" code="YPS" nation="LIE" clubid="11232" swrid="88905" name="YPS-Club Swim Team Gamprin" shortname="YPSC Gamprin">
+          <ATHLETES>
+            <ATHLETE firstname="Feliciana" lastname="Müller" birthdate="2010-04-14" gender="F" nation="LIE" license="120" swrid="5426902" athleteid="11269">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="11270" entrytime="00:01:35.28" entrycourse="SCM" />
+                <RESULT eventid="1099" swimtime="00:00:00.00" resultid="11271" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="11272" entrytime="00:01:54.10" entrycourse="SCM" />
+                <RESULT eventid="10385" swimtime="00:00:00.00" resultid="11273" entrytime="00:02:12.65" entrycourse="SCM" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="11274" entrytime="00:03:36.45" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Sveja" lastname="Schuler" birthdate="2012-12-12" gender="F" nation="LIE" swrid="5441010" athleteid="11293">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="11294" entrytime="00:00:50.47" entrycourse="SCM" />
+                <RESULT eventid="1107" swimtime="00:00:00.00" resultid="11295" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="11296" entrytime="00:01:05.85" entrycourse="SCM" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="11297" entrytime="00:01:12.82" entrycourse="SCM" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="11298" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Georgij" lastname="Antipov" birthdate="2009-01-09" gender="M" nation="GER" license="118" swrid="4370661" athleteid="11233">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11234" entrytime="00:01:07.86" entrycourse="SCM" />
+                <RESULT eventid="10409" swimtime="00:00:00.00" resultid="11235" entrytime="00:01:30.49" entrycourse="SCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11236" entrytime="00:01:19.28" entrycourse="SCM" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="11237" entrytime="00:01:41.10" entrycourse="SCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="11238" entrytime="00:02:41.10" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Alija" lastname="Schuler" birthdate="2010-11-02" gender="F" nation="LIE" license="99" swrid="5349434" athleteid="11281">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="11282" entrytime="00:01:26.15" entrycourse="SCM" />
+                <RESULT eventid="1099" swimtime="00:00:00.00" resultid="11283" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="11284" entrytime="00:01:38.55" entrycourse="SCM" />
+                <RESULT eventid="10385" swimtime="00:00:00.00" resultid="11285" entrytime="00:01:55.19" entrycourse="SCM" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="11286" entrytime="00:03:19.39" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Sarah" lastname="Ehlert" birthdate="2007-10-21" gender="F" nation="AUT" license="93" swrid="5349429" athleteid="11245">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11246" entrytime="00:01:23.22" entrycourse="SCM" />
+                <RESULT eventid="10412" swimtime="00:00:00.00" resultid="11247" entrytime="00:01:37.75" entrycourse="SCM" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="11248" entrytime="00:01:31.98" entrycourse="SCM" />
+                <RESULT eventid="1137" swimtime="00:00:00.00" resultid="11249" entrytime="00:01:49.37" entrycourse="SCM" />
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="11250" entrytime="00:02:48.67" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Lara" lastname="Rickenbach" birthdate="2011-09-21" gender="F" nation="SUI" athleteid="11275">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="11276" entrytime="00:00:51.21" entrycourse="SCM" />
+                <RESULT eventid="1107" swimtime="00:00:00.00" resultid="11277" entrytime="00:00:59.85" entrycourse="SCM" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="11278" entrytime="00:01:01.26" entrycourse="SCM" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="11279" entrytime="00:01:04.40" entrycourse="SCM" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="11280" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Denja" lastname="Schuler" birthdate="2010-11-02" gender="F" nation="LIE" license="100" swrid="5349433" athleteid="11287">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="11288" entrytime="00:01:28.18" entrycourse="SCM" />
+                <RESULT eventid="1099" swimtime="00:00:00.00" resultid="11289" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="11290" entrytime="00:01:41.66" entrycourse="SCM" />
+                <RESULT eventid="10385" swimtime="00:00:00.00" resultid="11291" entrytime="00:01:57.89" entrycourse="SCM" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="11292" entrytime="00:03:21.55" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Pyry" lastname="Hasler" birthdate="2007-10-10" gender="M" nation="LIE" license="51" swrid="5411306" athleteid="11251">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11252" entrytime="00:01:16.21" entrycourse="SCM" />
+                <RESULT eventid="10409" swimtime="00:00:00.00" resultid="11253" entrytime="00:01:54.45" entrycourse="SCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11254" entrytime="00:01:29.77" entrycourse="SCM" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="11255" entrytime="00:01:38.47" entrycourse="SCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="11256" entrytime="00:02:46.94" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Noemi" lastname="Ivanovic" birthdate="2010-02-20" gender="F" nation="SUI" athleteid="11263">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="11264" entrytime="00:01:36.87" entrycourse="SCM" />
+                <RESULT eventid="1099" swimtime="00:00:00.00" resultid="11265" entrytime="00:02:02.64" entrycourse="SCM" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="11266" entrytime="00:01:55.60" entrycourse="SCM" />
+                <RESULT eventid="10385" swimtime="00:00:00.00" resultid="11267" entrytime="00:02:15.79" entrycourse="SCM" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="11268" entrytime="00:03:35.29" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Leon" lastname="Ivanovic" birthdate="2008-12-31" gender="M" nation="SUI" license="97" swrid="5349446" athleteid="11257">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11258" entrytime="00:01:17.79" entrycourse="SCM" />
+                <RESULT eventid="10409" swimtime="00:00:00.00" resultid="11259" entrytime="00:01:53.01" entrycourse="SCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11260" entrytime="00:01:29.01" entrycourse="SCM" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="11261" entrytime="00:01:47.71" entrycourse="SCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="11262" entrytime="00:02:53.51" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Giovanna" lastname="Bevivino" birthdate="2005-11-11" gender="F" nation="SUI" license="82" athleteid="11239">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11240" entrytime="00:01:01.52" entrycourse="SCM" />
+                <RESULT eventid="10412" swimtime="00:00:00.00" resultid="11241" entrytime="00:01:16.25" entrycourse="SCM" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="11242" entrytime="00:01:15.04" entrycourse="SCM" />
+                <RESULT eventid="1137" swimtime="00:00:00.00" resultid="11243" entrytime="00:01:20.91" entrycourse="SCM" />
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="11244" entrytime="00:02:26.31" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="SCSH" nation="SUI" region="ROS" clubid="10500" swrid="65668" name="Schwimmclub Schaffhausen" shortname="SC Schaffhausen">
+          <ATHLETES>
+            <ATHLETE firstname="Hanna" lastname="Schurr" birthdate="2011-03-03" gender="F" nation="GER" license="119657" swrid="5037148" athleteid="10540">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="10541" entrytime="00:01:04.22" entrycourse="SCM" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="10542" entrytime="00:01:09.54" entrycourse="SCM" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="10543" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Shay" lastname="Ben-Attia" birthdate="2012-01-28" gender="M" nation="SUI" license="123719" swrid="5400811" athleteid="10505">
+              <RESULTS>
+                <RESULT eventid="1063" swimtime="00:00:00.00" resultid="10506" entrytime="00:00:46.60" entrycourse="SCM" />
+                <RESULT eventid="1075" swimtime="00:00:00.00" resultid="10507" entrytime="00:00:51.53" entrycourse="SCM" />
+                <RESULT eventid="1135" swimtime="00:00:00.00" resultid="10508" entrytime="00:01:00.48" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Ben" lastname="Wanner" birthdate="2011-02-11" gender="M" nation="SUI" license="121198" swrid="5354652" athleteid="10552">
+              <RESULTS>
+                <RESULT eventid="1063" swimtime="00:00:00.00" resultid="10553" entrytime="00:01:01.12" entrycourse="SCM" />
+                <RESULT eventid="1075" swimtime="00:00:00.00" resultid="10554" entrytime="00:00:50.05" entrycourse="SCM" />
+                <RESULT eventid="1135" swimtime="00:00:00.00" resultid="10555" entrytime="00:00:59.60" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Aidan" lastname="Amstad" birthdate="2011-06-08" gender="M" nation="SUI" license="119650" swrid="5228561" athleteid="10501">
+              <RESULTS>
+                <RESULT eventid="1063" swimtime="00:00:00.00" resultid="10502" entrytime="00:00:51.97" />
+                <RESULT eventid="1075" swimtime="00:00:00.00" resultid="10503" entrytime="00:01:00.15" entrycourse="SCM" />
+                <RESULT eventid="1135" swimtime="00:00:00.00" resultid="10504" entrytime="00:00:58.75" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Tim" lastname="Schweizer" birthdate="2011-04-13" gender="M" nation="SUI" license="123732" swrid="5400804" athleteid="10544">
+              <RESULTS>
+                <RESULT eventid="1063" swimtime="00:00:00.00" resultid="10545" entrytime="00:00:49.51" entrycourse="SCM" />
+                <RESULT eventid="1075" swimtime="00:00:00.00" resultid="10546" entrytime="00:00:54.56" entrycourse="SCM" />
+                <RESULT eventid="1135" swimtime="00:00:00.00" resultid="10547" entrytime="00:01:07.22" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Nida" lastname="Köroglu" birthdate="2010-05-31" gender="F" nation="SUI" license="119653" swrid="5326583" athleteid="10518">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="10519" entrytime="00:01:18.56" entrycourse="SCM" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="10520" entrytime="00:01:33.15" entrycourse="SCM" />
+                <RESULT eventid="10385" swimtime="00:00:00.00" resultid="10521" entrytime="00:01:36.54" entrycourse="SCM" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="10522" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Til" lastname="Saladin" birthdate="2013-05-03" gender="M" nation="SUI" license="123739" swrid="5400820" athleteid="10527">
+              <RESULTS>
+                <RESULT eventid="1063" swimtime="00:00:00.00" resultid="10528" entrytime="00:00:43.52" entrycourse="SCM" />
+                <RESULT eventid="1075" swimtime="00:00:00.00" resultid="10529" entrytime="00:00:52.23" entrycourse="SCM" />
+                <RESULT eventid="1135" swimtime="00:00:00.00" resultid="10530" entrytime="00:00:57.04" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Ben" lastname="Trachsel" birthdate="2011-09-14" gender="M" nation="SUI" license="119658" swrid="4940747" athleteid="10548">
+              <RESULTS>
+                <RESULT eventid="1063" swimtime="00:00:00.00" resultid="10549" entrytime="00:00:59.13" entrycourse="SCM" />
+                <RESULT eventid="1075" swimtime="00:00:00.00" resultid="10550" entrytime="00:00:51.74" entrycourse="SCM" />
+                <RESULT eventid="1135" swimtime="00:00:00.00" resultid="10551" entrytime="00:00:50.82" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Tamara" lastname="Schmied" birthdate="2012-10-29" gender="F" nation="SUI" swrid="5460879" athleteid="10536">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="10537" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="10538" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="10539" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Mael" lastname="Bruderer" birthdate="2011-08-20" gender="M" nation="SUI" license="123725" swrid="5440263" athleteid="10509">
+              <RESULTS>
+                <RESULT eventid="1063" swimtime="00:00:00.00" resultid="10510" entrytime="00:00:44.57" entrycourse="SCM" />
+                <RESULT eventid="1075" swimtime="00:00:00.00" resultid="10511" entrytime="00:00:48.64" entrycourse="SCM" />
+                <RESULT eventid="1135" swimtime="00:00:00.00" resultid="10512" entrytime="00:01:02.17" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Iara" lastname="Sauter" birthdate="2010-01-07" gender="F" nation="SUI" license="119656" swrid="5326588" athleteid="10531">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="10532" entrytime="00:01:20.73" entrycourse="SCM" />
+                <RESULT eventid="1099" swimtime="00:00:00.00" resultid="10533" />
+                <RESULT eventid="10385" swimtime="00:00:00.00" resultid="10534" entrytime="00:01:46.86" entrycourse="SCM" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="10535" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Naoki" lastname="Fausch" birthdate="2010-02-26" gender="M" nation="SUI" license="115470" swrid="5244240" athleteid="10513">
+              <RESULTS>
+                <RESULT eventid="1066" swimtime="00:00:00.00" resultid="10514" entrytime="00:01:21.82" entrycourse="SCM" />
+                <RESULT eventid="1078" swimtime="00:00:00.00" resultid="10515" entrytime="00:01:58.97" entrycourse="SCM" />
+                <RESULT eventid="10388" swimtime="00:00:00.00" resultid="10516" entrytime="00:01:47.80" entrycourse="SCM" />
+                <RESULT eventid="10430" swimtime="00:00:00.00" resultid="10517" entrytime="00:03:00.23" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Yannis" lastname="Sägesser" birthdate="2012-08-28" gender="M" nation="SUI" license="123731" swrid="5400803" athleteid="10523">
+              <RESULTS>
+                <RESULT eventid="1063" swimtime="00:00:00.00" resultid="10524" entrytime="00:00:48.73" entrycourse="SCM" />
+                <RESULT eventid="1075" swimtime="00:00:00.00" resultid="10525" entrytime="00:00:56.64" entrycourse="SCM" />
+                <RESULT eventid="1135" swimtime="00:00:00.00" resultid="10526" entrytime="00:01:11.30" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="REG" nation="SUI" region="RZO" clubid="10451" swrid="65625" name="Schwimmclub Regensdorf" shortname="SC Regensdorf">
+          <ATHLETES>
+            <ATHLETE firstname="Nora" lastname="Zurbuchen" birthdate="2009-08-22" gender="F" nation="SUI" swrid="4827989" athleteid="10496">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="10497" entrytime="00:01:28.00" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="10498" entrytime="00:01:46.00" />
+                <RESULT eventid="1137" swimtime="00:00:00.00" resultid="10499" entrytime="00:01:57.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Natasha" lastname="Kaluperuma de Silva" birthdate="2009-01-31" gender="F" nation="SUI" swrid="4475899" athleteid="10472">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="10473" entrytime="00:01:34.02" />
+                <RESULT eventid="10412" swimtime="00:00:00.00" resultid="10474" entrytime="00:01:57.62" />
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="10475" entrytime="00:03:16.02" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Amanda" lastname="Dürler" birthdate="2008-07-06" gender="F" nation="SUI" license="120217" swrid="5335571" athleteid="10462">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="10463" entrytime="00:01:19.36" entrycourse="SCM" />
+                <RESULT eventid="10412" swimtime="00:00:00.00" resultid="10464" entrytime="00:01:44.36" entrycourse="SCM" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="10465" entrytime="00:01:32.71" entrycourse="SCM" />
+                <RESULT eventid="1137" swimtime="00:00:00.00" resultid="10466" entrytime="00:01:55.49" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Kirsten" lastname="Roso" birthdate="2008-06-26" gender="F" nation="INA" license="117429" swrid="5086042" athleteid="10486">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="10487" entrytime="00:01:25.21" entrycourse="SCM" />
+                <RESULT eventid="10412" swimtime="00:00:00.00" resultid="10488" entrytime="00:01:47.07" entrycourse="SCM" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="10489" entrytime="00:01:37.37" entrycourse="SCM" />
+                <RESULT eventid="1137" swimtime="00:00:00.00" resultid="10490" entrytime="00:01:46.72" entrycourse="SCM" />
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="10491" entrytime="00:03:21.18" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Vincent Luis" lastname="Küppers" birthdate="2013-01-29" gender="M" nation="GER" swrid="5471571" athleteid="10476">
+              <RESULTS>
+                <RESULT eventid="1063" swimtime="00:00:00.00" resultid="10477" entrytime="00:00:50.30" entrycourse="SCM" />
+                <RESULT eventid="1069" swimtime="00:00:00.00" resultid="10478" entrytime="00:01:03.95" entrycourse="SCM" />
+                <RESULT eventid="1075" swimtime="00:00:00.00" resultid="10479" entrytime="00:01:00.57" entrycourse="SCM" />
+                <RESULT eventid="1135" swimtime="00:00:00.00" resultid="10480" entrytime="00:01:04.04" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Selina" lastname="Dürler" birthdate="2011-06-27" gender="F" nation="SUI" swrid="5471569" athleteid="10467">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="10468" entrytime="00:00:40.45" entrycourse="SCM" />
+                <RESULT eventid="1107" swimtime="00:00:00.00" resultid="10469" entrytime="00:00:49.44" entrycourse="SCM" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="10470" entrytime="00:00:45.07" entrycourse="SCM" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="10471" entrytime="00:00:53.21" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Kilian" lastname="Dell&apos; Agosti" birthdate="2012-10-04" gender="M" nation="SUI" swrid="5440435" athleteid="10457">
+              <RESULTS>
+                <RESULT eventid="1063" swimtime="00:00:00.00" resultid="10458" entrytime="00:00:52.30" entrycourse="SCM" />
+                <RESULT eventid="1069" swimtime="00:00:00.00" resultid="10459" entrytime="00:00:57.95" entrycourse="SCM" />
+                <RESULT eventid="1075" swimtime="00:00:00.00" resultid="10460" entrytime="00:00:55.98" entrycourse="SCM" />
+                <RESULT eventid="1135" swimtime="00:00:00.00" resultid="10461" entrytime="00:01:00.70" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Nicolas" lastname="Simmen" birthdate="2011-11-27" gender="M" nation="SUI" swrid="4827081" athleteid="10492">
+              <RESULTS>
+                <RESULT eventid="1063" swimtime="00:00:00.00" resultid="10493" entrytime="00:00:56.99" entrycourse="SCM" />
+                <RESULT eventid="1075" swimtime="00:00:00.00" resultid="10494" entrytime="00:00:57.00" entrycourse="SCM" />
+                <RESULT eventid="1135" swimtime="00:00:00.00" resultid="10495" entrytime="00:00:58.57" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Diego" lastname="Nebl" birthdate="2012-04-23" gender="M" nation="SUI" athleteid="10481">
+              <RESULTS>
+                <RESULT eventid="1063" swimtime="00:00:00.00" resultid="10482" entrytime="00:01:00.77" />
+                <RESULT eventid="1069" swimtime="00:00:00.00" resultid="10483" entrytime="00:01:19.34" />
+                <RESULT eventid="1075" swimtime="00:00:00.00" resultid="10484" entrytime="00:01:06.86" />
+                <RESULT eventid="1135" swimtime="00:00:00.00" resultid="10485" entrytime="00:01:29.33" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Kevin" lastname="Dell&apos; Agosti" birthdate="2009-09-13" gender="M" nation="SUI" license="124393" swrid="5409080" athleteid="10452">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="10453" entrytime="00:01:36.46" entrycourse="SCM" />
+                <RESULT eventid="10409" swimtime="00:00:00.00" resultid="10454" entrytime="00:02:10.30" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="10455" entrytime="00:01:46.32" entrycourse="SCM" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="10456" entrytime="00:01:57.14" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="SKLA" nation="SUI" region="RZW" clubid="10556" swrid="65596" name="Schwimmklub Langenthal" shortname="SK Langenthal">
+          <ATHLETES>
+            <ATHLETE firstname="Yanna" lastname="Souza Bregant" birthdate="2010-12-03" gender="F" nation="ITA" license="115696" swrid="5244596" athleteid="10588">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="10589" entrytime="00:01:10.23" entrycourse="LCM" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="10590" entrytime="00:01:24.84" entrycourse="LCM" />
+                <RESULT eventid="10385" swimtime="00:00:00.00" resultid="10591" entrytime="00:01:38.60" entrycourse="LCM" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="10592" entrytime="00:02:37.62" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Alicia" lastname="von Burg" birthdate="2008-05-08" gender="F" nation="SUI" license="115694" swrid="5233101" athleteid="10593">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="10594" entrytime="00:01:11.61" entrycourse="LCM" />
+                <RESULT eventid="10412" swimtime="00:00:00.00" resultid="10595" entrytime="00:01:30.57" entrycourse="LCM" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="10596" entrytime="00:01:21.29" entrycourse="LCM" />
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="10597" entrytime="00:02:40.56" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Jan" lastname="Schlüchter" birthdate="2010-01-18" gender="M" nation="SUI" license="115940" swrid="5257646" athleteid="10579">
+              <RESULTS>
+                <RESULT eventid="1066" swimtime="00:00:00.00" resultid="10580" entrytime="00:01:30.79" />
+                <RESULT eventid="1072" swimtime="00:00:00.00" resultid="10581" entrytime="00:01:39.99" />
+                <RESULT eventid="1078" swimtime="00:00:00.00" resultid="10582" entrytime="00:01:33.54" />
+                <RESULT eventid="10430" swimtime="00:00:00.00" resultid="10583" entrytime="00:02:57.70" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Joel" lastname="Frefel" birthdate="2005-08-04" gender="M" nation="SUI" license="120545" swrid="4575840" athleteid="10568">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="10569" entrytime="00:01:01.39" entrycourse="LCM" />
+                <RESULT eventid="10409" swimtime="00:00:00.00" resultid="10570" entrytime="00:01:16.90" entrycourse="SCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="10571" entrytime="00:01:15.11" entrycourse="LCM" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="10572" entrytime="00:01:13.22" entrycourse="LCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="10573" entrytime="00:02:24.67" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Seraina" lastname="Cahenzli" birthdate="2006-01-17" gender="F" nation="SUI" license="47772" swrid="4904867" athleteid="10562">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="10563" entrytime="00:01:06.82" entrycourse="SCM" />
+                <RESULT eventid="10412" swimtime="00:00:00.00" resultid="10564" entrytime="00:01:25.13" entrycourse="LCM" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="10565" entrytime="00:01:18.62" entrycourse="SCM" />
+                <RESULT eventid="1137" swimtime="00:00:00.00" resultid="10566" entrytime="00:01:30.93" entrycourse="SCM" />
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="10567" entrytime="00:02:23.12" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Tim" lastname="Schlüchter" birthdate="2012-02-22" gender="M" nation="SUI" swrid="5464186" athleteid="10584">
+              <RESULTS>
+                <RESULT eventid="1063" swimtime="00:00:00.00" resultid="10585" entrytime="00:00:41.58" entrycourse="LCM" />
+                <RESULT eventid="1069" swimtime="00:00:00.00" resultid="10586" entrytime="00:00:48.00" />
+                <RESULT eventid="1135" swimtime="00:00:00.00" resultid="10587" entrytime="00:01:00.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Ben" lastname="Bühler" birthdate="2008-06-20" gender="M" nation="SUI" license="122164" swrid="5387499" athleteid="10557">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="10558" entrytime="00:01:13.20" entrycourse="LCM" />
+                <RESULT eventid="10409" swimtime="00:00:00.00" resultid="10559" entrytime="00:01:34.70" entrycourse="LCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="10560" entrytime="00:01:28.40" entrycourse="LCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="10561" entrytime="00:02:46.95" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Simeon" lastname="Frefel" birthdate="2009-03-19" gender="M" nation="SUI" license="118013" swrid="4580822" athleteid="10574">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="10575" entrytime="00:01:14.00" entrycourse="LCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="10576" entrytime="00:01:31.43" entrycourse="LCM" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="10577" entrytime="00:01:35.66" entrycourse="LCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="10578" entrytime="00:02:53.47" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+          <COACHES>
+            <COACH firstname="Sven" gender="M" lastname="Pfeuti" license="13565" type="HEADCOACH" />
+          </COACHES>
+        </CLUB>
+        <CLUB type="CLUB" code="STL" nation="SUI" region="RZW" clubid="10669" swrid="89865" name="Swim Team Lucerne" shortname="ST Lucerne">
+          <ATHLETES>
+            <ATHLETE firstname="Gian" lastname="Germann" birthdate="2006-12-07" gender="M" nation="SUI" license="7251" athleteid="11431">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11432" entrytime="00:00:58.78" entrycourse="LCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11433" entrytime="00:01:02.91" entrycourse="SCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="11434" entrytime="00:02:09.60" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Lya" lastname="Glanzmann" birthdate="2005-10-06" gender="F" nation="SUI" license="7278" athleteid="11439">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11440" entrytime="00:01:06.35" entrycourse="SCM" />
+                <RESULT eventid="10412" swimtime="00:00:00.00" resultid="11441" entrytime="00:01:09.09" entrycourse="SCM" />
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="11442" entrytime="00:02:20.52" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Lea" lastname="Zimmermann" birthdate="2007-11-29" gender="F" nation="SUI" license="7265" athleteid="11500">
+              <RESULTS>
+                <RESULT eventid="1137" swimtime="00:00:00.00" resultid="11501" entrytime="00:01:31.88" entrycourse="SCM" />
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11502" entrytime="00:01:07.85" entrycourse="LCM" />
+                <RESULT eventid="10412" swimtime="00:00:00.00" resultid="11503" entrytime="00:01:14.42" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Elodie" lastname="Brugger" birthdate="2008-01-23" gender="F" nation="SUI" athleteid="11427">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11428" entrytime="00:01:12.33" />
+                <RESULT eventid="10412" swimtime="00:00:00.00" resultid="11429" entrytime="00:01:20.21" />
+                <RESULT eventid="1137" swimtime="00:00:00.00" resultid="11430" entrytime="00:01:32.32" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Chiara" lastname="Baumeler" birthdate="2006-05-04" gender="F" nation="SUI" license="7236" athleteid="11424">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11425" entrytime="00:01:11.67" entrycourse="LCM" />
+                <RESULT eventid="1137" swimtime="00:00:00.00" resultid="11426" entrytime="00:01:24.63" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Norah" lastname="Vogel" birthdate="2006-07-25" gender="F" nation="SUI" license="7302" athleteid="11487">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11488" entrytime="00:01:12.83" entrycourse="SCM" />
+                <RESULT eventid="10412" swimtime="00:00:00.00" resultid="11489" entrytime="00:01:29.35" entrycourse="SCM" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="11490" entrytime="00:01:21.56" entrycourse="SCM" />
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="11491" entrytime="00:02:36.98" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Sofia" lastname="Mörgeli" birthdate="2008-05-06" gender="F" nation="SUI" license="7313" athleteid="11471">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11472" entrytime="00:01:19.79" entrycourse="LCM" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="11473" entrytime="00:01:29.79" entrycourse="LCM" />
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="11474" entrytime="00:02:49.73" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Mateja" lastname="Mitrovic" birthdate="2009-11-27" gender="M" nation="SUI" license="7285" athleteid="11467">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11468" entrytime="00:01:34.72" entrycourse="LCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11469" entrytime="00:01:38.13" entrycourse="LCM" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="11470" entrytime="00:02:02.57" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Joaquin" lastname="Schulz" birthdate="2006-10-23" gender="M" nation="SUI" license="7259" athleteid="11479">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11480" entrytime="00:00:57.91" entrycourse="LCM" />
+                <RESULT eventid="10409" swimtime="00:00:00.00" resultid="11481" entrytime="00:01:04.75" entrycourse="LCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11482" entrytime="00:01:06.02" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Noemi" lastname="Schumacher" birthdate="2008-11-20" gender="F" nation="SUI" athleteid="11483">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11484" entrytime="00:01:12.35" entrycourse="LCM" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="11485" entrytime="00:01:22.02" entrycourse="LCM" />
+                <RESULT eventid="1137" swimtime="00:00:00.00" resultid="11486" entrytime="00:01:39.74" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Leona" lastname="Giaimo" birthdate="2008-07-29" gender="F" nation="SUI" athleteid="11435">
+              <RESULTS>
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="11436" entrytime="00:02:22.49" />
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11437" entrytime="00:01:08.22" />
+                <RESULT eventid="10412" swimtime="00:00:00.00" resultid="11438" entrytime="00:01:15.38" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Péter" lastname="Kopacsi" birthdate="2006-05-26" gender="M" nation="HUN" license="7304" athleteid="11462">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11463" entrytime="00:00:57.01" entrycourse="LCM" />
+                <RESULT eventid="10409" swimtime="00:00:00.00" resultid="11464" entrytime="00:01:01.92" entrycourse="LCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11465" entrytime="00:01:08.45" entrycourse="LCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="11466" entrytime="00:02:08.83" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Lynn" lastname="Müller" birthdate="2006-08-31" gender="F" nation="SUI" license="7279" athleteid="11475">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11476" entrytime="00:01:07.15" entrycourse="SCM" />
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="11477" entrytime="00:02:24.31" entrycourse="SCM" />
+                <RESULT eventid="1137" swimtime="00:00:00.00" resultid="11478" entrytime="00:01:23.94" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Micha" lastname="Grob" birthdate="2005-07-28" gender="M" nation="SUI" license="7293" athleteid="11446">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11447" entrytime="00:00:56.56" entrycourse="LCM" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="11448" entrytime="00:01:08.77" entrycourse="LCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="11449" entrytime="00:02:05.82" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Linn" lastname="Grob" birthdate="2007-08-21" gender="F" nation="SUI" license="7272" athleteid="11443">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11444" entrytime="00:01:03.94" entrycourse="LCM" />
+                <RESULT eventid="1137" swimtime="00:00:00.00" resultid="11445" entrytime="00:01:18.29" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Nino Jann" lastname="Grob" birthdate="2009-03-16" gender="M" nation="SUI" license="7300" athleteid="11450">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11451" entrytime="00:01:02.86" entrycourse="LCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11452" entrytime="00:01:18.70" entrycourse="SCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="11453" entrytime="00:02:15.24" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Vivienne" lastname="Waser" birthdate="2005-09-26" gender="F" nation="SUI" license="7323" athleteid="11496">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11497" entrytime="00:01:07.87" entrycourse="LCM" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="11498" entrytime="00:01:15.94" entrycourse="LCM" />
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="11499" entrytime="00:02:33.53" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Jaël" lastname="Jost" birthdate="2005-12-16" gender="F" nation="SUI" license="7257" athleteid="11454">
+              <RESULTS>
+                <RESULT eventid="10412" swimtime="00:00:00.00" resultid="11455" entrytime="00:01:08.16" entrycourse="LCM" />
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="11456" entrytime="00:02:28.12" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Kevin" lastname="Waser" birthdate="2007-07-31" gender="M" nation="SUI" license="7262" athleteid="11492">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11493" entrytime="00:01:06.52" entrycourse="LCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11494" entrytime="00:01:16.55" entrycourse="LCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="11495" entrytime="00:02:27.54" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Eric" lastname="Köhler" birthdate="2007-06-08" gender="M" nation="SUI" license="7244" athleteid="11457">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11458" entrytime="00:00:59.92" entrycourse="LCM" />
+                <RESULT eventid="10409" swimtime="00:00:00.00" resultid="11459" entrytime="00:01:05.72" entrycourse="LCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="11460" entrytime="00:02:09.73" entrycourse="LCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11461" entrytime="00:01:12.23" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+          <RELAYS>
+            <RELAY agemax="16" agemin="12" agetotalmax="-1" agetotalmin="-1" gender="M" number="1">
+              <RESULTS>
+                <RESULT eventid="1131" swimtime="00:00:00.00" resultid="11504" entrytime="00:01:53.43">
+                  <RELAYPOSITIONS>
+                    <RELAYPOSITION athleteid="11431" number="1" />
+                    <RELAYPOSITION athleteid="11446" number="2" />
+                    <RELAYPOSITION athleteid="11479" number="3" />
+                    <RELAYPOSITION athleteid="11462" number="4" />
+                  </RELAYPOSITIONS>
+                </RESULT>
+              </RESULTS>
+            </RELAY>
+            <RELAY agemax="16" agemin="12" agetotalmax="-1" agetotalmin="-1" gender="F" number="1">
+              <RESULTS>
+                <RESULT eventid="1129" swimtime="00:00:00.00" resultid="11505" entrytime="00:02:11.75">
+                  <RELAYPOSITIONS>
+                    <RELAYPOSITION athleteid="11496" number="1" />
+                    <RELAYPOSITION athleteid="11443" number="2" />
+                    <RELAYPOSITION athleteid="11454" number="3" />
+                    <RELAYPOSITION athleteid="11439" number="4" />
+                  </RELAYPOSITIONS>
+                </RESULT>
+              </RESULTS>
+            </RELAY>
+            <RELAY agemax="16" agemin="12" agetotalmax="-1" agetotalmin="-1" gender="F" number="2">
+              <RESULTS>
+                <RESULT eventid="1129" swimtime="00:00:00.00" resultid="11506" entrytime="00:02:16.63">
+                  <RELAYPOSITIONS>
+                    <RELAYPOSITION athleteid="11487" number="1" />
+                    <RELAYPOSITION athleteid="11424" number="2" />
+                    <RELAYPOSITION athleteid="11500" number="3" />
+                    <RELAYPOSITION athleteid="11475" number="4" />
+                  </RELAYPOSITIONS>
+                </RESULT>
+              </RESULTS>
+            </RELAY>
+          </RELAYS>
+        </CLUB>
+        <CLUB type="CLUB" code="BUEL" nation="SUI" region="RZO" clubid="10869" swrid="65618" name="Schwimmclub Bülach" shortname="SC Bülach">
+          <ATHLETES>
+            <ATHLETE firstname="Sven" lastname="Novy" birthdate="2013-07-07" gender="M" nation="SUI" swrid="5458208" athleteid="10919">
+              <RESULTS>
+                <RESULT eventid="1063" swimtime="00:00:00.00" resultid="10920" entrytime="00:00:49.48" entrycourse="SCM" />
+                <RESULT eventid="1075" swimtime="00:00:00.00" resultid="10921" entrytime="00:00:59.37" entrycourse="SCM" />
+                <RESULT eventid="1135" swimtime="00:00:00.00" resultid="10922" entrytime="00:01:13.72" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Lovely" lastname="Tchouga" birthdate="2013-10-20" gender="F" nation="SUI" swrid="5458226" athleteid="10936">
+              <RESULTS>
+                <RESULT eventid="1107" swimtime="00:00:00.00" resultid="10937" entrytime="00:01:00.00" />
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="10938" entrytime="00:00:45.30" entrycourse="SCM" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="10939" entrytime="00:01:03.32" entrycourse="SCM" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="10940" entrytime="00:00:52.26" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Emily" lastname="den Buitelaar" birthdate="2010-05-17" gender="F" nation="SUI" swrid="5383635" athleteid="10879">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="10880" entrytime="00:01:30.95" entrycourse="SCM" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="10881" entrytime="00:01:43.00" entrycourse="SCM" />
+                <RESULT eventid="10385" swimtime="00:00:00.00" resultid="10882" entrytime="00:01:56.89" entrycourse="SCM" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="10883" entrytime="00:03:34.51" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Andrea" lastname="Cebic" birthdate="2011-01-03" gender="F" nation="SUI" swrid="5458176" athleteid="10874">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="10875" entrytime="00:00:37.20" />
+                <RESULT eventid="1107" swimtime="00:00:00.00" resultid="10876" entrytime="00:00:39.87" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="10877" entrytime="00:00:41.05" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="10878" entrytime="00:00:47.85" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Alina" lastname="Saiti" birthdate="2012-01-09" gender="F" nation="SUI" athleteid="10928">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="10929" entrytime="00:01:06.00" entrycourse="SCM" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="10930" entrytime="00:01:04.24" entrycourse="SCM" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="10931" entrytime="00:01:04.42" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Livia" lastname="Keller" birthdate="2010-10-02" gender="F" nation="SUI" swrid="5413664" athleteid="10911">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="10912" entrytime="00:01:33.96" entrycourse="SCM" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="10913" entrytime="00:01:46.09" entrycourse="SCM" />
+                <RESULT eventid="10385" swimtime="00:00:00.00" resultid="10914" entrytime="00:02:00.80" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Julia" lastname="den Buitelaar" birthdate="2010-05-17" gender="F" nation="SUI" swrid="5383637" athleteid="10884">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="10885" entrytime="00:01:33.06" entrycourse="SCM" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="10886" entrytime="00:01:43.53" entrycourse="SCM" />
+                <RESULT eventid="10385" swimtime="00:00:00.00" resultid="10887" entrytime="00:02:05.07" entrycourse="SCM" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="10888" entrytime="00:03:38.81" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Sophie" lastname="Novy" birthdate="2011-11-14" gender="F" nation="SUI" swrid="5458207" athleteid="10915">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="10916" entrytime="00:00:51.60" entrycourse="SCM" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="10917" entrytime="00:00:58.57" entrycourse="SCM" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="10918" entrytime="00:01:03.97" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Karolina" lastname="Postument" birthdate="2010-01-23" gender="F" nation="SUI" swrid="5282707" athleteid="10923">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="10924" entrytime="00:01:27.14" entrycourse="SCM" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="10925" entrytime="00:01:48.21" entrycourse="LCM" />
+                <RESULT eventid="10385" swimtime="00:00:00.00" resultid="10926" entrytime="00:01:47.03" entrycourse="SCM" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="10927" entrytime="00:03:33.87" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Fiona" lastname="Jaiji" birthdate="2010-10-07" gender="F" nation="SUI" swrid="5440433" athleteid="10907">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="10908" entrytime="00:01:40.45" entrycourse="SCM" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="10909" entrytime="00:01:53.48" entrycourse="SCM" />
+                <RESULT eventid="10385" swimtime="00:00:00.00" resultid="10910" entrytime="00:01:54.63" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Iva" lastname="Djukic" birthdate="2010-03-08" gender="F" nation="SUI" swrid="5383891" athleteid="10889">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="10890" entrytime="00:01:37.97" entrycourse="SCM" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="10891" entrytime="00:01:44.81" entrycourse="LCM" />
+                <RESULT eventid="10385" swimtime="00:00:00.00" resultid="10892" entrytime="00:01:54.89" entrycourse="SCM" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="10893" entrytime="00:03:42.90" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Amy" lastname="Berni" birthdate="2011-01-24" gender="F" nation="SUI" swrid="5383632" athleteid="10870">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="10871" entrytime="00:00:40.69" entrycourse="SCM" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="10872" entrytime="00:00:54.20" entrycourse="SCM" />
+                <RESULT eventid="1107" swimtime="00:00:00.00" resultid="10873" entrytime="00:00:57.78" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Henry" lastname="Ellesser" birthdate="2009-12-03" gender="M" nation="SUI" swrid="5461125" athleteid="10894">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="10895" entrytime="00:01:20.84" entrycourse="SCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="10896" entrytime="00:01:30.65" entrycourse="SCM" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="10897" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="10898" entrytime="00:03:00.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Lena" lastname="Huber" birthdate="2012-06-10" gender="F" nation="SUI" athleteid="10903">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="10904" entrytime="00:00:54.03" entrycourse="SCM" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="10905" entrytime="00:01:03.91" entrycourse="SCM" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="10906" entrytime="00:01:05.00" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Chiara" lastname="Greile" birthdate="2013-01-21" gender="F" nation="SUI" athleteid="10899">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="10900" entrytime="00:00:53.27" entrycourse="SCM" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="10901" entrytime="00:01:07.07" entrycourse="SCM" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="10902" entrytime="00:01:00.05" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Vanessa" lastname="Stano" birthdate="2010-07-22" gender="F" nation="SUI" swrid="5464139" athleteid="10932">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="10933" entrytime="00:01:34.17" entrycourse="SCM" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="10934" entrytime="00:01:50.14" entrycourse="SCM" />
+                <RESULT eventid="10385" swimtime="00:00:00.00" resultid="10935" entrytime="00:01:52.14" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+        </CLUB>
+        <CLUB type="CLUB" code="WSCK" nation="SUI" region="RZO" clubid="10758" swrid="65644" name="Wassersport-Club Kloten" shortname="WSC Kloten">
+          <ATHLETES>
+            <ATHLETE firstname="Melanie" lastname="Höfler" birthdate="2011-07-26" gender="F" nation="GER" license="21123" athleteid="11155">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="11156" entrytime="00:01:04.82" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="11157" entrytime="00:01:08.46" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="11158" entrytime="00:01:09.94" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Anne Sophie" lastname="Schweighofer" birthdate="2007-05-24" gender="F" nation="SUI" license="7987" swrid="5264312" athleteid="11189">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11190" entrytime="00:01:35.40" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="11191" entrytime="00:01:46.70" />
+                <RESULT eventid="1137" swimtime="00:00:00.00" resultid="11192" entrytime="00:01:50.90" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Juan" lastname="Diaz" birthdate="2009-11-22" gender="M" nation="SUI" license="19686" swrid="5440436" athleteid="11138">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11139" entrytime="00:01:30.68" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11140" entrytime="00:01:45.76" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="11141" entrytime="00:01:56.56" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="11142" entrytime="00:03:30.45" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Colin" lastname="Gerber" birthdate="2010-03-05" gender="M" nation="SUI" license="7994" swrid="5314593" athleteid="11147">
+              <RESULTS>
+                <RESULT eventid="1066" swimtime="00:00:00.00" resultid="11148" entrytime="00:01:40.34" />
+                <RESULT eventid="1078" swimtime="00:00:00.00" resultid="11149" entrytime="00:01:55.76" />
+                <RESULT eventid="10388" swimtime="00:00:00.00" resultid="11150" entrytime="00:02:00.36" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Oliver" lastname="Flüeler" birthdate="2006-03-28" gender="M" nation="SUI" license="8035" swrid="5207277" athleteid="11143">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11144" entrytime="00:01:10.80" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11145" entrytime="00:01:28.20" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="11146" entrytime="00:02:28.20" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Justin" lastname="Rosenzopf" birthdate="2006-06-09" gender="M" nation="SUI" license="8013" swrid="5105880" athleteid="11173">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11174" entrytime="00:01:06.24" entrycourse="SCM" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="11175" entrytime="00:01:19.29" entrycourse="SCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="11176" entrytime="00:02:26.36" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Melina" lastname="Zissis" birthdate="2012-02-12" gender="F" nation="SUI" license="8026" swrid="5440453" athleteid="11226">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="11227" entrytime="00:01:10.31" entrycourse="SCM" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="11228" entrytime="00:01:04.15" entrycourse="SCM" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="11229" entrytime="00:01:15.34" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Magor" lastname="Senesi" birthdate="2007-05-21" gender="M" nation="SUI" license="8023" swrid="5008737" athleteid="11197">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11198" entrytime="00:01:28.90" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11199" entrytime="00:01:40.50" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="11200" entrytime="00:01:45.60" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Anna" lastname="Würmli" birthdate="2012-08-25" gender="F" nation="SUI" license="19728" athleteid="11222">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="11223" entrytime="00:00:56.27" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="11224" entrytime="00:01:04.83" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="11225" entrytime="00:01:16.91" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Carlotta" lastname="Schneider" birthdate="2008-11-11" gender="F" nation="GER" license="7990" swrid="5207266" athleteid="11181">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11182" entrytime="00:01:28.65" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="11183" entrytime="00:01:42.60" />
+                <RESULT eventid="1137" swimtime="00:00:00.00" resultid="11184" entrytime="00:01:46.30" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Chiara Serli" lastname="Boyadjian" birthdate="2005-01-08" gender="F" nation="SUI" athleteid="11130">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11131" entrytime="00:01:25.30" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="11132" entrytime="00:01:38.40" />
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="11133" entrytime="00:03:00.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Klara" lastname="Coric" birthdate="2009-05-15" gender="F" nation="SUI" license="8014" swrid="5395778" athleteid="11134">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11135" entrytime="00:01:50.86" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="11136" entrytime="00:02:00.45" />
+                <RESULT eventid="1137" swimtime="00:00:00.00" resultid="11137" entrytime="00:02:15.21" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Massimo" lastname="Rossi" birthdate="2007-01-27" gender="M" nation="RSA" license="8025" athleteid="11177">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11178" entrytime="00:01:10.25" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11179" entrytime="00:01:23.10" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="11180" entrytime="00:02:33.50" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Alma" lastname="Senesi" birthdate="2013-10-05" gender="F" nation="SUI" license="31952" athleteid="11193">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="11194" entrytime="00:01:00.97" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="11195" entrytime="00:00:57.11" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="11196" entrytime="00:01:00.49" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Viviana" lastname="Valles" birthdate="2009-03-19" gender="F" nation="NZL" license="8054" swrid="5343389" athleteid="11209">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11210" entrytime="00:01:35.56" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="11211" entrytime="00:01:46.89" />
+                <RESULT eventid="1137" swimtime="00:00:00.00" resultid="11212" entrytime="00:01:58.38" />
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="11213" entrytime="00:03:40.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Rastko" lastname="Arsic" birthdate="2012-06-02" gender="M" nation="SUI" license="32799" athleteid="11126">
+              <RESULTS>
+                <RESULT eventid="1063" swimtime="00:00:00.00" resultid="11127" entrytime="00:01:00.00" />
+                <RESULT eventid="1075" swimtime="00:00:00.00" resultid="11128" entrytime="00:01:13.00" />
+                <RESULT eventid="1135" swimtime="00:00:00.00" resultid="11129" entrytime="00:01:26.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Pedro" lastname="Vieira" birthdate="2010-04-08" gender="M" nation="SUI" license="20022" swrid="5441242" athleteid="11214">
+              <RESULTS>
+                <RESULT eventid="1066" swimtime="00:00:00.00" resultid="11215" entrytime="00:01:50.39" />
+                <RESULT eventid="1078" swimtime="00:00:00.00" resultid="11216" entrytime="00:01:57.38" />
+                <RESULT eventid="10388" swimtime="00:00:00.00" resultid="11217" entrytime="00:02:18.25" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Liam" lastname="Valles" birthdate="2011-11-21" gender="M" nation="NZL" license="32052" athleteid="11205">
+              <RESULTS>
+                <RESULT eventid="1063" swimtime="00:00:00.00" resultid="11206" entrytime="00:00:52.39" />
+                <RESULT eventid="1075" swimtime="00:00:00.00" resultid="11207" entrytime="00:01:10.44" />
+                <RESULT eventid="1135" swimtime="00:00:00.00" resultid="11208" entrytime="00:01:17.76" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Fernando" lastname="Schupp" birthdate="2006-11-09" gender="M" nation="SUI" license="8000" swrid="5097306" athleteid="11185">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11186" entrytime="00:01:15.30" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11187" entrytime="00:01:30.00" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="11188" entrytime="00:01:36.40" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Nemanja" lastname="Tesic" birthdate="2009-02-18" gender="M" nation="SUI" license="8031" swrid="5243510" athleteid="11201">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11202" entrytime="00:01:47.89" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11203" entrytime="00:01:55.55" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="11204" entrytime="00:01:50.82" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Lir" lastname="Leci" birthdate="2009-12-28" gender="M" nation="SUI" license="19968" swrid="5441224" athleteid="11164">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11165" entrytime="00:01:40.38" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11166" entrytime="00:01:54.73" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="11167" entrytime="00:02:10.29" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Milan" lastname="Vladetic" birthdate="2008-06-28" gender="M" nation="SUI" license="8028" swrid="4940718" athleteid="11218">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11219" entrytime="00:01:28.30" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11220" entrytime="00:01:37.00" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="11221" entrytime="00:01:41.80" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Arsenije" lastname="Arsic" birthdate="2009-05-06" gender="M" nation="SUI" license="7989" swrid="5314251" athleteid="11121">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11122" entrytime="00:01:28.30" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11123" entrytime="00:01:51.23" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="11124" entrytime="00:01:55.11" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="11125" entrytime="00:03:30.82" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Alessio" lastname="Rizzo" birthdate="2010-05-14" gender="M" nation="SUI" license="7982" swrid="5264327" athleteid="11168">
+              <RESULTS>
+                <RESULT eventid="1066" swimtime="00:00:00.00" resultid="11169" entrytime="00:01:40.03" />
+                <RESULT eventid="1078" swimtime="00:00:00.00" resultid="11170" entrytime="00:01:54.90" />
+                <RESULT eventid="10388" swimtime="00:00:00.00" resultid="11171" entrytime="00:01:57.58" />
+                <RESULT eventid="10430" swimtime="00:00:00.00" resultid="11172" entrytime="00:03:30.97" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Catherine" lastname="Gisler" birthdate="2008-06-27" gender="F" nation="SUI" license="19690" swrid="5442065" athleteid="11151">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11152" entrytime="00:01:50.00" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="11153" entrytime="00:02:20.00" />
+                <RESULT eventid="1137" swimtime="00:00:00.00" resultid="11154" entrytime="00:02:40.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Emilie" lastname="Künzi" birthdate="2012-04-12" gender="F" nation="SUI" license="7996" swrid="5383896" athleteid="11159">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="11160" entrytime="00:00:52.90" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="11161" entrytime="00:00:58.26" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="11162" entrytime="00:01:01.94" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="11163" entrytime="00:04:00.03" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+          <RELAYS>
+            <RELAY agemax="16" agemin="12" agetotalmax="-1" agetotalmin="-1" gender="M" number="1">
+              <RESULTS>
+                <RESULT eventid="1131" swimtime="00:00:00.00" resultid="11230" entrytime="00:02:30.00">
+                  <RELAYPOSITIONS>
+                    <RELAYPOSITION athleteid="11177" number="1" />
+                    <RELAYPOSITION athleteid="11185" number="2" />
+                    <RELAYPOSITION athleteid="11173" number="3" />
+                    <RELAYPOSITION athleteid="11143" number="4" />
+                  </RELAYPOSITIONS>
+                </RESULT>
+              </RESULTS>
+            </RELAY>
+            <RELAY agemax="11" agemin="-1" agetotalmax="-1" agetotalmin="-1" gender="X" number="1">
+              <RESULTS>
+                <RESULT eventid="1125" swimtime="00:00:00.00" resultid="11231" entrytime="00:03:39.66">
+                  <RELAYPOSITIONS>
+                    <RELAYPOSITION athleteid="11168" number="1" />
+                    <RELAYPOSITION athleteid="11159" number="2" />
+                    <RELAYPOSITION athleteid="11155" number="3" />
+                    <RELAYPOSITION athleteid="11147" number="4" />
+                  </RELAYPOSITIONS>
+                </RESULT>
+              </RESULTS>
+            </RELAY>
+          </RELAYS>
+        </CLUB>
+        <CLUB type="CLUB" code="SCUW" nation="SUI" region="RZO" clubid="10941" swrid="65630" name="Schwimmclub Uster Wallisellen" shortname="SC Uster Wallisellen">
+          <ATHLETES>
+            <ATHLETE firstname="Flavia" lastname="Bertolini" birthdate="2010-01-01" gender="F" nation="SUI" swrid="5442059" athleteid="10950">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="10951" entrytime="00:01:40.88" entrycourse="SCM" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="10952" entrytime="00:01:51.00" entrycourse="SCM" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="10953" entrytime="00:03:40.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Anina" lastname="Spiess" birthdate="2010-08-06" gender="F" nation="SUI" swrid="5382236" athleteid="11079">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="11080" entrytime="00:01:34.63" entrycourse="SCM" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="11081" entrytime="00:01:44.14" entrycourse="SCM" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="11082" entrytime="00:03:35.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Mihajlo" lastname="Radojevic" birthdate="2010-01-03" gender="M" nation="SUI" swrid="5367926" athleteid="11057">
+              <RESULTS>
+                <RESULT eventid="1066" swimtime="00:00:00.00" resultid="11058" entrytime="00:01:32.14" entrycourse="SCM" />
+                <RESULT eventid="1078" swimtime="00:00:00.00" resultid="11059" entrytime="00:01:52.19" entrycourse="SCM" />
+                <RESULT eventid="10388" swimtime="00:00:00.00" resultid="11060" entrytime="00:02:04.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Nina" lastname="Schaffner" birthdate="2006-12-26" gender="F" nation="SUI" license="108169" swrid="5137133" athleteid="11061">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11062" entrytime="00:01:06.71" entrycourse="LCM" />
+                <RESULT eventid="10412" swimtime="00:00:00.00" resultid="11063" entrytime="00:01:11.30" entrycourse="LCM" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="11064" entrytime="00:01:13.64" entrycourse="LCM" />
+                <RESULT eventid="1137" swimtime="00:00:00.00" resultid="11065" entrytime="00:01:20.02" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Naya" lastname="Buob" birthdate="2010-02-09" gender="F" nation="SUI" license="22173" swrid="5442060" athleteid="10972">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="10973" entrytime="00:01:40.11" entrycourse="SCM" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="10974" entrytime="00:01:50.00" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="10975" entrytime="00:03:40.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Inès" lastname="Brugger" birthdate="2011-10-30" gender="F" nation="SUI" swrid="5416962" athleteid="10967">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="10968" entrytime="00:00:41.71" entrycourse="LCM" />
+                <RESULT eventid="1107" swimtime="00:00:00.00" resultid="10969" entrytime="00:00:54.92" entrycourse="LCM" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="10970" entrytime="00:00:47.26" entrycourse="LCM" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="10971" entrytime="00:00:53.40" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Peyton" lastname="Jennerich" birthdate="2010-01-29" gender="F" nation="SUI" license="32594" swrid="4823417" athleteid="11025">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="11026" entrytime="00:01:48.00" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="11027" entrytime="00:01:50.00" />
+                <RESULT eventid="10385" swimtime="00:00:00.00" resultid="11028" entrytime="00:02:10.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Niclas" lastname="Chartron" birthdate="2009-11-27" gender="M" nation="SUI" license="121652" swrid="5458765" athleteid="10984">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="10985" entrytime="00:01:31.27" entrycourse="SCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="10986" entrytime="00:01:43.97" entrycourse="SCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="10987" entrytime="00:03:23.75" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Sebastian" lastname="Schega" birthdate="2010-01-29" gender="M" nation="SUI" license="117188" swrid="5301237" athleteid="11066">
+              <RESULTS>
+                <RESULT eventid="1066" swimtime="00:00:00.00" resultid="11067" entrytime="00:01:21.91" entrycourse="SCM" />
+                <RESULT eventid="1078" swimtime="00:00:00.00" resultid="11068" entrytime="00:01:37.60" />
+                <RESULT eventid="10430" swimtime="00:00:00.00" resultid="11069" entrytime="00:03:03.77" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Ayleen" lastname="Sunier" birthdate="2010-08-04" gender="F" nation="SUI" swrid="5382245" athleteid="11087">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="11088" entrytime="00:01:33.65" entrycourse="SCM" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="11089" entrytime="00:01:44.53" entrycourse="LCM" />
+                <RESULT eventid="10385" swimtime="00:00:00.00" resultid="11090" entrytime="00:01:55.34" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Sven" lastname="Briner" birthdate="2008-02-02" gender="M" nation="SUI" license="106794" swrid="5119969" athleteid="10963">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="10964" entrytime="00:01:00.36" entrycourse="LCM" />
+                <RESULT eventid="10409" swimtime="00:00:00.00" resultid="10965" entrytime="00:01:09.28" entrycourse="LCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="10966" entrytime="00:02:12.26" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Gabriel" lastname="Trascinelli" birthdate="2011-11-29" gender="M" nation="ITA" swrid="5441240" athleteid="11091">
+              <RESULTS>
+                <RESULT eventid="1063" swimtime="00:00:00.00" resultid="11092" entrytime="00:00:43.16" entrycourse="LCM" />
+                <RESULT eventid="1075" swimtime="00:00:00.00" resultid="11093" entrytime="00:00:46.10" entrycourse="LCM" />
+                <RESULT eventid="10430" swimtime="00:00:00.00" resultid="11094" entrytime="00:03:35.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Nils" lastname="Hagen" birthdate="2011-01-24" gender="M" nation="SUI" swrid="5382238" athleteid="11007">
+              <RESULTS>
+                <RESULT eventid="1063" swimtime="00:00:00.00" resultid="11008" entrytime="00:00:39.96" entrycourse="LCM" />
+                <RESULT eventid="1069" swimtime="00:00:00.00" resultid="11009" entrytime="00:00:56.49" entrycourse="LCM" />
+                <RESULT eventid="1075" swimtime="00:00:00.00" resultid="11010" entrytime="00:00:49.03" entrycourse="SCM" />
+                <RESULT eventid="1135" swimtime="00:00:00.00" resultid="11011" entrytime="00:00:52.01" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Simon" lastname="Fehr" birthdate="2009-10-07" gender="M" nation="SUI" license="118774" swrid="5312725" athleteid="10993">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="10994" entrytime="00:01:29.01" entrycourse="SCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="10995" entrytime="00:01:54.03" entrycourse="SCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="10996" entrytime="00:03:52.06" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Naomi Layla" lastname="Martinez" birthdate="2007-05-09" gender="F" nation="SUI" license="106541" swrid="5115752" athleteid="11052">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11053" entrytime="00:01:08.98" entrycourse="LCM" />
+                <RESULT eventid="10412" swimtime="00:00:00.00" resultid="11054" entrytime="00:01:23.78" entrycourse="SCM" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="11055" entrytime="00:01:13.73" entrycourse="LCM" />
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="11056" entrytime="00:02:27.24" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Nael" lastname="Wunnerlich" birthdate="2010-07-30" gender="M" nation="SUI" swrid="5442092" athleteid="11103">
+              <RESULTS>
+                <RESULT eventid="1066" swimtime="00:00:00.00" resultid="11104" entrytime="00:01:33.26" entrycourse="SCM" />
+                <RESULT eventid="1078" swimtime="00:00:00.00" resultid="11105" entrytime="00:01:51.02" entrycourse="SCM" />
+                <RESULT eventid="10430" swimtime="00:00:00.00" resultid="11106" entrytime="00:03:20.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Emily" lastname="Lukac" birthdate="2012-02-09" gender="F" nation="SUI" swrid="5382241" athleteid="11038">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="11039" entrytime="00:00:41.45" entrycourse="SCM" />
+                <RESULT eventid="1107" swimtime="00:00:00.00" resultid="11040" entrytime="00:00:52.50" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="11041" entrytime="00:00:51.76" entrycourse="SCM" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="11042" entrytime="00:00:52.41" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Vittoria" lastname="Carletti" birthdate="2011-12-20" gender="F" nation="SUI" swrid="5458174" athleteid="10980">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="10981" entrytime="00:00:53.88" entrycourse="LCM" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="10982" entrytime="00:00:59.45" entrycourse="LCM" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="10983" entrytime="00:03:40.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Maxim" lastname="Ivanov" birthdate="2007-10-25" gender="M" nation="SUI" license="107723" swrid="5133216" athleteid="11021">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11022" entrytime="00:01:00.48" entrycourse="LCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11023" entrytime="00:01:11.08" entrycourse="LCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="11024" entrytime="00:02:19.07" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Svenja Patricia" lastname="Luchsinger" birthdate="2006-04-01" gender="F" nation="SUI" license="117244" swrid="5202654" athleteid="11034">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11035" entrytime="00:01:13.24" entrycourse="SCM" />
+                <RESULT eventid="10412" swimtime="00:00:00.00" resultid="11036" entrytime="00:01:18.00" />
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="11037" entrytime="00:02:30.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Jelena" lastname="Korda" birthdate="2011-04-15" gender="F" nation="SUI" swrid="5441222" athleteid="11029">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="11030" entrytime="00:00:44.21" entrycourse="LCM" />
+                <RESULT eventid="1107" swimtime="00:00:00.00" resultid="11031" entrytime="00:00:57.80" entrycourse="SCM" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="11032" entrytime="00:00:53.88" entrycourse="LCM" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="11033" entrytime="00:00:53.77" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Aaron" lastname="Baia" birthdate="2005-04-23" gender="M" nation="SUI" license="103910" swrid="5053787" athleteid="10942">
+              <RESULTS>
+                <RESULT eventid="10409" swimtime="00:00:00.00" resultid="10943" entrytime="00:01:11.48" entrycourse="SCM" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="10944" entrytime="00:01:14.98" entrycourse="SCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="10945" entrytime="00:02:17.04" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Loris" lastname="Blumenthal" birthdate="2007-04-16" gender="M" nation="SUI" license="103247" swrid="5029845" athleteid="10958">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="10959" entrytime="00:00:58.88" entrycourse="LCM" />
+                <RESULT eventid="10409" swimtime="00:00:00.00" resultid="10960" entrytime="00:01:09.49" entrycourse="LCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="10961" entrytime="00:01:03.33" entrycourse="LCM" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="10962" entrytime="00:01:13.26" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Malea" lastname="Vego" birthdate="2011-10-01" gender="F" nation="SUI" swrid="5441241" athleteid="11095">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="11096" entrytime="00:00:43.86" entrycourse="LCM" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="11097" entrytime="00:00:51.74" entrycourse="LCM" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="11098" entrytime="00:03:35.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Amélie" lastname="Speerli" birthdate="2011-06-18" gender="F" nation="SUI" swrid="5382257" athleteid="11074">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="11075" entrytime="00:00:38.18" entrycourse="LCM" />
+                <RESULT eventid="1107" swimtime="00:00:00.00" resultid="11076" entrytime="00:00:46.84" entrycourse="LCM" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="11077" entrytime="00:00:46.08" entrycourse="LCM" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="11078" entrytime="00:00:47.06" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Enrico" lastname="Gartmann" birthdate="2005-07-04" gender="M" nation="SUI" license="100592" swrid="4965808" athleteid="10997">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="10998" entrytime="00:01:01.63" entrycourse="LCM" />
+                <RESULT eventid="10409" swimtime="00:00:00.00" resultid="10999" entrytime="00:01:12.81" entrycourse="LCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11000" entrytime="00:01:10.74" entrycourse="LCM" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="11001" entrytime="00:01:18.94" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Fritz" lastname="Hofmann" birthdate="2006-01-12" gender="M" nation="GER" license="102573" athleteid="11016">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11017" entrytime="00:01:01.91" entrycourse="LCM" />
+                <RESULT eventid="10409" swimtime="00:00:00.00" resultid="11018" entrytime="00:01:18.66" entrycourse="SCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11019" entrytime="00:01:13.94" entrycourse="LCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="11020" entrytime="00:02:20.72" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Kyara" lastname="Stahel" birthdate="2011-07-03" gender="F" nation="SUI" swrid="5458222" athleteid="11083">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="11084" entrytime="00:00:45.83" entrycourse="LCM" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="11085" entrytime="00:00:52.68" entrycourse="LCM" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="11086" entrytime="00:03:40.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Jayden" lastname="Heyn" birthdate="2009-12-02" gender="M" nation="SUI" license="119140" swrid="5314576" athleteid="11012">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11013" entrytime="00:01:22.11" entrycourse="SCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11014" entrytime="00:01:35.84" entrycourse="LCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="11015" entrytime="00:03:07.41" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Ellen" lastname="Zdrahal" birthdate="2007-09-14" gender="F" nation="SUI" license="113075" swrid="4698478" athleteid="11111">
+              <RESULTS>
+                <RESULT eventid="1137" swimtime="00:00:00.00" resultid="11112" entrytime="00:01:20.84" entrycourse="SCM" />
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="11113" entrytime="00:02:21.76" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Maximilian" lastname="Wenzel" birthdate="2009-01-29" gender="M" nation="SUI" license="122709" swrid="5382252" athleteid="11099">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11100" entrytime="00:01:34.40" entrycourse="LCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11101" entrytime="00:01:41.76" entrycourse="SCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="11102" entrytime="00:03:31.62" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Yondric" lastname="Zulauf" birthdate="2009-08-12" gender="M" nation="SUI" license="118778" swrid="5312289" athleteid="11114">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11115" entrytime="00:01:52.14" entrycourse="SCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11116" entrytime="00:01:50.00" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="11117" entrytime="00:04:18.46" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Vivienne" lastname="Beauzec" birthdate="2010-04-01" gender="F" nation="SUI" license="22180" swrid="5424900" athleteid="10946">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="10947" entrytime="00:01:40.00" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="10948" entrytime="00:01:48.39" entrycourse="SCM" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="10949" entrytime="00:03:40.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Mia" lastname="Zahner" birthdate="2010-05-21" gender="F" nation="SUI" swrid="5085556" athleteid="11107">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="11108" entrytime="00:01:35.00" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="11109" entrytime="00:01:45.00" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="11110" entrytime="00:03:25.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Aitana" lastname="Martin Zdarilova" birthdate="2007-09-29" gender="F" nation="SUI" license="112562" swrid="4918182" athleteid="11047">
+              <RESULTS>
+                <RESULT eventid="10403" swimtime="00:00:00.00" resultid="11048" entrytime="00:01:03.89" entrycourse="SCM" />
+                <RESULT eventid="10412" swimtime="00:00:00.00" resultid="11049" entrytime="00:01:10.56" entrycourse="LCM" />
+                <RESULT eventid="10393" swimtime="00:00:00.00" resultid="11050" entrytime="00:01:13.23" entrycourse="LCM" />
+                <RESULT eventid="1149" swimtime="00:00:00.00" resultid="11051" entrytime="00:02:24.28" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Gianmarco" lastname="Carletti" birthdate="2009-09-20" gender="M" nation="ITA" license="120394" swrid="5322563" athleteid="10976">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="10977" entrytime="00:01:40.89" entrycourse="SCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="10978" entrytime="00:01:46.68" entrycourse="SCM" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="10979" entrytime="00:01:53.77" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Lucy" lastname="Mäder" birthdate="2010-06-10" gender="F" nation="SUI" swrid="4823529" athleteid="11043">
+              <RESULTS>
+                <RESULT eventid="1094" swimtime="00:00:00.00" resultid="11044" entrytime="00:01:40.00" />
+                <RESULT eventid="1117" swimtime="00:00:00.00" resultid="11045" entrytime="00:01:50.00" />
+                <RESULT eventid="10428" swimtime="00:00:00.00" resultid="11046" entrytime="00:03:40.00" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Tim" lastname="Sciullo" birthdate="2007-06-15" gender="M" nation="SUI" license="109446" swrid="5163373" athleteid="11070">
+              <RESULTS>
+                <RESULT eventid="10415" swimtime="00:00:00.00" resultid="11071" entrytime="00:01:04.11" entrycourse="LCM" />
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="11072" entrytime="00:01:13.35" entrycourse="LCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="11073" entrytime="00:02:20.77" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Maximilian" lastname="Gujer" birthdate="2011-01-01" gender="M" nation="SUI" swrid="5382250" athleteid="11002">
+              <RESULTS>
+                <RESULT eventid="1063" swimtime="00:00:00.00" resultid="11003" entrytime="00:00:34.47" entrycourse="SCM" />
+                <RESULT eventid="1069" swimtime="00:00:00.00" resultid="11004" entrytime="00:00:43.10" entrycourse="SCM" />
+                <RESULT eventid="1075" swimtime="00:00:00.00" resultid="11005" entrytime="00:00:41.21" entrycourse="LCM" />
+                <RESULT eventid="1135" swimtime="00:00:00.00" resultid="11006" entrytime="00:00:48.64" entrycourse="LCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Rebecca" lastname="Espina" birthdate="2011-12-16" gender="F" nation="PHI" swrid="5382254" athleteid="10988">
+              <RESULTS>
+                <RESULT eventid="1060" swimtime="00:00:00.00" resultid="10989" entrytime="00:00:42.07" entrycourse="LCM" />
+                <RESULT eventid="1107" swimtime="00:00:00.00" resultid="10990" entrytime="00:00:54.57" entrycourse="SCM" />
+                <RESULT eventid="1112" swimtime="00:00:00.00" resultid="10991" entrytime="00:00:49.61" entrycourse="LCM" />
+                <RESULT eventid="10380" swimtime="00:00:00.00" resultid="10992" entrytime="00:00:55.47" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+            <ATHLETE firstname="Finn" lastname="Bertschi" birthdate="2005-09-12" gender="M" nation="SUI" license="103911" swrid="5053792" athleteid="10954">
+              <RESULTS>
+                <RESULT eventid="10390" swimtime="00:00:00.00" resultid="10955" entrytime="00:01:10.62" entrycourse="SCM" />
+                <RESULT eventid="1144" swimtime="00:00:00.00" resultid="10956" entrytime="00:01:19.74" entrycourse="LCM" />
+                <RESULT eventid="1154" swimtime="00:00:00.00" resultid="10957" entrytime="00:02:12.82" entrycourse="SCM" />
+              </RESULTS>
+            </ATHLETE>
+          </ATHLETES>
+          <RELAYS>
+            <RELAY agemax="16" agemin="12" agetotalmax="-1" agetotalmin="-1" gender="M" number="1">
+              <RESULTS>
+                <RESULT eventid="1131" swimtime="00:00:00.00" resultid="11118" entrytime="00:02:02.89">
+                  <RELAYPOSITIONS>
+                    <RELAYPOSITION athleteid="10958" number="1" />
+                    <RELAYPOSITION athleteid="10942" number="2" />
+                    <RELAYPOSITION athleteid="10997" number="3" />
+                    <RELAYPOSITION athleteid="11021" number="4" />
+                  </RELAYPOSITIONS>
+                </RESULT>
+              </RESULTS>
+            </RELAY>
+            <RELAY agemax="16" agemin="12" agetotalmax="-1" agetotalmin="-1" gender="M" number="2">
+              <RESULTS>
+                <RESULT eventid="1131" swimtime="00:00:00.00" resultid="11119" entrytime="00:03:23.60">
+                  <RELAYPOSITIONS>
+                    <RELAYPOSITION athleteid="10984" number="1" />
+                    <RELAYPOSITION athleteid="11099" number="2" />
+                    <RELAYPOSITION athleteid="11114" number="3" />
+                    <RELAYPOSITION athleteid="10993" number="4" />
+                  </RELAYPOSITIONS>
+                </RESULT>
+              </RESULTS>
+            </RELAY>
+            <RELAY agemax="16" agemin="12" agetotalmax="-1" agetotalmin="-1" gender="F" number="1">
+              <RESULTS>
+                <RESULT eventid="1129" swimtime="00:00:00.00" resultid="11120" entrytime="00:02:14.76">
+                  <RELAYPOSITIONS>
+                    <RELAYPOSITION athleteid="11052" number="1" />
+                    <RELAYPOSITION athleteid="11061" number="2" />
+                    <RELAYPOSITION athleteid="11047" number="3" />
+                    <RELAYPOSITION athleteid="11034" number="4" />
+                  </RELAYPOSITIONS>
+                </RESULT>
+              </RESULTS>
+            </RELAY>
+          </RELAYS>
+        </CLUB>
+      </CLUBS>
+    </MEET>
+  </MEETS>
+  <TIMESTANDARDLISTS>
+    <TIMESTANDARDLIST timestandardlistid="4803" code="NS" course="SCM" gender="M" name="Niveau Nachwuchs-SM 2011" type="MINIMUM">
+      <AGEGROUP agemax="12" agemin="-1" />
+      <TIMESTANDARDS>
+        <TIMESTANDARD swimtime="00:01:10.79">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+        </TIMESTANDARD>
+        <TIMESTANDARD swimtime="00:01:23.65">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+        </TIMESTANDARD>
+        <TIMESTANDARD swimtime="00:01:34.15">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+        </TIMESTANDARD>
+        <TIMESTANDARD swimtime="00:01:23.60">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+        </TIMESTANDARD>
+      </TIMESTANDARDS>
+    </TIMESTANDARDLIST>
+    <TIMESTANDARDLIST timestandardlistid="4805" code="NS" course="SCM" gender="F" name="Niveau Nachwuchs-SM 2011" type="MINIMUM">
+      <AGEGROUP agemax="12" agemin="-1" />
+      <TIMESTANDARDS>
+        <TIMESTANDARD swimtime="00:01:11.14">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+        </TIMESTANDARD>
+        <TIMESTANDARD swimtime="00:01:22.78">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+        </TIMESTANDARD>
+        <TIMESTANDARD swimtime="00:01:31.86">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+        </TIMESTANDARD>
+        <TIMESTANDARD swimtime="00:01:25.86">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+        </TIMESTANDARD>
+      </TIMESTANDARDS>
+    </TIMESTANDARDLIST>
+    <TIMESTANDARDLIST timestandardlistid="4807" code="NS" course="SCM" gender="M" name="Niveau Nachwuchs-SM 2011" type="MINIMUM">
+      <AGEGROUP agemax="14" agemin="-1" />
+      <TIMESTANDARDS>
+        <TIMESTANDARD swimtime="00:02:19.00">
+          <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+        </TIMESTANDARD>
+      </TIMESTANDARDS>
+    </TIMESTANDARDLIST>
+    <TIMESTANDARDLIST timestandardlistid="4809" code="NS" course="SCM" gender="F" name="Niveau Nachwuchs-SM 2011" type="MINIMUM">
+      <AGEGROUP agemax="14" agemin="-1" />
+      <TIMESTANDARDS>
+        <TIMESTANDARD swimtime="00:02:23.95">
+          <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+        </TIMESTANDARD>
+      </TIMESTANDARDS>
+    </TIMESTANDARDLIST>
+    <TIMESTANDARDLIST timestandardlistid="4799" code="NS" course="SCM" gender="M" name="Niveau Nachwuchs-SM 2011" type="MINIMUM">
+      <AGEGROUP agemax="13" agemin="13" />
+      <TIMESTANDARDS>
+        <TIMESTANDARD swimtime="00:01:06.19">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+        </TIMESTANDARD>
+        <TIMESTANDARD swimtime="00:01:18.50">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+        </TIMESTANDARD>
+        <TIMESTANDARD swimtime="00:01:27.45">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+        </TIMESTANDARD>
+        <TIMESTANDARD swimtime="00:01:19.50">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+        </TIMESTANDARD>
+      </TIMESTANDARDS>
+    </TIMESTANDARDLIST>
+    <TIMESTANDARDLIST timestandardlistid="4801" code="NS" course="SCM" gender="F" name="Niveau Nachwuchs-SM 2011" type="MINIMUM">
+      <AGEGROUP agemax="13" agemin="13" />
+      <TIMESTANDARDS>
+        <TIMESTANDARD swimtime="00:01:07.48">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+        </TIMESTANDARD>
+        <TIMESTANDARD swimtime="00:01:18.95">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+        </TIMESTANDARD>
+        <TIMESTANDARD swimtime="00:01:27.99">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+        </TIMESTANDARD>
+        <TIMESTANDARD swimtime="00:01:19.13">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+        </TIMESTANDARD>
+      </TIMESTANDARDS>
+    </TIMESTANDARDLIST>
+    <TIMESTANDARDLIST timestandardlistid="4795" code="NS" course="SCM" gender="M" name="Niveau Nachwuchs-SM 2011" type="MINIMUM">
+      <AGEGROUP agemax="14" agemin="14" />
+      <TIMESTANDARDS>
+        <TIMESTANDARD swimtime="00:01:02.31">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+        </TIMESTANDARD>
+        <TIMESTANDARD swimtime="00:01:13.74">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+        </TIMESTANDARD>
+        <TIMESTANDARD swimtime="00:01:22.27">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+        </TIMESTANDARD>
+        <TIMESTANDARD swimtime="00:01:12.74">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+        </TIMESTANDARD>
+      </TIMESTANDARDS>
+    </TIMESTANDARDLIST>
+    <TIMESTANDARDLIST timestandardlistid="4797" code="NS" course="SCM" gender="F" name="Niveau Nachwuchs-SM 2011" type="MINIMUM">
+      <AGEGROUP agemax="14" agemin="14" />
+      <TIMESTANDARDS>
+        <TIMESTANDARD swimtime="00:01:05.49">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+        </TIMESTANDARD>
+        <TIMESTANDARD swimtime="00:01:16.49">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+        </TIMESTANDARD>
+        <TIMESTANDARD swimtime="00:01:25.57">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+        </TIMESTANDARD>
+        <TIMESTANDARD swimtime="00:01:15.68">
+          <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+        </TIMESTANDARD>
+      </TIMESTANDARDS>
+    </TIMESTANDARDLIST>
+  </TIMESTANDARDLISTS>
+</LENEX>
