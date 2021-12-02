@@ -1,21 +1,21 @@
-import { readFile } from 'fs/promises'
 import { parse } from "fast-xml-parser";
 import JSZip from 'jszip';
 import he from "he"
 import { LenexRaw } from './lenex-type.js';
-import Ajv from "ajv";
-import addFormats from "ajv-formats"
-import schema from "./schema.json";
+//import Ajv from "ajv";
+//import addFormats from "ajv-formats"
+//import schema from "./schema.json";
 
 const isBrowser = typeof window !== 'undefined';
-const ajv = new Ajv({
+/*const ajv = new Ajv({
   allowUnionTypes: true,
 })
 addFormats(ajv);
 const validate = ajv.compile(schema);
+*/
 
 export async function parseLenex(
-  file: Blob | String | Buffer | Uint8Array
+  file: Blob | Buffer | Uint8Array
 ): Promise<LenexRaw> {
   let data = await handleFile(file);
   if (isZip(data)) {
@@ -24,21 +24,19 @@ export async function parseLenex(
 
   const lenex: LenexRaw = parseXML(new TextDecoder().decode(data));
 
-  const valid = validate(lenex);
+  /*const valid = validate(lenex);
 
   if (!valid) {
     console.log(ajv.errorsText(validate.errors));
     console.log(JSON.stringify(lenex));
     throw new Error(ajv.errorsText(validate.errors));
-  }
+  }*/
 
   return lenex;
 }
 
-async function handleFile(file: Blob | String | Buffer | Uint8Array): Promise<Uint8Array> {
-  if (!isBrowser && typeof file === "string") {
-    return readFile(file);
-  } else if ((Buffer && Buffer.isBuffer(file)) || file instanceof Uint8Array) {
+async function handleFile(file: Blob | Buffer | Uint8Array): Promise<Uint8Array> {
+  if ((Buffer && Buffer.isBuffer(file)) || file instanceof Uint8Array) {
     return file
   } else if (Blob && file instanceof Blob) {
     return new Uint8Array(await file.arrayBuffer());
@@ -74,7 +72,7 @@ function parseXML(str: string): any {
       return tagName.toLowerCase() + "s" === parentTagName?.toLowerCase()
     },
     tagValueProcessor: (a, tagName) => { 
-      let num: Number;
+      let num: any;
       if (a === "") {
         return ""
       } else if (!Number.isNaN( num = Number(a))) {
@@ -85,7 +83,7 @@ function parseXML(str: string): any {
     },
     attrValueProcessor: (a, attrName) => 
     { 
-      let num: Number;
+      let num: any;
       if (a === "") {
         return ""
       } else if (!Number.isNaN( num = Number(a)) && !attrIgnoreNumbers.includes(attrName)) {

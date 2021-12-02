@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es5",                                     /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
-    "module": "ES6",                                     /* Specify what module code is generated. */
+    "target": "es2017",                                     /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "module": "esnext",                                     /* Specify what module code is generated. */
     "moduleResolution": "node",                       /* Specify how TypeScript looks up a file from a given module specifier. */
     "resolveJsonModule": true,                        /* Enable importing .json files */
     "outDir": "./build",                                   /* Specify an output folder for all emitted files. */
     "allowSyntheticDefaultImports": true,             /* Allow 'import x from y' when a module doesn't have a default export. */
     "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
-
+    "declaration": true,
     "strict": false,                                      /* Enable all strict type-checking options. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   }

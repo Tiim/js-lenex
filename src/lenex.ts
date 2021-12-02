@@ -1,7 +1,7 @@
 import { parseLenex } from './lenex-parse.js'
 import { LenexRaw, MeetAthlete, MeetClub } from './lenex-type.js';
 
-type AcceptedInputTypes = string|Blob|Buffer|Uint8Array;
+type AcceptedInputTypes = Blob|Buffer|Uint8Array;
 
 
 export class Lenex {
@@ -77,7 +77,7 @@ export class Lenex {
       .reduce((prev, cur) => ({...prev, [cur.code]: cur}), {}) ?? {};
   }
 
-  get rawLenexData() {
+  get rawLenexData(): LenexRaw {
     return JSON.parse(JSON.stringify(this.raw));
   }
 

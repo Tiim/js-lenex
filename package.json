@@ -1,14 +1,16 @@
 {
   "name": "js-lenex",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "type": "module",
-  "main": "index.js",
+  "types": "build/src/index.d.ts",
+  "main": "build/src/index.js",
   "directories": {
     "example": "examples"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build",
     "build": "tsc",
     "update-typings": "./scripts/update-typings.sh",
     "update-schema": "ts-json-schema-generator --path src/lenex-type.ts --type LenexRaw -o src/schema.json --additional-properties true"
@@ -23,7 +25,9 @@
     "jszip": "^3.7.1"
   },
   "devDependencies": {
+    "@types/he": "^1.1.2",
     "@types/node": "^16.11.7",
+    "jest": "^27.4.3",
     "quicktype": "^15.0.260",
     "ts-json-schema-generator": "^0.97.0",
     "tslint": "^6.1.3",
