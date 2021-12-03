@@ -1,12 +1,12 @@
 import { parse } from "fast-xml-parser";
-import JSZip from 'jszip';
-import he from "he"
-import { LenexRaw } from './lenex-type.js';
+import JSZip from "jszip";
+import he from "he";
+import { LenexRaw } from "./lenex-type.js";
+import { exit } from "process";
 //import Ajv from "ajv";
 //import addFormats from "ajv-formats"
 //import schema from "./schema.json";
 
-const isBrowser = typeof window !== 'undefined';
 /*const ajv = new Ajv({
   allowUnionTypes: true,
 })
@@ -35,9 +35,11 @@ export async function parseLenex(
   return lenex;
 }
 
-async function handleFile(file: Blob | Buffer | Uint8Array): Promise<Uint8Array> {
+async function handleFile(
+  file: Blob | Buffer | Uint8Array
+): Promise<Uint8Array> {
   if ((Buffer && Buffer.isBuffer(file)) || file instanceof Uint8Array) {
-    return file
+    return file;
   } else if (Blob && file instanceof Blob) {
     return new Uint8Array(await file.arrayBuffer());
   }
@@ -45,53 +47,54 @@ async function handleFile(file: Blob | Buffer | Uint8Array): Promise<Uint8Array>
 
 async function extractZip(data: Uint8Array): Promise<Uint8Array> {
   const zip = await JSZip.loadAsync(data);
-  const keys = Object.keys(zip.files)
+  const keys = Object.keys(zip.files);
   if (keys.length > 1) {
     throw new Error("Not Implemented: lenex file with multiple lenex files");
   }
-  return zip.files[keys[0]].async("uint8array")
+  return zip.files[keys[0]].async("uint8array");
 }
 
 function isZip(buffer: Uint8Array): boolean {
-  const zip = new Uint8Array([0x50, 0x4b, 0x03, 0x04])
+  const zip = new Uint8Array([0x50, 0x4b, 0x03, 0x04]);
   for (let i = 0; i < 4; i++) {
     if (zip[i] !== buffer[i]) {
-      return false
+      return false;
     }
   }
   return true;
-
 }
 
-const attrIgnoreNumbers = ["zip", "fax", "phone", "mobile"]
+const attrIgnoreNumbers = ["zip", "fax", "phone", "mobile"];
 function parseXML(str: string): any {
-    let data = parse(str, {
-    ignoreAttributes : false,
-    attributeNamePrefix: '',
+  let data = parse(str, {
+    ignoreAttributes: false,
+    attributeNamePrefix: "",
     arrayMode: (tagName, parentTagName) => {
-      return tagName.toLowerCase() + "s" === parentTagName?.toLowerCase()
+      return tagName.toLowerCase() + "s" === parentTagName?.toLowerCase();
     },
-    tagValueProcessor: (a, tagName) => { 
+    tagValueProcessor: (a, tagName) => {
       let num: any;
       if (a === "") {
-        return ""
-      } else if (!Number.isNaN( num = Number(a))) {
+        return "";
+      } else if (!Number.isNaN((num = Number(a)))) {
         return num;
       } else {
         return he.decode(a, {});
       }
     },
-    attrValueProcessor: (a, attrName) => 
-    { 
+    attrValueProcessor: (a, attrName) => {
       let num: any;
       if (a === "") {
-        return ""
-      } else if (!Number.isNaN( num = Number(a)) && !attrIgnoreNumbers.includes(attrName)) {
+        return "";
+      } else if (
+        !Number.isNaN((num = Number(a))) &&
+        !attrIgnoreNumbers.includes(attrName)
+      ) {
         return num;
       } else {
-        return he.decode(a, {isAttributeValue: true})
+        return he.decode(a, { isAttributeValue: true });
       }
-    }
+    },
   });
 
   data = keysToLowerCase(data);
@@ -100,44 +103,67 @@ function parseXML(str: string): any {
 }
 
 function keysToLowerCase(obj: any): any {
-    if (Array.isArray(obj)) {
-      return obj.map(x => keysToLowerCase(x));
+  if (Array.isArray(obj)) {
+    return obj.map((x) => keysToLowerCase(x));
+  }
+  if (typeof obj !== "object") {
+    return obj;
+  }
+  const keys = Object.keys(obj);
+  const newObj = {};
+  for (const key of keys) {
+    const lowKey = key.toLowerCase();
+    if (key === lowKey) {
+      newObj[key] = obj[key];
+    } else {
+      newObj[lowKey] = keysToLowerCase(obj[key]);
     }
-    if (typeof obj !== "object") {
-        return obj;
-    }
-    const keys = Object.keys(obj);
-    const newObj = {}
-    for (const key of keys) {
-        const lowKey = key.toLowerCase()
-        if (key === lowKey) {
-          newObj[key] = obj[key];
-        } else {
-          newObj[lowKey] = keysToLowerCase(obj[key]);
-        }
-    }
-    return newObj;
+  }
+  return newObj;
 }
+
+// TODO: fix this method to include array entries-entry
+const collectionTags = {
+  agegroups: "agegroup",
+  athletes: "athlete",
+  clubs: "club",
+  entries: "entry",
+  events: "event",
+  fees: "fee",
+  heats: "heat",
+  judges: "judge",
+  meets: "meet",
+  officials: "official",
+  rankings: "ranking",
+  recordlists: "recordlist",
+  records: "record",
+  relays: "relay",
+  relaypositions: "relayposition",
+  results: "result",
+  sessions: "session",
+  splits: "split",
+  timestandards: "timestandard",
+  timestandardlistss: "timestandardlist",
+  timestandardrefs: "timestandardref",
+};
 
 function arrayTagSquash(obj: any): any {
   if (Array.isArray(obj)) {
-    return obj.map(o => arrayTagSquash(o));
-  } else if (typeof obj === 'object') {
+    return obj.map((o) => arrayTagSquash(o));
+  } else if (typeof obj === "object") {
     const newObj = {};
+    
     const entries = Object.entries(obj);
     for (let [key, val] of entries) {
-      if (typeof val === 'object' || !key.endsWith('s')) {
-        const subKey = Object.keys(val);
-        if (subKey.length === 1 && subKey[0] + 's' === key && Array.isArray(val[subKey[0]])) {
-          newObj[key] = arrayTagSquash(val[subKey[0]]);            
-        } else {
-          newObj[key] = arrayTagSquash(val);
-        }
+      if (key in collectionTags) {
+        console.log(key,val);
+        newObj[key] = arrayTagSquash(val[collectionTags[key]]);
       } else {
         newObj[key] = arrayTagSquash(val);
       }
     }
     return newObj;
+  
   } else {
     return obj;
   }

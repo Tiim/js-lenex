@@ -1,6 +1,6 @@
 {
   "name": "js-lenex",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "",
   "type": "module",
   "types": "build/src/index.d.ts",

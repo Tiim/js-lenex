@@ -1,3 +1,4 @@
+import { courses } from './constants.js';
 import { parseLenex } from './lenex-parse.js'
 import { LenexRaw, MeetAthlete, MeetClub } from './lenex-type.js';
 
@@ -101,6 +102,10 @@ export class Lenex {
     return this.raw.constructor
   }
 
+  get meetCourse() {
+    const c = this.raw.meets[0].course;
+    return {type: c, ...courses[c]}
+  }
 }
 
 function notNull(a: any): boolean {
