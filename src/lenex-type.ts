@@ -93,7 +93,7 @@ export interface Constructor {
 
 
 export type OfficialContact = Omit<_Contact, "name">;
-export type ConstructorContact = _Contact | { email: string }
+export type ConstructorContact = _Contact & { email: string }
 export type MeetContact = _Contact;
 export interface _Contact {
     /**
@@ -404,12 +404,12 @@ export interface _Club {
     type?:           ClubType;
 }
 
-export type MeetAthlete = _Athlete | {
+export type MeetAthlete = _Athlete & {
     /**
      * The id attribute should be unique over all athletes of a meet. It is 
      * required for ATHLETE objects in a meet sub tree. 
      */
-    athleteid:      number
+    athleteid:      number;
     /**
      * All entries of the athlete.
      */
@@ -426,7 +426,7 @@ export type MeetAthlete = _Athlete | {
     results?:    Result[];
 };
 
-export type RecordAthlete = _Athlete | {
+export type RecordAthlete = _Athlete & {
     /**
      * The club or team for the athlete, when he swam the record.
      */
@@ -491,7 +491,7 @@ interface _Athlete {
 /**
  * This element is used in entries and records for general information about a meet.
  */
-export type RecordMeetInfo = _MeetInfo | {
+export type RecordMeetInfo = _MeetInfo & {
     /**
      * The city name where the meet took place. 
      */
@@ -506,7 +506,7 @@ export type RecordMeetInfo = _MeetInfo | {
     nation?:     Nation;
 };
 
-export type RaceMeetInfo = _MeetInfo | {
+export type RaceMeetInfo = _MeetInfo & {
     /**
      * Contains a code for the organisation, who approved the qualification 
      * time, e.g. FINA, LEN or a IOC nation code. If this field is empty, the 
@@ -672,7 +672,7 @@ export interface Result {
     swimtime:        SwimTime;
 }
 
-export type MeetRelayPosition = _RelayPosition | {
+export type MeetRelayPosition = _RelayPosition & {
 /**
  * A reference to the ATHLETE element of the athlete. This attribute is 
  * allowed in the context of a meet sub tree only. 
@@ -680,7 +680,7 @@ export type MeetRelayPosition = _RelayPosition | {
     athleteid?:    number;
 };
 
-export type RecordRelayPosition = _RelayPosition | {
+export type RecordRelayPosition = _RelayPosition & {
    /**
     * Last name, first name, etc. of the athlete. This element is allowed in 
     * the context of a record only and in this case it is required.
@@ -688,7 +688,7 @@ export type RecordRelayPosition = _RelayPosition | {
     athlete: RecordAthlete;
 }
 
-export type EntryRelayPosition = _RelayPosition | {
+export type EntryRelayPosition = _RelayPosition & {
     /**
      * This element contains the information, where the entry time was 
      * achieved. This element is only allowed in the context of a relay entry. 
@@ -773,7 +773,7 @@ export interface Official {
     passport?: string;
 }
 
-export type MeetRelay = _Relay | {
+export type MeetRelay = _Relay & {
     /**
      * The maximum age allowed for the oldest swimmer in the team. The value -1 means no upper bound.
      */
@@ -817,7 +817,7 @@ export type MeetRelay = _Relay | {
      */
     results?:    Result[];
 }
-export type RecordRelay = _Relay | {
+export type RecordRelay = _Relay & {
     /**
      * The club or team of the relay in the context of a record. 
      */
@@ -1333,7 +1333,7 @@ export interface Event {
     type?:             AgegroupType;
 }
 
-export type EventAgeGroup = _AgeGroup | {
+export type EventAgeGroup = _AgeGroup & {
     /**
      * Only for events, every AGEGROUP element needs an id, because the 
      * objects can be referenced from ENTRY objects. The id has to be 
@@ -1439,7 +1439,7 @@ export enum AgegroupType {
 
 
 export type SingleFee = _Fee;
-export type FeeElement = _Fee | {
+export type FeeElement = _Fee & {
     type:      FeeType;
 }
 /**

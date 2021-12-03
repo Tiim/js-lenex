@@ -156,8 +156,12 @@ function arrayTagSquash(obj: any): any {
     const entries = Object.entries(obj);
     for (let [key, val] of entries) {
       if (key in collectionTags) {
-        console.log(key,val);
-        newObj[key] = arrayTagSquash(val[collectionTags[key]]);
+        const collection = arrayTagSquash(val[collectionTags[key]]);
+        if (Array.isArray(collection)) {
+          newObj[key] = collection
+        } else {
+          newObj[key] = [collection]
+        }
       } else {
         newObj[key] = arrayTagSquash(val);
       }
