@@ -1,13 +1,18 @@
 {
   "name": "js-lenex",
   "version": "0.0.6",
-  "description": "",
+  "description": "LENEX 3.0 library for javascript (node.js/browser) ",
+  "keywords": ["LENEX", "swim", "swimrankings", "LEN", "XML"],
+  "bugs": {
+    "url": "https://github.com/Tiim/js-lenex/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tiim/js-lenex"
+  },
   "type": "module",
   "types": "build/src/index.d.ts",
   "main": "build/src/index.js",
-  "directories": {
-    "example": "examples"
-  },
   "scripts": {
     "test": "npm run build && mocha build/test/**/*.js",
     "prepublish": "npm run build",
