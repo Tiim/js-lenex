@@ -38,7 +38,7 @@ export async function parseLenex(
 async function handleFile(
   file: Blob | Buffer | Uint8Array
 ): Promise<Uint8Array> {
-  if ((window.Buffer && window.Buffer.isBuffer(file)) || file instanceof Uint8Array) {
+  if ((typeof Buffer !== "undefined" && Buffer.isBuffer(file)) || file instanceof Uint8Array) {
     return file;
   } else if (Blob && file instanceof Blob) {
     return new Uint8Array(await file.arrayBuffer());
