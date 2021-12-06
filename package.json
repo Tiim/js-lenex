@@ -1,6 +1,6 @@
 {
   "name": "js-lenex",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "LENEX 3.0 library for javascript (node.js/browser) ",
   "keywords": ["LENEX", "swim", "swimrankings", "LEN", "XML"],
   "bugs": {
